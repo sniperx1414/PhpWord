@@ -125,7 +125,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
         <a href="#method_setParentWriter" title="setParentWriter :: Set parent writer">
             <span class="description">Set parent writer</span><pre>setParentWriter</pre>
         </a>
@@ -141,7 +141,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
                             <a href="#method_writeCommonRootAttributes" title="writeCommonRootAttributes :: Write common root attributes">
                                 <span class="description">Write common root attributes</span><pre>writeCommonRootAttributes</pre>
                             </a>
@@ -161,23 +161,13 @@
         <li class="nav-header private">» Private
             <ul>
                                                                                                                 <li class="method private">
-                            <a href="#method_writeSectionStyles" title="writeSectionStyles :: Write section automatic styles">
-                                <span class="description">Write section automatic styles</span><pre>writeSectionStyles</pre>
+                            <a href="#method_writeAutoStyles" title="writeAutoStyles :: Write automatic styles other than fonts and paragraphs">
+                                <span class="description">Write automatic styles other than fonts and paragraphs</span><pre>writeAutoStyles</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
                             <a href="#method_writeTextStyles" title="writeTextStyles :: Write automatic styles">
                                 <span class="description">Write automatic styles</span><pre>writeTextStyles</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
-                            <a href="#method_writeImageStyles" title="writeImageStyles :: Write image automatic styles">
-                                <span class="description">Write image automatic styles</span><pre>writeImageStyles</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
-                            <a href="#method_writeTableStyles" title="writeTableStyles :: Write table automatic styles">
-                                <span class="description">Write table automatic styles</span><pre>writeTableStyles</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
@@ -248,10 +238,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_writeSectionStyles"></a>
-                        <div class="element clickable method private  method_writeSectionStyles" data-toggle="collapse" data-target=".method_writeSectionStyles .collapse">
-                            <h2>Write section automatic styles</h2>
-                            <pre>writeSectionStyles(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\PhpWord $phpWord) </pre>
+                                            <a id="method_writeAutoStyles"></a>
+                        <div class="element clickable method private  method_writeAutoStyles" data-toggle="collapse" data-target=".method_writeAutoStyles .collapse">
+                            <h2>Write automatic styles other than fonts and paragraphs</h2>
+                            <pre>writeAutoStyles(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -266,15 +256,6 @@
                                                 <td>
                                                                                                                                                                         0.11.0
                                                                                                                                                                         
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    todo
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        <p>Put more section properties/styles</p>
                                                                                                     </td>
                                             </tr>
                                                                                     <tr>
@@ -297,10 +278,6 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$xmlWriter</h4>
                                                 <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$phpWord</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -337,82 +314,6 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$xmlWriter</h4>
                                                 <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeImageStyles"></a>
-                        <div class="element clickable method private  method_writeImageStyles" data-toggle="collapse" data-target=".method_writeImageStyles .collapse">
-                            <h2>Write image automatic styles</h2>
-                            <pre>writeImageStyles(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter) </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$xmlWriter</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeTableStyles"></a>
-                        <div class="element clickable method private  method_writeTableStyles" data-toggle="collapse" data-target=".method_writeTableStyles .collapse">
-                            <h2>Write table automatic styles</h2>
-                            <pre>writeTableStyles(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\PhpWord $phpWord) </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$xmlWriter</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$phpWord</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -462,9 +363,18 @@
                                                                                                                                                                                             </div>
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"></div>
+                                    <div class="long_description"><p>Table style can be null or string of the style name</p></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Simplify the logic</p>
+                                                                                                    </td>
+                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -693,6 +603,40 @@
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_autoStyles"> </a>
+                            <div class="element clickable property  private property_autoStyles" data-toggle="collapse" data-target=".property_autoStyles .collapse">
+                                <h2>Auto style collection</h2>
+                                <pre>autoStyles : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Collect inline style information from section, image, and table elements</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        todo
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>Merge font and paragraph styles</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_parentWriter"> </a>
                             <div class="element clickable property  protected property_parentWriter inherited" data-toggle="collapse" data-target=".property_parentWriter .collapse">
                                 <h2>Parent writer</h2>
@@ -739,7 +683,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 18 May 2014 10:56:46 +0000.<br/>
+            generated on Sun, 18 May 2014 14:32:10 +0000.<br/>
     </footer>
     </body>
 </html>
