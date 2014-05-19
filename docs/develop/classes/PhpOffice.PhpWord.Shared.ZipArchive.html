@@ -204,24 +204,6 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_close" title="close :: ">
-            <span class="description"></span><pre>close</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_extractTo" title="extractTo :: ">
-            <span class="description"></span><pre>extractTo</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_getFromName" title="getFromName :: ">
-            <span class="description"></span><pre>getFromName</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
         <a href="#method_getNameIndex" title="getNameIndex :: ">
             <span class="description"></span><pre>getNameIndex</pre>
         </a>
@@ -233,21 +215,15 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public">
-        <a href="#method_open" title="open :: ">
-            <span class="description"></span><pre>open</pre>
-        </a>
-    </li>
-
                                                 </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -456,7 +432,7 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                             <a id="method_getFromName"></a>
                         <div class="element clickable method public  method_getFromName" data-toggle="collapse" data-target=".method_getFromName .collapse">
                             <h2>Extract file from archive by given file name (emulate \ZipArchive)</h2>
-                            <pre>getFromName(string $filename) : string|false</pre>
+                            <pre>getFromName(string $filename) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -473,7 +449,7 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>string|false</code><p><p>$contents File string contents</p></p>
+                                        <code>string</code><p><p>$contents File string contents</p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -573,7 +549,7 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                             <a id="method_pclzipGetFromName"></a>
                         <div class="element clickable method public  method_pclzipGetFromName" data-toggle="collapse" data-target=".method_pclzipGetFromName .collapse">
                             <h2>Extract file from archive by given file name (emulate \ZipArchive)</h2>
-                            <pre>pclzipGetFromName(string $filename) : string|false</pre>
+                            <pre>pclzipGetFromName(string $filename) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -590,14 +566,14 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>string|false</code><p><p>$contents File string contents</p></p>
+                                        <code>string</code><p><p>$contents File string contents</p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_pclzipGetNameIndex"></a>
                         <div class="element clickable method public  method_pclzipGetNameIndex" data-toggle="collapse" data-target=".method_pclzipGetNameIndex .collapse">
                             <h2>Returns the name of an entry using its index (emulate \ZipArchive)</h2>
-                            <pre>pclzipGetNameIndex(int $index) : string|false</pre>
+                            <pre>pclzipGetNameIndex(int $index) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -623,14 +599,14 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>string|false</code><p></p>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_pclzipLocateName"></a>
                         <div class="element clickable method public  method_pclzipLocateName" data-toggle="collapse" data-target=".method_pclzipLocateName .collapse">
                             <h2>Returns the index of the entry in the archive (emulate \ZipArchive)</h2>
-                            <pre>pclzipLocateName(string $filename) : int|false</pre>
+                            <pre>pclzipLocateName(string $filename) : int</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -647,7 +623,7 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>int|false</code><p></p>
+                                        <code>int</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -707,77 +683,6 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_close"></a>
-                        <div class="element clickable method public  method_close" data-toggle="collapse" data-target=".method_close .collapse">
-                            <h2>close</h2>
-                            <pre>close() : bool</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>bool</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_extractTo"></a>
-                        <div class="element clickable method public  method_extractTo" data-toggle="collapse" data-target=".method_extractTo .collapse">
-                            <h2>extractTo</h2>
-                            <pre>extractTo(string $destination, mixed $entries) : bool</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$destination</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$entries</h4>
-                                                <code>mixed</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>bool</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getFromName"></a>
-                        <div class="element clickable method public  method_getFromName" data-toggle="collapse" data-target=".method_getFromName .collapse">
-                            <h2>getFromName</h2>
-                            <pre>getFromName(string $name) : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$name</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
                                             <a id="method_getNameIndex"></a>
                         <div class="element clickable method public  method_getNameIndex" data-toggle="collapse" data-target=".method_getNameIndex .collapse">
                             <h2>getNameIndex</h2>
@@ -823,34 +728,6 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>int</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_open"></a>
-                        <div class="element clickable method public  method_open" data-toggle="collapse" data-target=".method_open .collapse">
-                            <h2>open</h2>
-                            <pre>open(string $filename, int $flags) : bool</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$filename</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$flags</h4>
-                                                <code>int</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>bool</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -1058,7 +935,7 @@ emulation. Only needed PHP ZipArchive features are implemented.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 18 May 2014 16:19:54 +0000.<br/>
+            generated on Mon, 19 May 2014 08:31:38 +0000.<br/>
     </footer>
     </body>
 </html>
