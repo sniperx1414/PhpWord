@@ -125,7 +125,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+                                                                                                        <li class="method public inherited">
         <a href="#method___construct" title="__construct :: Create new instance">
             <span class="description">Create new instance</span><pre>__construct</pre>
         </a>
@@ -137,11 +137,11 @@
         </a>
     </li>
 
-                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                <li class="method protected inherited">
+                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_readParagraph" title="readParagraph :: Read w:p">
                                 <span class="description">Read w:p</span><pre>readParagraph</pre>
                             </a>
@@ -171,21 +171,21 @@
                                 <span class="description">Read w:tblPr</span><pre>readTableStyle</pre>
                             </a>
                         </li>
-                                                                                <li class="method protected inherited">
+                                                                                                                    <li class="method protected inherited">
                             <a href="#method_readStyleDefs" title="readStyleDefs :: Read style definition">
                                 <span class="description">Read style definition</span><pre>readStyleDefs</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                </ul>
+                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
                             <a href="#method_readCellStyle" title="readCellStyle :: Read w:tcPr">
                                 <span class="description">Read w:tcPr</span><pre>readCellStyle</pre>
                             </a>
                         </li>
-                                                                                <li class="method private inherited">
+                                                                                                                    <li class="method private inherited">
                             <a href="#method_getMediaTarget" title="getMediaTarget :: Returns the target of image, object, or link as stored in ::readMainRels">
                                 <span class="description">Returns the target of image, object, or link as stored in ::readMainRels</span><pre>getMediaTarget</pre>
                             </a>
@@ -287,10 +287,72 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Create new instance</h2>
+                            <pre>__construct(string $docFile, string $xmlFile) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$docFile</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlFile</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setRels"></a>
+                        <div class="element clickable method public  method_setRels inherited" data-toggle="collapse" data-target=".method_setRels .collapse">
+                            <h2>Set relationships</h2>
+                            <pre>setRels(array $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_readParagraph"></a>
                         <div class="element clickable method protected  method_readParagraph inherited" data-toggle="collapse" data-target=".method_readParagraph .collapse">
                             <h2>Read w:p</h2>
-                            <pre>readParagraph(\PhpOffice\PhpWord\Shared\XMLReader $xmlReader, \DOMElement $domNode, mixed &$parent, string $docPart) </pre>
+                            <pre>readParagraph(\PhpOffice\PhpWord\Shared\XMLReader $xmlReader, \DOMElement $domNode, mixed &$parent, string $docPart = &#039;document&#039;) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -394,7 +456,7 @@
                                             <a id="method_readTable"></a>
                         <div class="element clickable method protected  method_readTable inherited" data-toggle="collapse" data-target=".method_readTable .collapse">
                             <h2>Read w:tbl</h2>
-                            <pre>readTable(\PhpOffice\PhpWord\Shared\XMLReader $xmlReader, \DOMElement $domNode, mixed &$parent, string $docPart) </pre>
+                            <pre>readTable(\PhpOffice\PhpWord\Shared\XMLReader $xmlReader, \DOMElement $domNode, mixed &$parent, string $docPart = &#039;document&#039;) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -525,6 +587,34 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_readCellStyle"></a>
+                        <div class="element clickable method private  method_readCellStyle inherited" data-toggle="collapse" data-target=".method_readCellStyle .collapse">
+                            <h2>Read w:tcPr</h2>
+                            <pre>readCellStyle(\PhpOffice\PhpWord\Shared\XMLReader $xmlReader, \DOMElement $domNode) : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlReader</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLReader.html">\PhpOffice\PhpWord\Shared\XMLReader</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$domNode</h4>
+                                                <code>\DOMElement</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_readStyleDefs"></a>
                         <div class="element clickable method protected  method_readStyleDefs inherited" data-toggle="collapse" data-target=".method_readStyleDefs .collapse">
                             <h2>Read style definition</h2>
@@ -550,96 +640,6 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$styleDefs</h4>
                                                 <code>array</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>array</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method___construct"></a>
-                        <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
-                            <h2>Create new instance</h2>
-                            <pre>__construct(string $docFile, string $xmlFile) </pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$docFile</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$xmlFile</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_setRels"></a>
-                        <div class="element clickable method public  method_setRels inherited" data-toggle="collapse" data-target=".method_setRels .collapse">
-                            <h2>Set relationships</h2>
-                            <pre>setRels(array $value) </pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$value</h4>
-                                                <code>array</code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_readCellStyle"></a>
-                        <div class="element clickable method private  method_readCellStyle inherited" data-toggle="collapse" data-target=".method_readCellStyle .collapse">
-                            <h2>Read w:tcPr</h2>
-                            <pre>readCellStyle(\PhpOffice\PhpWord\Shared\XMLReader $xmlReader, \DOMElement $domNode) : array</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$xmlReader</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLReader.html">\PhpOffice\PhpWord\Shared\XMLReader</a></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$domNode</h4>
-                                                <code>\DOMElement</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -890,7 +890,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 23 May 2014 02:18:42 +0000.<br/>
+            generated on Fri, 23 May 2014 09:57:48 +0000.<br/>
     </footer>
     </body>
 </html>
