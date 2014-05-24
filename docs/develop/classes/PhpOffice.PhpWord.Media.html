@@ -137,7 +137,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public">
+                                                                                                                                                                <li class="method public">
         <a href="#method_resetElements" title="resetElements :: Reset media elements">
             <span class="description">Reset media elements</span><pre>resetElements</pre>
         </a>
@@ -207,11 +207,16 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                        <li class="method private">
+                            <a href="#method_getElementsByType" title="getElementsByType :: Get elements by media type">
+                                <span class="description">Get elements by media type</span><pre>getElementsByType</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -333,7 +338,7 @@
                                             <a id="method_getElements"></a>
                         <div class="element clickable method public  method_getElements" data-toggle="collapse" data-target=".method_getElements .collapse">
                             <h2>Get media elements</h2>
-                            <pre>getElements(string $container, string $mediaType = null) : array</pre>
+                            <pre>getElements(string $container, string $type = null) : array</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -358,7 +363,44 @@
                                                 <code>string</code><p><p>section|headerx|footerx|footnote|endnote</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$mediaType</h4>
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>image|object|link</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getElementsByType"></a>
+                        <div class="element clickable method private  method_getElementsByType" data-toggle="collapse" data-target=".method_getElementsByType .collapse">
+                            <h2>Get elements by media type</h2>
+                            <pre>getElementsByType(string $container, string $type = null) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        <p>Splitted from <code>getElements</code> to reduce complexity</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$container</h4>
+                                                <code>string</code><p><p>section|footnote|endnote</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
                                                 <code>string</code><p><p>image|object|link</p></p>
                                             </div>
                                                                             
@@ -895,7 +937,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 24 May 2014 04:30:17 +0000.<br/>
+            generated on Sat, 24 May 2014 09:01:49 +0000.<br/>
     </footer>
     </body>
 </html>

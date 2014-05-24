@@ -125,7 +125,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                        <li class="method public inherited">
+                                                                                                                                                                                                                                                                                <li class="method public inherited">
         <a href="#method_setParentWriter" title="setParentWriter :: Set parent writer">
             <span class="description">Set parent writer</span><pre>setParentWriter</pre>
         </a>
@@ -146,7 +146,7 @@
                                 <span class="description">Write relationships</span><pre>writeRels</pre>
                             </a>
                         </li>
-                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_getXmlWriter" title="getXmlWriter :: Get XML Writer">
                                 <span class="description">Get XML Writer</span><pre>getXmlWriter</pre>
                             </a>
@@ -156,6 +156,11 @@
         <li class="nav-header private">» Private
             <ul>
                                                                                                                                                     <li class="method private inherited">
+                            <a href="#method_writeMediaRel" title="writeMediaRel :: Write media relationships">
+                                <span class="description">Write media relationships</span><pre>writeMediaRel</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
                             <a href="#method_writeRel" title="writeRel :: Write individual rels entry">
                                 <span class="description">Write individual rels entry</span><pre>writeRel</pre>
                             </a>
@@ -225,7 +230,7 @@
                                             <a id="method_writeRels"></a>
                         <div class="element clickable method protected  method_writeRels inherited" data-toggle="collapse" data-target=".method_writeRels .collapse">
                             <h2>Write relationships</h2>
-                            <pre>writeRels(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, null|array $xmlRels = null, null|array $mediaRels = null, integer $relId = 1) </pre>
+                            <pre>writeRels(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, array $xmlRels = array(), array $mediaRels = array(), int $relId = 1) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -249,15 +254,52 @@
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$xmlRels</h4>
-                                                <code>null|array</code><p></p>
+                                                <code>array</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$mediaRels</h4>
-                                                <code>null|array</code><p></p>
+                                                <code>array</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$relId</h4>
-                                                <code>integer</code><p></p>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeMediaRel"></a>
+                        <div class="element clickable method private  method_writeMediaRel inherited" data-toggle="collapse" data-target=".method_writeMediaRel .collapse">
+                            <h2>Write media relationships</h2>
+                            <pre>writeMediaRel(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, int $relId, array $mediaRel) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$relId</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mediaRel</h4>
+                                                <code>array</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -483,7 +525,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 24 May 2014 04:30:11 +0000.<br/>
+            generated on Sat, 24 May 2014 09:01:53 +0000.<br/>
     </footer>
     </body>
 </html>
