@@ -125,7 +125,7 @@
         </a>
     </li>
 
-                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                        <li class="method public inherited">
         <a href="#method_setParentWriter" title="setParentWriter :: Set parent writer">
             <span class="description">Set parent writer</span><pre>setParentWriter</pre>
         </a>
@@ -141,7 +141,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_getXmlWriter" title="getXmlWriter :: Get XML Writer">
                                 <span class="description">Get XML Writer</span><pre>getXmlWriter</pre>
                             </a>
@@ -153,6 +153,21 @@
                                                                                                                 <li class="method private">
                             <a href="#method_writeDefaultStyles" title="writeDefaultStyles :: Write default font and other default styles">
                                 <span class="description">Write default font and other default styles</span><pre>writeDefaultStyles</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_writeFontStyle" title="writeFontStyle :: Write font style">
+                                <span class="description">Write font style</span><pre>writeFontStyle</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_writeParagraphStyle" title="writeParagraphStyle :: Write paragraph style">
+                                <span class="description">Write paragraph style</span><pre>writeParagraphStyle</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_writeTableStyle" title="writeTableStyle :: Write table style">
+                                <span class="description">Write table style</span><pre>writeTableStyle</pre>
                             </a>
                         </li>
                                                                                                                                                             </ul>
@@ -186,6 +201,15 @@
                                     <td>
                                                                                     
                                                                                 <p>Do something with the numbering style introduced in 0.10.0</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        SuppressWarnings
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>(PHPMD.UnusedPrivateMethod) For writeFontStyle, writeParagraphStyle, and writeTableStyle</p>
                                     </td>
                                 </tr>
                                                                                                                                                                                                                                     </table>
@@ -245,6 +269,117 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
                                                 <code>\PhpOffice\PhpWord\Style\AbstractStyle[]</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeFontStyle"></a>
+                        <div class="element clickable method private  method_writeFontStyle" data-toggle="collapse" data-target=".method_writeFontStyle .collapse">
+                            <h2>Write font style</h2>
+                            <pre>writeFontStyle(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, string $styleName, \PhpOffice\PhpWord\Style\Font $style) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Font.html">\PhpOffice\PhpWord\Style\Font</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeParagraphStyle"></a>
+                        <div class="element clickable method private  method_writeParagraphStyle" data-toggle="collapse" data-target=".method_writeParagraphStyle .collapse">
+                            <h2>Write paragraph style</h2>
+                            <pre>writeParagraphStyle(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, string $styleName, \PhpOffice\PhpWord\Style\Paragraph $style) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Paragraph.html">\PhpOffice\PhpWord\Style\Paragraph</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeTableStyle"></a>
+                        <div class="element clickable method private  method_writeTableStyle" data-toggle="collapse" data-target=".method_writeTableStyle .collapse">
+                            <h2>Write table style</h2>
+                            <pre>writeTableStyle(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, string $styleName, \PhpOffice\PhpWord\Style\Table $style) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Table.html">\PhpOffice\PhpWord\Style\Table</a></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -415,7 +550,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 24 May 2014 17:51:58 +0000.<br/>
+            generated on Sun, 25 May 2014 17:00:12 +0000.<br/>
     </footer>
     </body>
 </html>

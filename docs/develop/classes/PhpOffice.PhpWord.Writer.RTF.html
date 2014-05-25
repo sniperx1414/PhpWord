@@ -126,12 +126,12 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_save" title="save :: Save PhpWord to file">
-            <span class="description">Save PhpWord to file</span><pre>save</pre>
+        <a href="#method_save" title="save :: Save content to file">
+            <span class="description">Save content to file</span><pre>save</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public">
+                                                                                                                                                                <li class="method public">
         <a href="#method_getFontTable" title="getFontTable :: Get font table">
             <span class="description">Get font table</span><pre>getFontTable</pre>
         </a>
@@ -203,7 +203,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
         <a href="#method_getUseDiskCaching" title="getUseDiskCaching :: Get use disk caching status">
             <span class="description">Get use disk caching status</span><pre>getUseDiskCaching</pre>
         </a>
@@ -213,7 +213,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_getTempFile" title="getTempFile :: Get temporary file name">
                                 <span class="description">Get temporary file name</span><pre>getTempFile</pre>
                             </a>
@@ -234,6 +234,16 @@
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
+                            <a href="#method_openFile" title="openFile :: Open file for writing">
+                                <span class="description">Open file for writing</span><pre>openFile</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_writeFile" title="writeFile :: Write content to file">
+                                <span class="description">Write content to file</span><pre>writeFile</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
                             <a href="#method_addFilesToPackage" title="addFilesToPackage :: Add files to package">
                                 <span class="description">Add files to package</span><pre>addFilesToPackage</pre>
                             </a>
@@ -247,7 +257,12 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                    <li class="method private">
+                            <a href="#method_getContent" title="getContent :: Get content">
+                                <span class="description">Get content</span><pre>getContent</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
                             <a href="#method_deleteDir" title="deleteDir :: Delete directory">
                                 <span class="description">Delete directory</span><pre>deleteDir</pre>
                             </a>
@@ -320,7 +335,7 @@
                         </div>
                                             <a id="method_save"></a>
                         <div class="element clickable method public  method_save" data-toggle="collapse" data-target=".method_save .collapse">
-                            <h2>Save PhpWord to file</h2>
+                            <h2>Save content to file</h2>
                             <pre>save(string $filename = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -353,6 +368,41 @@
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getContent"></a>
+                        <div class="element clickable method private  method_getContent" data-toggle="collapse" data-target=".method_getContent .collapse">
+                            <h2>Get content</h2>
+                            <pre>getContent() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -819,6 +869,90 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_openFile"></a>
+                        <div class="element clickable method protected  method_openFile inherited" data-toggle="collapse" data-target=".method_openFile .collapse">
+                            <h2>Open file for writing</h2>
+                            <pre>openFile(string $filename) : resource</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>resource</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeFile"></a>
+                        <div class="element clickable method protected  method_writeFile inherited" data-toggle="collapse" data-target=".method_writeFile .collapse">
+                            <h2>Write content to file</h2>
+                            <pre>writeFile(resource &$fileHandle, string $content) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fileHandle</h4>
+                                                <code>resource</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_addFilesToPackage"></a>
                         <div class="element clickable method protected  method_addFilesToPackage inherited" data-toggle="collapse" data-target=".method_addFilesToPackage .collapse">
                             <h2>Add files to package</h2>
@@ -1250,7 +1384,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 24 May 2014 17:51:55 +0000.<br/>
+            generated on Sun, 25 May 2014 17:00:09 +0000.<br/>
     </footer>
     </body>
 </html>
