@@ -215,7 +215,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                                                                                                                                        <li class="method public inherited">
         <a href="#method_addText" title="addText :: Add text/preservetext element">
             <span class="description">Add text/preservetext element</span><pre>addText</pre>
         </a>
@@ -428,7 +428,7 @@
                                 <span class="description">Add element</span><pre>addElement</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_setStyle" title="setStyle :: Set style value">
                                 <span class="description">Set style value</span><pre>setStyle</pre>
                             </a>
@@ -442,7 +442,17 @@
                                 <span class="description">Add header/footer</span><pre>addHeaderFooter</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
+                            <a href="#method_setElementNestedLevel" title="setElementNestedLevel :: Set element nested level based on container; add one when it&#039;s inside a cell">
+                                <span class="description">Set element nested level based on container; add one when it&#039;s inside a cell</span><pre>setElementNestedLevel</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_setElementRelationId" title="setElementRelationId :: Set relation Id">
+                                <span class="description">Set relation Id</span><pre>setElementRelationId</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
                             <a href="#method_checkValidity" title="checkValidity :: Check if a method is allowed for the current container">
                                 <span class="description">Check if a method is allowed for the current container</span><pre>checkValidity</pre>
                             </a>
@@ -1058,6 +1068,79 @@ False otherwise.</p></div>
                                     
                                                                             <h3>Response</h3>
                                         <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setElementNestedLevel"></a>
+                        <div class="element clickable method private  method_setElementNestedLevel inherited" data-toggle="collapse" data-target=".method_setElementNestedLevel .collapse">
+                            <h2>Set element nested level based on container; add one when it&#039;s inside a cell</h2>
+                            <pre>setElementNestedLevel(\PhpOffice\PhpWord\Element\AbstractElement $element) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setElementRelationId"></a>
+                        <div class="element clickable method private  method_setElementRelationId inherited" data-toggle="collapse" data-target=".method_setElementRelationId .collapse">
+                            <h2>Set relation Id</h2>
+                            <pre>setElementRelationId(\PhpOffice\PhpWord\Element\AbstractElement $element, string $elementName, string $source) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$elementName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$source</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
                         </div>
@@ -2542,7 +2625,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 31 May 2014 06:47:12 +0000.<br/>
+            generated on Sat, 31 May 2014 16:05:38 +0000.<br/>
     </footer>
     </body>
 </html>
