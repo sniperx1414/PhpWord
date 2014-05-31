@@ -246,6 +246,18 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_getNestedLevel" title="getNestedLevel :: Get nested level">
+            <span class="description">Get nested level</span><pre>getNestedLevel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setNestedLevel" title="setNestedLevel :: Set nested level">
+            <span class="description">Set nested level</span><pre>setNestedLevel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_isInSection" title="isInSection :: Check if element is located in Section doc part (as opposed to Header/Footer)">
             <span class="description">Check if element is located in Section doc part (as opposed to Header/Footer)</span><pre>isInSection</pre>
         </a>
@@ -255,7 +267,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
                             <a href="#method_setStyle" title="setStyle :: Set style value">
                                 <span class="description">Set style value</span><pre>setStyle</pre>
                             </a>
@@ -264,7 +276,7 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -839,7 +851,7 @@
                                             <a id="method_setRelationId"></a>
                         <div class="element clickable method public  method_setRelationId inherited" data-toggle="collapse" data-target=".method_setRelationId .collapse">
                             <h2>Set relation Id</h2>
-                            <pre>setRelationId(int $rId) </pre>
+                            <pre>setRelationId(int $value) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -858,7 +870,62 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$rId</h4>
+                                                <h4>$value</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getNestedLevel"></a>
+                        <div class="element clickable method public  method_getNestedLevel inherited" data-toggle="collapse" data-target=".method_getNestedLevel .collapse">
+                            <h2>Get nested level</h2>
+                            <pre>getNestedLevel() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setNestedLevel"></a>
+                        <div class="element clickable method public  method_setNestedLevel inherited" data-toggle="collapse" data-target=".method_setNestedLevel .collapse">
+                            <h2>Set nested level</h2>
+                            <pre>setNestedLevel(int $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
                                                 <code>int</code><p></p>
                                             </div>
                                                                             
@@ -1216,6 +1283,32 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_nestedLevel"> </a>
+                            <div class="element clickable property  private property_nestedLevel inherited" data-toggle="collapse" data-target=".property_nestedLevel .collapse">
+                                <h2>Depth of table container nested level; Primarily used for RTF writer/reader</h2>
+                                <pre>nestedLevel : int</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>0 = Not in a table; 1 = in a table; 2 = in a table inside another table, etc.</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                             </div>
             </div>
             <a id="\PhpOffice\PhpWord\Element\CheckBox"></a>
@@ -1236,7 +1329,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 30 May 2014 23:31:14 +0000.<br/>
+            generated on Sat, 31 May 2014 06:47:11 +0000.<br/>
     </footer>
     </body>
 </html>
