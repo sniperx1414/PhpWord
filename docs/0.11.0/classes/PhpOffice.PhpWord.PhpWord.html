@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\PhpWord
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Create new">
+            <span class="description">Create new</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDocumentProperties" title="getDocumentProperties :: Get document properties object">
+            <span class="description">Get document properties object</span><pre>getDocumentProperties</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDocumentProperties" title="setDocumentProperties :: Set document properties object">
+            <span class="description">Set document properties object</span><pre>setDocumentProperties</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSections" title="getSections :: Get all sections">
+            <span class="description">Get all sections</span><pre>getSections</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addSection" title="addSection :: Create new section">
+            <span class="description">Create new section</span><pre>addSection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getTitles" title="getTitles :: Get titles">
+            <span class="description">Get titles</span><pre>getTitles</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addTitle" title="addTitle :: Add new title">
+            <span class="description">Add new title</span><pre>addTitle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFootnotes" title="getFootnotes :: Get footnotes">
+            <span class="description">Get footnotes</span><pre>getFootnotes</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addFootnote" title="addFootnote :: Add new footnote">
+            <span class="description">Add new footnote</span><pre>addFootnote</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getEndnotes" title="getEndnotes :: Get endnotes">
+            <span class="description">Get endnotes</span><pre>getEndnotes</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addEndnote" title="addEndnote :: Add new endnote">
+            <span class="description">Add new endnote</span><pre>addEndnote</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDefaultFontName" title="getDefaultFontName :: Get default font name">
+            <span class="description">Get default font name</span><pre>getDefaultFontName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDefaultFontName" title="setDefaultFontName :: Set default font name">
+            <span class="description">Set default font name</span><pre>setDefaultFontName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDefaultFontSize" title="getDefaultFontSize :: Get default font size">
+            <span class="description">Get default font size</span><pre>getDefaultFontSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDefaultFontSize" title="setDefaultFontSize :: Set default font size">
+            <span class="description">Set default font size</span><pre>setDefaultFontSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDefaultParagraphStyle" title="setDefaultParagraphStyle :: Set default paragraph style definition to styles.xml">
+            <span class="description">Set default paragraph style definition to styles.xml</span><pre>setDefaultParagraphStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addParagraphStyle" title="addParagraphStyle :: Adds a paragraph style definition to styles.xml">
+            <span class="description">Adds a paragraph style definition to styles.xml</span><pre>addParagraphStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addFontStyle" title="addFontStyle :: Adds a font style definition to styles.xml">
+            <span class="description">Adds a font style definition to styles.xml</span><pre>addFontStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addTableStyle" title="addTableStyle :: Adds a table style definition to styles.xml">
+            <span class="description">Adds a table style definition to styles.xml</span><pre>addTableStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addNumberingStyle" title="addNumberingStyle :: Adds a numbering style">
+            <span class="description">Adds a numbering style</span><pre>addNumberingStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addLinkStyle" title="addLinkStyle :: Adds a hyperlink style to styles.xml">
+            <span class="description">Adds a hyperlink style to styles.xml</span><pre>addLinkStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_addTitleStyle" title="addTitleStyle :: Adds a heading style definition to styles.xml">
+            <span class="description">Adds a heading style definition to styles.xml</span><pre>addTitleStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_loadTemplate" title="loadTemplate :: Load template by filename">
+            <span class="description">Load template by filename</span><pre>loadTemplate</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_createSection" title="createSection :: Create new section">
+            <span class="description">Create new section</span><pre>createSection</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_NAME" title="DEFAULT_FONT_NAME :: Default font settings">
+                        <span class="description">Default font settings</span><pre>DEFAULT_FONT_NAME</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_SIZE" title="DEFAULT_FONT_SIZE :: ">
+                        <span class="description"></span><pre>DEFAULT_FONT_SIZE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_COLOR" title="DEFAULT_FONT_COLOR :: ">
+                        <span class="description"></span><pre>DEFAULT_FONT_COLOR</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_CONTENT_TYPE" title="DEFAULT_FONT_CONTENT_TYPE :: ">
+                        <span class="description"></span><pre>DEFAULT_FONT_CONTENT_TYPE</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>PhpWord</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">PHPWord main class</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                                                                                                                                        </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Create new</h2>
+                            <pre>__construct() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDocumentProperties"></a>
+                        <div class="element clickable method public  method_getDocumentProperties" data-toggle="collapse" data-target=".method_getDocumentProperties .collapse">
+                            <h2>Get document properties object</h2>
+                            <pre>getDocumentProperties() : \PhpOffice\PhpWord\DocumentProperties</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.DocumentProperties.html">\PhpOffice\PhpWord\DocumentProperties</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDocumentProperties"></a>
+                        <div class="element clickable method public  method_setDocumentProperties" data-toggle="collapse" data-target=".method_setDocumentProperties .collapse">
+                            <h2>Set document properties object</h2>
+                            <pre>setDocumentProperties(\PhpOffice\PhpWord\DocumentProperties $documentProperties) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$documentProperties</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.DocumentProperties.html">\PhpOffice\PhpWord\DocumentProperties</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSections"></a>
+                        <div class="element clickable method public  method_getSections" data-toggle="collapse" data-target=".method_getSections .collapse">
+                            <h2>Get all sections</h2>
+                            <pre>getSections() : \PhpOffice\PhpWord\Element\Section[]</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Section[]</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addSection"></a>
+                        <div class="element clickable method public  method_addSection" data-toggle="collapse" data-target=".method_addSection .collapse">
+                            <h2>Create new section</h2>
+                            <pre>addSection(array $settings = null) : \PhpOffice\PhpWord\Element\Section</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$settings</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.Section.html">\PhpOffice\PhpWord\Element\Section</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getTitles"></a>
+                        <div class="element clickable method public  method_getTitles" data-toggle="collapse" data-target=".method_getTitles .collapse">
+                            <h2>Get titles</h2>
+                            <pre>getTitles() : \PhpOffice\PhpWord\Collection\Titles</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Collection.Titles.html">\PhpOffice\PhpWord\Collection\Titles</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTitle"></a>
+                        <div class="element clickable method public  method_addTitle" data-toggle="collapse" data-target=".method_addTitle .collapse">
+                            <h2>Add new title</h2>
+                            <pre>addTitle(\PhpOffice\PhpWord\Element\Title $title) : int</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.Title.html">\PhpOffice\PhpWord\Element\Title</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getFootnotes"></a>
+                        <div class="element clickable method public  method_getFootnotes" data-toggle="collapse" data-target=".method_getFootnotes .collapse">
+                            <h2>Get footnotes</h2>
+                            <pre>getFootnotes() : \PhpOffice\PhpWord\Collection\Footnotes</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Collection.Footnotes.html">\PhpOffice\PhpWord\Collection\Footnotes</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addFootnote"></a>
+                        <div class="element clickable method public  method_addFootnote" data-toggle="collapse" data-target=".method_addFootnote .collapse">
+                            <h2>Add new footnote</h2>
+                            <pre>addFootnote(\PhpOffice\PhpWord\Element\Footnote $footnote) : int</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$footnote</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.Footnote.html">\PhpOffice\PhpWord\Element\Footnote</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getEndnotes"></a>
+                        <div class="element clickable method public  method_getEndnotes" data-toggle="collapse" data-target=".method_getEndnotes .collapse">
+                            <h2>Get endnotes</h2>
+                            <pre>getEndnotes() : \PhpOffice\PhpWord\Collection\Endnotes</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Collection.Endnotes.html">\PhpOffice\PhpWord\Collection\Endnotes</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addEndnote"></a>
+                        <div class="element clickable method public  method_addEndnote" data-toggle="collapse" data-target=".method_addEndnote .collapse">
+                            <h2>Add new endnote</h2>
+                            <pre>addEndnote(\PhpOffice\PhpWord\Element\Endnote $endnote) : int</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$endnote</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.Endnote.html">\PhpOffice\PhpWord\Element\Endnote</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDefaultFontName"></a>
+                        <div class="element clickable method public  method_getDefaultFontName" data-toggle="collapse" data-target=".method_getDefaultFontName .collapse">
+                            <h2>Get default font name</h2>
+                            <pre>getDefaultFontName() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDefaultFontName"></a>
+                        <div class="element clickable method public  method_setDefaultFontName" data-toggle="collapse" data-target=".method_setDefaultFontName .collapse">
+                            <h2>Set default font name</h2>
+                            <pre>setDefaultFontName(string $fontName) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fontName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDefaultFontSize"></a>
+                        <div class="element clickable method public  method_getDefaultFontSize" data-toggle="collapse" data-target=".method_getDefaultFontSize .collapse">
+                            <h2>Get default font size</h2>
+                            <pre>getDefaultFontSize() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDefaultFontSize"></a>
+                        <div class="element clickable method public  method_setDefaultFontSize" data-toggle="collapse" data-target=".method_setDefaultFontSize .collapse">
+                            <h2>Set default font size</h2>
+                            <pre>setDefaultFontSize(int $fontSize) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fontSize</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDefaultParagraphStyle"></a>
+                        <div class="element clickable method public  method_setDefaultParagraphStyle" data-toggle="collapse" data-target=".method_setDefaultParagraphStyle .collapse">
+                            <h2>Set default paragraph style definition to styles.xml</h2>
+                            <pre>setDefaultParagraphStyle(array $styles) : \PhpOffice\PhpWord\Style\Paragraph</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p><p>Paragraph style definition</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Paragraph.html">\PhpOffice\PhpWord\Style\Paragraph</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addParagraphStyle"></a>
+                        <div class="element clickable method public  method_addParagraphStyle" data-toggle="collapse" data-target=".method_addParagraphStyle .collapse">
+                            <h2>Adds a paragraph style definition to styles.xml</h2>
+                            <pre>addParagraphStyle(string $styleName, array $styles) : \PhpOffice\PhpWord\Style\Paragraph</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Paragraph.html">\PhpOffice\PhpWord\Style\Paragraph</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addFontStyle"></a>
+                        <div class="element clickable method public  method_addFontStyle" data-toggle="collapse" data-target=".method_addFontStyle .collapse">
+                            <h2>Adds a font style definition to styles.xml</h2>
+                            <pre>addFontStyle(string $styleName, mixed $fontStyle, mixed $paragraphStyle = null) : \PhpOffice\PhpWord\Style\Font</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fontStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$paragraphStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Font.html">\PhpOffice\PhpWord\Style\Font</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTableStyle"></a>
+                        <div class="element clickable method public  method_addTableStyle" data-toggle="collapse" data-target=".method_addTableStyle .collapse">
+                            <h2>Adds a table style definition to styles.xml</h2>
+                            <pre>addTableStyle(string $styleName, mixed $styleTable, mixed $styleFirstRow = null) : \PhpOffice\PhpWord\Style\Table</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleTable</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleFirstRow</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Table.html">\PhpOffice\PhpWord\Style\Table</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addNumberingStyle"></a>
+                        <div class="element clickable method public  method_addNumberingStyle" data-toggle="collapse" data-target=".method_addNumberingStyle .collapse">
+                            <h2>Adds a numbering style</h2>
+                            <pre>addNumberingStyle(string $styleName, mixed $styles) : \PhpOffice\PhpWord\Style\Numbering</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Numbering.html">\PhpOffice\PhpWord\Style\Numbering</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addLinkStyle"></a>
+                        <div class="element clickable method public  method_addLinkStyle" data-toggle="collapse" data-target=".method_addLinkStyle .collapse">
+                            <h2>Adds a hyperlink style to styles.xml</h2>
+                            <pre>addLinkStyle(string $styleName, mixed $styles) : \PhpOffice\PhpWord\Style\Font</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Font.html">\PhpOffice\PhpWord\Style\Font</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTitleStyle"></a>
+                        <div class="element clickable method public  method_addTitleStyle" data-toggle="collapse" data-target=".method_addTitleStyle .collapse">
+                            <h2>Adds a heading style definition to styles.xml</h2>
+                            <pre>addTitleStyle(int $depth, mixed $fontStyle, mixed $paragraphStyle = null) : \PhpOffice\PhpWord\Style\Font</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$depth</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fontStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$paragraphStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Font.html">\PhpOffice\PhpWord\Style\Font</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_loadTemplate"></a>
+                        <div class="element clickable method public  method_loadTemplate" data-toggle="collapse" data-target=".method_loadTemplate .collapse">
+                            <h2>Load template by filename</h2>
+                            <pre>loadTemplate(string $filename) : \PhpOffice\PhpWord\Template</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p><p>Fully qualified filename.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Template.html">\PhpOffice\PhpWord\Template</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_createSection"></a>
+                        <div class="element clickable method public deprecated method_createSection" data-toggle="collapse" data-target=".method_createSection .collapse">
+                            <h2>Create new section</h2>
+                            <pre>createSection(array $settings = null) : \PhpOffice\PhpWord\Element\Section</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$settings</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.Section.html">\PhpOffice\PhpWord\Element\Section</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_DEFAULT_FONT_NAME"> </a>
+                            <div class="element clickable constant deprecated constant_DEFAULT_FONT_NAME" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_NAME .collapse">
+                                <h2>Default font settings</h2>
+                                <pre>DEFAULT_FONT_NAME</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string|int</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        deprecated
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>Use Settings constants</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DEFAULT_FONT_SIZE"> </a>
+                            <div class="element clickable constant  constant_DEFAULT_FONT_SIZE" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_SIZE .collapse">
+                                <h2>DEFAULT_FONT_SIZE</h2>
+                                <pre>DEFAULT_FONT_SIZE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DEFAULT_FONT_COLOR"> </a>
+                            <div class="element clickable constant  constant_DEFAULT_FONT_COLOR" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_COLOR .collapse">
+                                <h2>DEFAULT_FONT_COLOR</h2>
+                                <pre>DEFAULT_FONT_COLOR</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DEFAULT_FONT_CONTENT_TYPE"> </a>
+                            <div class="element clickable constant  constant_DEFAULT_FONT_CONTENT_TYPE" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_CONTENT_TYPE .collapse">
+                                <h2>DEFAULT_FONT_CONTENT_TYPE</h2>
+                                <pre>DEFAULT_FONT_CONTENT_TYPE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_documentProperties"> </a>
+                            <div class="element clickable property  private property_documentProperties" data-toggle="collapse" data-target=".property_documentProperties .collapse">
+                                <h2>Document properties object</h2>
+                                <pre>documentProperties : \PhpOffice\PhpWord\DocumentProperties</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.DocumentProperties.html">\PhpOffice\PhpWord\DocumentProperties</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sections"> </a>
+                            <div class="element clickable property  private property_sections" data-toggle="collapse" data-target=".property_sections .collapse">
+                                <h2>Collection of sections</h2>
+                                <pre>sections : \PhpOffice\PhpWord\Element\Section[]</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\PhpOffice\PhpWord\Element\Section[]</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_titles"> </a>
+                            <div class="element clickable property  private property_titles" data-toggle="collapse" data-target=".property_titles .collapse">
+                                <h2>Collection of titles</h2>
+                                <pre>titles : \PhpOffice\PhpWord\Collection\Titles</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Collection.Titles.html">\PhpOffice\PhpWord\Collection\Titles</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_footnotes"> </a>
+                            <div class="element clickable property  private property_footnotes" data-toggle="collapse" data-target=".property_footnotes .collapse">
+                                <h2>Collection of footnotes</h2>
+                                <pre>footnotes : \PhpOffice\PhpWord\Collection\Footnotes</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Collection.Footnotes.html">\PhpOffice\PhpWord\Collection\Footnotes</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_endnotes"> </a>
+                            <div class="element clickable property  private property_endnotes" data-toggle="collapse" data-target=".property_endnotes .collapse">
+                                <h2>Collection of endnotes</h2>
+                                <pre>endnotes : \PhpOffice\PhpWord\Collection\Endnotes</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Collection.Endnotes.html">\PhpOffice\PhpWord\Collection\Endnotes</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\PhpWord"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.html">PhpWord</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.PhpWord.html">PhpWord</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 01 Jun 2014 15:03:54 +0000.<br/>
+    </footer>
+    </body>
+</html>
