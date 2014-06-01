@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Reader\RTF\Document
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_read" title="read :: Parse RTF content">
+            <span class="description">Parse RTF content</span><pre>read</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                <li class="method private">
+                            <a href="#method_markOpening" title="markOpening :: Mark opening braket `{` character">
+                                <span class="description">Mark opening braket `{` character</span><pre>markOpening</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_markClosing" title="markClosing :: Mark closing braket `}` character">
+                                <span class="description">Mark closing braket `}` character</span><pre>markClosing</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_markBackslash" title="markBackslash :: Mark backslash `\` character">
+                                <span class="description">Mark backslash `\` character</span><pre>markBackslash</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_markNewline" title="markNewline :: Mark newline character: Flush control word because it&#039;s not possible to span multiline">
+                                <span class="description">Mark newline character: Flush control word because it&#039;s not possible to span multiline</span><pre>markNewline</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_flush" title="flush :: Flush control word or text">
+                                <span class="description">Flush control word or text</span><pre>flush</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_flushControl" title="flushControl :: Flush control word">
+                                <span class="description">Flush control word</span><pre>flushControl</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_flushText" title="flushText :: Flush text in queue">
+                                <span class="description">Flush text in queue</span><pre>flushText</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_setControl" title="setControl :: Reset control word and first char state">
+                                <span class="description">Reset control word and first char state</span><pre>setControl</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_pushText" title="pushText :: Push text into queue">
+                                <span class="description">Push text into queue</span><pre>pushText</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseControl" title="parseControl :: Parse control">
+                                <span class="description">Parse control</span><pre>parseControl</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readParagraph" title="readParagraph :: Read paragraph">
+                                <span class="description">Read paragraph</span><pre>readParagraph</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readStyle" title="readStyle :: Read style">
+                                <span class="description">Read style</span><pre>readStyle</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readSkip" title="readSkip :: Read skip">
+                                <span class="description">Read skip</span><pre>readSkip</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readText" title="readText :: Read text">
+                                <span class="description">Read text</span><pre>readText</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_PARA" title="PARA :: ">
+                        <span class="description"></span><pre>PARA</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_STYL" title="STYL :: ">
+                        <span class="description"></span><pre>STYL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_SKIP" title="SKIP :: ">
+                        <span class="description"></span><pre>SKIP</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Document</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">RTF document reader</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p>References:</p>
+<ul>
+<li>How to Write an RTF Reader <a href="http://latex2rtf.sourceforge.net/rtfspec_45.html">http://latex2rtf.sourceforge.net/rtfspec_45.html</a></li>
+<li>PHP rtfclass by Markus Fischer <a href="https://github.com/mfn/rtfclass">https://github.com/mfn/rtfclass</a></li>
+<li>JavaScript RTF-parser by LazyGyu <a href="https://github.com/lazygyu/RTF-parser">https://github.com/lazygyu/RTF-parser</a></li>
+</ul>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        since
+                                                                            </th>
+                                    <td>
+                                                                                    0.11.0
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        SuppressWarnings
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>(PHPMD.UnusedPrivateMethod)</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                    </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_read"></a>
+                        <div class="element clickable method public  method_read" data-toggle="collapse" data-target=".method_read .collapse">
+                            <h2>Parse RTF content</h2>
+                            <pre>read(\PhpOffice\PhpWord\PhpWord &$phpWord) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><ul>
+<li>Marks controlling characters <code>{</code>, <code>}</code>, and <code>\</code></li>
+<li>Removes line endings</li>
+<li>Builds control words and control symbols</li>
+<li>Pushes every other character into the text queue</li>
+</ul></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Use <code>fread</code> stream for scalability</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$phpWord</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_markOpening"></a>
+                        <div class="element clickable method private  method_markOpening" data-toggle="collapse" data-target=".method_markOpening .collapse">
+                            <h2>Mark opening braket `{` character</h2>
+                            <pre>markOpening() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_markClosing"></a>
+                        <div class="element clickable method private  method_markClosing" data-toggle="collapse" data-target=".method_markClosing .collapse">
+                            <h2>Mark closing braket `}` character</h2>
+                            <pre>markClosing() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_markBackslash"></a>
+                        <div class="element clickable method private  method_markBackslash" data-toggle="collapse" data-target=".method_markBackslash .collapse">
+                            <h2>Mark backslash `\` character</h2>
+                            <pre>markBackslash() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_markNewline"></a>
+                        <div class="element clickable method private  method_markNewline" data-toggle="collapse" data-target=".method_markNewline .collapse">
+                            <h2>Mark newline character: Flush control word because it&#039;s not possible to span multiline</h2>
+                            <pre>markNewline() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_flush"></a>
+                        <div class="element clickable method private  method_flush" data-toggle="collapse" data-target=".method_flush .collapse">
+                            <h2>Flush control word or text</h2>
+                            <pre>flush(bool $isControl = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$isControl</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_flushControl"></a>
+                        <div class="element clickable method private  method_flushControl" data-toggle="collapse" data-target=".method_flushControl .collapse">
+                            <h2>Flush control word</h2>
+                            <pre>flushControl(bool $isControl = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$isControl</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_flushText"></a>
+                        <div class="element clickable method private  method_flushText" data-toggle="collapse" data-target=".method_flushText .collapse">
+                            <h2>Flush text in queue</h2>
+                            <pre>flushText() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setControl"></a>
+                        <div class="element clickable method private  method_setControl" data-toggle="collapse" data-target=".method_setControl .collapse">
+                            <h2>Reset control word and first char state</h2>
+                            <pre>setControl(bool $value) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_pushText"></a>
+                        <div class="element clickable method private  method_pushText" data-toggle="collapse" data-target=".method_pushText .collapse">
+                            <h2>Push text into queue</h2>
+                            <pre>pushText(string $char) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$char</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseControl"></a>
+                        <div class="element clickable method private  method_parseControl" data-toggle="collapse" data-target=".method_parseControl .collapse">
+                            <h2>Parse control</h2>
+                            <pre>parseControl(string $control, string $parameter) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$control</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parameter</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_readParagraph"></a>
+                        <div class="element clickable method private  method_readParagraph" data-toggle="collapse" data-target=".method_readParagraph .collapse">
+                            <h2>Read paragraph</h2>
+                            <pre>readParagraph(array $directives) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$directives</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_readStyle"></a>
+                        <div class="element clickable method private  method_readStyle" data-toggle="collapse" data-target=".method_readStyle .collapse">
+                            <h2>Read style</h2>
+                            <pre>readStyle(array $directives) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$directives</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_readSkip"></a>
+                        <div class="element clickable method private  method_readSkip" data-toggle="collapse" data-target=".method_readSkip .collapse">
+                            <h2>Read skip</h2>
+                            <pre>readSkip(array $directives) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$directives</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_readText"></a>
+                        <div class="element clickable method private  method_readText" data-toggle="collapse" data-target=".method_readText .collapse">
+                            <h2>Read text</h2>
+                            <pre>readText() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_PARA"> </a>
+                            <div class="element clickable constant  constant_PARA" data-toggle="collapse" data-target=".constant_PARA .collapse">
+                                <h2>PARA</h2>
+                                <pre>PARA</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>int</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_STYL"> </a>
+                            <div class="element clickable constant  constant_STYL" data-toggle="collapse" data-target=".constant_STYL .collapse">
+                                <h2>STYL</h2>
+                                <pre>STYL</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_SKIP"> </a>
+                            <div class="element clickable constant  constant_SKIP" data-toggle="collapse" data-target=".constant_SKIP .collapse">
+                                <h2>SKIP</h2>
+                                <pre>SKIP</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_phpWord"> </a>
+                            <div class="element clickable property  private property_phpWord" data-toggle="collapse" data-target=".property_phpWord .collapse">
+                                <h2>PhpWord object</h2>
+                                <pre>phpWord : \PhpOffice\PhpWord\PhpWord</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_section"> </a>
+                            <div class="element clickable property  private property_section" data-toggle="collapse" data-target=".property_section .collapse">
+                                <h2>Section object</h2>
+                                <pre>section : \PhpOffice\PhpWord\Element\Section</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Element.Section.html">\PhpOffice\PhpWord\Element\Section</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_textrun"> </a>
+                            <div class="element clickable property  private property_textrun" data-toggle="collapse" data-target=".property_textrun .collapse">
+                                <h2>Textrun object</h2>
+                                <pre>textrun : \PhpOffice\PhpWord\Element\TextRun</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Element.TextRun.html">\PhpOffice\PhpWord\Element\TextRun</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_rtf"> </a>
+                            <div class="element clickable property  public property_rtf" data-toggle="collapse" data-target=".property_rtf .collapse">
+                                <h2>RTF content</h2>
+                                <pre>rtf : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_length"> </a>
+                            <div class="element clickable property  private property_length" data-toggle="collapse" data-target=".property_length .collapse">
+                                <h2>Content length</h2>
+                                <pre>length : int</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_offset"> </a>
+                            <div class="element clickable property  private property_offset" data-toggle="collapse" data-target=".property_offset .collapse">
+                                <h2>Character index</h2>
+                                <pre>offset : int</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_control"> </a>
+                            <div class="element clickable property  private property_control" data-toggle="collapse" data-target=".property_control .collapse">
+                                <h2>Current control word</h2>
+                                <pre>control : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_text"> </a>
+                            <div class="element clickable property  private property_text" data-toggle="collapse" data-target=".property_text .collapse">
+                                <h2>Text content</h2>
+                                <pre>text : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_isControl"> </a>
+                            <div class="element clickable property  private property_isControl" data-toggle="collapse" data-target=".property_isControl .collapse">
+                                <h2>Parsing a control word flag</h2>
+                                <pre>isControl : bool</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>bool</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_isFirst"> </a>
+                            <div class="element clickable property  private property_isFirst" data-toggle="collapse" data-target=".property_isFirst .collapse">
+                                <h2>First character flag: watch out for control symbols</h2>
+                                <pre>isFirst : bool</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>bool</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_groups"> </a>
+                            <div class="element clickable property  private property_groups" data-toggle="collapse" data-target=".property_groups .collapse">
+                                <h2>Group groups</h2>
+                                <pre>groups : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_flags"> </a>
+                            <div class="element clickable property  private property_flags" data-toggle="collapse" data-target=".property_flags .collapse">
+                                <h2>Parser flags; not used</h2>
+                                <pre>flags : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\Reader\RTF\Document"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.Reader.RTF.html">RTF</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Reader.RTF.Document.html">Document</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 01 Jun 2014 14:53:04 +0000.<br/>
+    </footer>
+    </body>
+</html>
