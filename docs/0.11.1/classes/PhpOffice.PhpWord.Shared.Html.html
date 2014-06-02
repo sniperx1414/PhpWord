@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Shared\Html
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_addHtml" title="addHtml :: Add HTML parts">
+            <span class="description">Add HTML parts</span><pre>addHtml</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                <li class="method protected">
+                            <a href="#method_parseInlineStyle" title="parseInlineStyle :: parse Inline style of a node">
+                                <span class="description">parse Inline style of a node</span><pre>parseInlineStyle</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_parseNode" title="parseNode :: Parse a node and add a corresponding element to the parent element">
+                                <span class="description">Parse a node and add a corresponding element to the parent element</span><pre>parseNode</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                        <li class="method private">
+                            <a href="#method_parseChildNodes" title="parseChildNodes :: Parse child nodes">
+                                <span class="description">Parse child nodes</span><pre>parseChildNodes</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseParagraph" title="parseParagraph :: Parse paragraph node">
+                                <span class="description">Parse paragraph node</span><pre>parseParagraph</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseHeading" title="parseHeading :: Parse heading node">
+                                <span class="description">Parse heading node</span><pre>parseHeading</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseText" title="parseText :: Parse text node">
+                                <span class="description">Parse text node</span><pre>parseText</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseProperty" title="parseProperty :: Parse property node">
+                                <span class="description">Parse property node</span><pre>parseProperty</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseTable" title="parseTable :: Parse table node">
+                                <span class="description">Parse table node</span><pre>parseTable</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseList" title="parseList :: Parse list node">
+                                <span class="description">Parse list node</span><pre>parseList</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseListItem" title="parseListItem :: Parse list item node">
+                                <span class="description">Parse list item node</span><pre>parseListItem</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_parseStyle" title="parseStyle :: Parse style">
+                                <span class="description">Parse style</span><pre>parseStyle</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Html</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Common Html functions</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        SuppressWarnings
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>(PHPMD.UnusedPrivateMethod) For readWPNode</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                    </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_addHtml"></a>
+                        <div class="element clickable method public  method_addHtml" data-toggle="collapse" data-target=".method_addHtml .collapse">
+                            <h2>Add HTML parts</h2>
+                            <pre>addHtml(\PhpOffice\PhpWord\Element\AbstractContainer $element, string $html, bool $fullHTML = false) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Note: $stylesheet parameter is removed to avoid PHPMD error for unused parameter</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p><p>Where the parts need to be added</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$html</h4>
+                                                <code>string</code><p><p>The code to parse</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fullHTML</h4>
+                                                <code>bool</code><p><p>If it's a full HTML, no need to add 'body' tag</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseInlineStyle"></a>
+                        <div class="element clickable method protected  method_parseInlineStyle" data-toggle="collapse" data-target=".method_parseInlineStyle .collapse">
+                            <h2>parse Inline style of a node</h2>
+                            <pre>parseInlineStyle(\DOMNode $node, array $styles = array()) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$node</h4>
+                                                <code>\DOMNode</code><p><p>Node to check on attributes and to compile a style array</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p><p>is supplied, the inline style attributes are added to the already existing style</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseNode"></a>
+                        <div class="element clickable method protected  method_parseNode" data-toggle="collapse" data-target=".method_parseNode .collapse">
+                            <h2>Parse a node and add a corresponding element to the parent element</h2>
+                            <pre>parseNode(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array $styles = array(), array $data = array()) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$node</h4>
+                                                <code>\DOMNode</code><p><p>node to parse</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p><p>object to add an element corresponding with the node</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p><p>Array with all styles</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p><p>Array to transport data to a next level in the DOM tree, for example level of listitems</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseChildNodes"></a>
+                        <div class="element clickable method private  method_parseChildNodes" data-toggle="collapse" data-target=".method_parseChildNodes .collapse">
+                            <h2>Parse child nodes</h2>
+                            <pre>parseChildNodes(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array $styles, array $data) </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$node</h4>
+                                                <code>\DOMNode</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseParagraph"></a>
+                        <div class="element clickable method private  method_parseParagraph" data-toggle="collapse" data-target=".method_parseParagraph .collapse">
+                            <h2>Parse paragraph node</h2>
+                            <pre>parseParagraph(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles) : \PhpOffice\PhpWord\Element\TextRun</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$node</h4>
+                                                <code>\DOMNode</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.TextRun.html">\PhpOffice\PhpWord\Element\TextRun</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseHeading"></a>
+                        <div class="element clickable method private  method_parseHeading" data-toggle="collapse" data-target=".method_parseHeading .collapse">
+                            <h2>Parse heading node</h2>
+                            <pre>parseHeading(\PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles, string $argument1) : \PhpOffice\PhpWord\Element\TextRun</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Think of a clever way of defining header styles, now it is only based on the assumption, that
+Heading1 - Heading6 are already defined somewhere</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$argument1</h4>
+                                                <code>string</code><p><p>Name of heading style</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.TextRun.html">\PhpOffice\PhpWord\Element\TextRun</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseText"></a>
+                        <div class="element clickable method private  method_parseText" data-toggle="collapse" data-target=".method_parseText .collapse">
+                            <h2>Parse text node</h2>
+                            <pre>parseText(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles) : null</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$node</h4>
+                                                <code>\DOMNode</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseProperty"></a>
+                        <div class="element clickable method private  method_parseProperty" data-toggle="collapse" data-target=".method_parseProperty .collapse">
+                            <h2>Parse property node</h2>
+                            <pre>parseProperty(array &$styles, string $argument1, string $argument2) : null</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$argument1</h4>
+                                                <code>string</code><p><p>Style name</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$argument2</h4>
+                                                <code>string</code><p><p>Style value</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseTable"></a>
+                        <div class="element clickable method private  method_parseTable" data-toggle="collapse" data-target=".method_parseTable .collapse">
+                            <h2>Parse table node</h2>
+                            <pre>parseTable(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles, string $argument1) : \PhpOffice\PhpWord\Element\AbstractContainer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>As soon as TableItem, RowItem and CellItem support relative width and height</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$node</h4>
+                                                <code>\DOMNode</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$argument1</h4>
+                                                <code>string</code><p><p>Method name</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p><p>$element</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseList"></a>
+                        <div class="element clickable method private  method_parseList" data-toggle="collapse" data-target=".method_parseList .collapse">
+                            <h2>Parse list node</h2>
+                            <pre>parseList(array &$styles, array &$data, string $argument1) : null</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$argument1</h4>
+                                                <code>string</code><p><p>List type</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseListItem"></a>
+                        <div class="element clickable method private  method_parseListItem" data-toggle="collapse" data-target=".method_parseListItem .collapse">
+                            <h2>Parse list item node</h2>
+                            <pre>parseListItem(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles, array $data) : null</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>This function is almost the same like <code>parseChildNodes</code>. Merged?</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>As soon as ListItem inherits from AbstractContainer or TextRun delete parsing part of childNodes</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$node</h4>
+                                                <code>\DOMNode</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parseStyle"></a>
+                        <div class="element clickable method private  method_parseStyle" data-toggle="collapse" data-target=".method_parseStyle .collapse">
+                            <h2>Parse style</h2>
+                            <pre>parseStyle(\DOMAttr $attribute, array $styles) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$attribute</h4>
+                                                <code>\DOMAttr</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styles</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                        </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\Shared\Html"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.Shared.html">Shared</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Shared.Html.html">Html</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Mon, 02 Jun 2014 11:55:23 +0000.<br/>
+    </footer>
+    </body>
+</html>

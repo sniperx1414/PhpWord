@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Settings
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_hasCompatibility" title="hasCompatibility :: Return the compatibility option used by the XMLWriter">
+            <span class="description">Return the compatibility option used by the XMLWriter</span><pre>hasCompatibility</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setCompatibility" title="setCompatibility :: Set the compatibility option used by the XMLWriter">
+            <span class="description">Set the compatibility option used by the XMLWriter</span><pre>setCompatibility</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getZipClass" title="getZipClass :: Get zip handler class">
+            <span class="description">Get zip handler class</span><pre>getZipClass</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setZipClass" title="setZipClass :: Set zip handler class">
+            <span class="description">Set zip handler class</span><pre>setZipClass</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setPdfRenderer" title="setPdfRenderer :: Set details of the external library for rendering PDF files">
+            <span class="description">Set details of the external library for rendering PDF files</span><pre>setPdfRenderer</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getPdfRendererName" title="getPdfRendererName :: Return the PDF Rendering Library">
+            <span class="description">Return the PDF Rendering Library</span><pre>getPdfRendererName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setPdfRendererName" title="setPdfRendererName :: Identify the external library to use for rendering PDF files">
+            <span class="description">Identify the external library to use for rendering PDF files</span><pre>setPdfRendererName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getPdfRendererPath" title="getPdfRendererPath :: Return the directory path to the PDF Rendering Library">
+            <span class="description">Return the directory path to the PDF Rendering Library</span><pre>getPdfRendererPath</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setPdfRendererPath" title="setPdfRendererPath :: Location of external library to use for rendering PDF files">
+            <span class="description">Location of external library to use for rendering PDF files</span><pre>setPdfRendererPath</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMeasurementUnit" title="getMeasurementUnit :: Get measurement unit">
+            <span class="description">Get measurement unit</span><pre>getMeasurementUnit</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setMeasurementUnit" title="setMeasurementUnit :: Set measurement unit">
+            <span class="description">Set measurement unit</span><pre>setMeasurementUnit</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDefaultFontName" title="getDefaultFontName :: Get default font name">
+            <span class="description">Get default font name</span><pre>getDefaultFontName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDefaultFontName" title="setDefaultFontName :: Set default font name">
+            <span class="description">Set default font name</span><pre>setDefaultFontName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDefaultFontSize" title="getDefaultFontSize :: Get default font size">
+            <span class="description">Get default font size</span><pre>getDefaultFontSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDefaultFontSize" title="setDefaultFontSize :: Set default font size">
+            <span class="description">Set default font size</span><pre>setDefaultFontSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_loadConfig" title="loadConfig :: Load setting from phpword.yml or phpword.yml.dist">
+            <span class="description">Load setting from phpword.yml or phpword.yml.dist</span><pre>loadConfig</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getCompatibility" title="getCompatibility :: Return the compatibility option used by the XMLWriter">
+            <span class="description">Return the compatibility option used by the XMLWriter</span><pre>getCompatibility</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_ZIPARCHIVE" title="ZIPARCHIVE :: Zip libraries">
+                        <span class="description">Zip libraries</span><pre>ZIPARCHIVE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_PCLZIP" title="PCLZIP :: ">
+                        <span class="description"></span><pre>PCLZIP</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OLD_LIB" title="OLD_LIB :: ">
+                        <span class="description"></span><pre>OLD_LIB</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_PDF_RENDERER_DOMPDF" title="PDF_RENDERER_DOMPDF :: PDF rendering libraries">
+                        <span class="description">PDF rendering libraries</span><pre>PDF_RENDERER_DOMPDF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_PDF_RENDERER_TCPDF" title="PDF_RENDERER_TCPDF :: ">
+                        <span class="description"></span><pre>PDF_RENDERER_TCPDF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_PDF_RENDERER_MPDF" title="PDF_RENDERER_MPDF :: ">
+                        <span class="description"></span><pre>PDF_RENDERER_MPDF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UNIT_TWIP" title="UNIT_TWIP :: Measurement units multiplication factor">
+                        <span class="description">Measurement units multiplication factor</span><pre>UNIT_TWIP</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UNIT_CM" title="UNIT_CM :: ">
+                        <span class="description"></span><pre>UNIT_CM</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UNIT_MM" title="UNIT_MM :: ">
+                        <span class="description"></span><pre>UNIT_MM</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UNIT_INCH" title="UNIT_INCH :: ">
+                        <span class="description"></span><pre>UNIT_INCH</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UNIT_POINT" title="UNIT_POINT :: ">
+                        <span class="description"></span><pre>UNIT_POINT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_UNIT_PICA" title="UNIT_PICA :: ">
+                        <span class="description"></span><pre>UNIT_PICA</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_NAME" title="DEFAULT_FONT_NAME :: Default font settings">
+                        <span class="description">Default font settings</span><pre>DEFAULT_FONT_NAME</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_SIZE" title="DEFAULT_FONT_SIZE :: ">
+                        <span class="description"></span><pre>DEFAULT_FONT_SIZE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_COLOR" title="DEFAULT_FONT_COLOR :: ">
+                        <span class="description"></span><pre>DEFAULT_FONT_COLOR</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_DEFAULT_FONT_CONTENT_TYPE" title="DEFAULT_FONT_CONTENT_TYPE :: ">
+                        <span class="description"></span><pre>DEFAULT_FONT_CONTENT_TYPE</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Settings</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">PHPWord settings class</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        since
+                                                                            </th>
+                                    <td>
+                                                                                    0.8.0
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                    </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_hasCompatibility"></a>
+                        <div class="element clickable method public  method_hasCompatibility" data-toggle="collapse" data-target=".method_hasCompatibility .collapse">
+                            <h2>Return the compatibility option used by the XMLWriter</h2>
+                            <pre>hasCompatibility() : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p><p>Compatibility</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setCompatibility"></a>
+                        <div class="element clickable method public  method_setCompatibility" data-toggle="collapse" data-target=".method_setCompatibility .collapse">
+                            <h2>Set the compatibility option used by the XMLWriter</h2>
+                            <pre>setCompatibility(bool $compatibility) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This sets the setIndent and setIndentString for better compatibility</p></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$compatibility</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getZipClass"></a>
+                        <div class="element clickable method public  method_getZipClass" data-toggle="collapse" data-target=".method_getZipClass .collapse">
+                            <h2>Get zip handler class</h2>
+                            <pre>getZipClass() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setZipClass"></a>
+                        <div class="element clickable method public  method_setZipClass" data-toggle="collapse" data-target=".method_setZipClass .collapse">
+                            <h2>Set zip handler class</h2>
+                            <pre>setZipClass(string $zipClass) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$zipClass</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPdfRenderer"></a>
+                        <div class="element clickable method public  method_setPdfRenderer" data-toggle="collapse" data-target=".method_setPdfRenderer .collapse">
+                            <h2>Set details of the external library for rendering PDF files</h2>
+                            <pre>setPdfRenderer(string $libraryName, string $libraryBaseDir) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$libraryName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$libraryBaseDir</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p><p>Success or failure</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getPdfRendererName"></a>
+                        <div class="element clickable method public  method_getPdfRendererName" data-toggle="collapse" data-target=".method_getPdfRendererName .collapse">
+                            <h2>Return the PDF Rendering Library</h2>
+                            <pre>getPdfRendererName() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPdfRendererName"></a>
+                        <div class="element clickable method public  method_setPdfRendererName" data-toggle="collapse" data-target=".method_setPdfRendererName .collapse">
+                            <h2>Identify the external library to use for rendering PDF files</h2>
+                            <pre>setPdfRendererName(string $libraryName) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$libraryName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getPdfRendererPath"></a>
+                        <div class="element clickable method public  method_getPdfRendererPath" data-toggle="collapse" data-target=".method_getPdfRendererPath .collapse">
+                            <h2>Return the directory path to the PDF Rendering Library</h2>
+                            <pre>getPdfRendererPath() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPdfRendererPath"></a>
+                        <div class="element clickable method public  method_setPdfRendererPath" data-toggle="collapse" data-target=".method_setPdfRendererPath .collapse">
+                            <h2>Location of external library to use for rendering PDF files</h2>
+                            <pre>setPdfRendererPath(string $libraryBaseDir) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$libraryBaseDir</h4>
+                                                <code>string</code><p><p>Directory path to the library's base folder</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p><p>Success or failure</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMeasurementUnit"></a>
+                        <div class="element clickable method public  method_getMeasurementUnit" data-toggle="collapse" data-target=".method_getMeasurementUnit .collapse">
+                            <h2>Get measurement unit</h2>
+                            <pre>getMeasurementUnit() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setMeasurementUnit"></a>
+                        <div class="element clickable method public  method_setMeasurementUnit" data-toggle="collapse" data-target=".method_setMeasurementUnit .collapse">
+                            <h2>Set measurement unit</h2>
+                            <pre>setMeasurementUnit(string $value) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDefaultFontName"></a>
+                        <div class="element clickable method public  method_getDefaultFontName" data-toggle="collapse" data-target=".method_getDefaultFontName .collapse">
+                            <h2>Get default font name</h2>
+                            <pre>getDefaultFontName() : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDefaultFontName"></a>
+                        <div class="element clickable method public  method_setDefaultFontName" data-toggle="collapse" data-target=".method_setDefaultFontName .collapse">
+                            <h2>Set default font name</h2>
+                            <pre>setDefaultFontName(string $value) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDefaultFontSize"></a>
+                        <div class="element clickable method public  method_getDefaultFontSize" data-toggle="collapse" data-target=".method_getDefaultFontSize .collapse">
+                            <h2>Get default font size</h2>
+                            <pre>getDefaultFontSize() : integer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDefaultFontSize"></a>
+                        <div class="element clickable method public  method_setDefaultFontSize" data-toggle="collapse" data-target=".method_setDefaultFontSize .collapse">
+                            <h2>Set default font size</h2>
+                            <pre>setDefaultFontSize(int $value) : bool</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_loadConfig"></a>
+                        <div class="element clickable method public  method_loadConfig" data-toggle="collapse" data-target=".method_loadConfig .collapse">
+                            <h2>Load setting from phpword.yml or phpword.yml.dist</h2>
+                            <pre>loadConfig(string $filename = null) : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getCompatibility"></a>
+                        <div class="element clickable method public deprecated method_getCompatibility" data-toggle="collapse" data-target=".method_getCompatibility .collapse">
+                            <h2>Return the compatibility option used by the XMLWriter</h2>
+                            <pre>getCompatibility() </pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_ZIPARCHIVE"> </a>
+                            <div class="element clickable constant  constant_ZIPARCHIVE" data-toggle="collapse" data-target=".constant_ZIPARCHIVE .collapse">
+                                <h2>Zip libraries</h2>
+                                <pre>ZIPARCHIVE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_PCLZIP"> </a>
+                            <div class="element clickable constant  constant_PCLZIP" data-toggle="collapse" data-target=".constant_PCLZIP .collapse">
+                                <h2>PCLZIP</h2>
+                                <pre>PCLZIP</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OLD_LIB"> </a>
+                            <div class="element clickable constant  constant_OLD_LIB" data-toggle="collapse" data-target=".constant_OLD_LIB .collapse">
+                                <h2>OLD_LIB</h2>
+                                <pre>OLD_LIB</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_PDF_RENDERER_DOMPDF"> </a>
+                            <div class="element clickable constant  constant_PDF_RENDERER_DOMPDF" data-toggle="collapse" data-target=".constant_PDF_RENDERER_DOMPDF .collapse">
+                                <h2>PDF rendering libraries</h2>
+                                <pre>PDF_RENDERER_DOMPDF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_PDF_RENDERER_TCPDF"> </a>
+                            <div class="element clickable constant  constant_PDF_RENDERER_TCPDF" data-toggle="collapse" data-target=".constant_PDF_RENDERER_TCPDF .collapse">
+                                <h2>PDF_RENDERER_TCPDF</h2>
+                                <pre>PDF_RENDERER_TCPDF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_PDF_RENDERER_MPDF"> </a>
+                            <div class="element clickable constant  constant_PDF_RENDERER_MPDF" data-toggle="collapse" data-target=".constant_PDF_RENDERER_MPDF .collapse">
+                                <h2>PDF_RENDERER_MPDF</h2>
+                                <pre>PDF_RENDERER_MPDF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UNIT_TWIP"> </a>
+                            <div class="element clickable constant  constant_UNIT_TWIP" data-toggle="collapse" data-target=".constant_UNIT_TWIP .collapse">
+                                <h2>Measurement units multiplication factor</h2>
+                                <pre>UNIT_TWIP</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Applied to:</p>
+<ul>
+<li>Section: margins, header/footer height, gutter, column spacing</li>
+<li>Tab: position</li>
+<li>Indentation: left, right, firstLine, hanging</li>
+<li>Spacing: before, after</li>
+</ul></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UNIT_CM"> </a>
+                            <div class="element clickable constant  constant_UNIT_CM" data-toggle="collapse" data-target=".constant_UNIT_CM .collapse">
+                                <h2>UNIT_CM</h2>
+                                <pre>UNIT_CM</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UNIT_MM"> </a>
+                            <div class="element clickable constant  constant_UNIT_MM" data-toggle="collapse" data-target=".constant_UNIT_MM .collapse">
+                                <h2>UNIT_MM</h2>
+                                <pre>UNIT_MM</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UNIT_INCH"> </a>
+                            <div class="element clickable constant  constant_UNIT_INCH" data-toggle="collapse" data-target=".constant_UNIT_INCH .collapse">
+                                <h2>UNIT_INCH</h2>
+                                <pre>UNIT_INCH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UNIT_POINT"> </a>
+                            <div class="element clickable constant  constant_UNIT_POINT" data-toggle="collapse" data-target=".constant_UNIT_POINT .collapse">
+                                <h2>UNIT_POINT</h2>
+                                <pre>UNIT_POINT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_UNIT_PICA"> </a>
+                            <div class="element clickable constant  constant_UNIT_PICA" data-toggle="collapse" data-target=".constant_UNIT_PICA .collapse">
+                                <h2>UNIT_PICA</h2>
+                                <pre>UNIT_PICA</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DEFAULT_FONT_NAME"> </a>
+                            <div class="element clickable constant  constant_DEFAULT_FONT_NAME" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_NAME .collapse">
+                                <h2>Default font settings</h2>
+                                <pre>DEFAULT_FONT_NAME</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>OOXML defined font size values in halfpoints, i.e. twice of what PhpWord
+use, and the conversion will be conducted during XML writing.</p></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DEFAULT_FONT_SIZE"> </a>
+                            <div class="element clickable constant  constant_DEFAULT_FONT_SIZE" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_SIZE .collapse">
+                                <h2>DEFAULT_FONT_SIZE</h2>
+                                <pre>DEFAULT_FONT_SIZE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DEFAULT_FONT_COLOR"> </a>
+                            <div class="element clickable constant  constant_DEFAULT_FONT_COLOR" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_COLOR .collapse">
+                                <h2>DEFAULT_FONT_COLOR</h2>
+                                <pre>DEFAULT_FONT_COLOR</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_DEFAULT_FONT_CONTENT_TYPE"> </a>
+                            <div class="element clickable constant  constant_DEFAULT_FONT_CONTENT_TYPE" data-toggle="collapse" data-target=".constant_DEFAULT_FONT_CONTENT_TYPE .collapse">
+                                <h2>DEFAULT_FONT_CONTENT_TYPE</h2>
+                                <pre>DEFAULT_FONT_CONTENT_TYPE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_xmlWriterCompatibility"> </a>
+                            <div class="element clickable property  private property_xmlWriterCompatibility" data-toggle="collapse" data-target=".property_xmlWriterCompatibility .collapse">
+                                <h2>Compatibility option for XMLWriter</h2>
+                                <pre>xmlWriterCompatibility : bool</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>bool</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_zipClass"> </a>
+                            <div class="element clickable property  private property_zipClass" data-toggle="collapse" data-target=".property_zipClass .collapse">
+                                <h2>Name of the class used for Zip file management</h2>
+                                <pre>zipClass : string</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_pdfRendererName"> </a>
+                            <div class="element clickable property  private property_pdfRendererName" data-toggle="collapse" data-target=".property_pdfRendererName .collapse">
+                                <h2>Name of the external Library used for rendering PDF files</h2>
+                                <pre>pdfRendererName : string</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_pdfRendererPath"> </a>
+                            <div class="element clickable property  private property_pdfRendererPath" data-toggle="collapse" data-target=".property_pdfRendererPath .collapse">
+                                <h2>Directory Path to the external Library used for rendering PDF files</h2>
+                                <pre>pdfRendererPath : string</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_measurementUnit"> </a>
+                            <div class="element clickable property  private property_measurementUnit" data-toggle="collapse" data-target=".property_measurementUnit .collapse">
+                                <h2>Measurement unit</h2>
+                                <pre>measurementUnit : int|float</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int|float</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_defaultFontName"> </a>
+                            <div class="element clickable property  private property_defaultFontName" data-toggle="collapse" data-target=".property_defaultFontName .collapse">
+                                <h2>Default font name</h2>
+                                <pre>defaultFontName : string</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_defaultFontSize"> </a>
+                            <div class="element clickable property  private property_defaultFontSize" data-toggle="collapse" data-target=".property_defaultFontSize .collapse">
+                                <h2>Default font size</h2>
+                                <pre>defaultFontSize : int</pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\Settings"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.html">PhpWord</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Mon, 02 Jun 2014 11:55:23 +0000.<br/>
+    </footer>
+    </body>
+</html>
