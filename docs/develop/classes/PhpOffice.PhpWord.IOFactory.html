@@ -131,7 +131,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public">
+                                                                                                                                                                <li class="method public">
         <a href="#method_load" title="load :: Loads PhpWord from file">
             <span class="description">Loads PhpWord from file</span><pre>load</pre>
         </a>
@@ -141,11 +141,16 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                        <li class="method private">
+                                                                                                                                                    <li class="method private">
+                            <a href="#method_createObject" title="createObject :: Create new object">
+                                <span class="description">Create new object</span><pre>createObject</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method private">
                             <a href="#method_isConcreteClass" title="isConcreteClass :: Check if it&#039;s a concrete class (not abstract nor interface)">
                                 <span class="description">Check if it&#039;s a concrete class (not abstract nor interface)</span><pre>isConcreteClass</pre>
                             </a>
@@ -187,15 +192,6 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    throws
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
@@ -224,6 +220,30 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Reader.ReaderInterface.html">\PhpOffice\PhpWord\Reader\ReaderInterface</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_createObject"></a>
+                        <div class="element clickable method private  method_createObject" data-toggle="collapse" data-target=".method_createObject .collapse">
+                            <h2>Create new object</h2>
+                            <pre>createObject(string $type, string $name, \PhpOffice\PhpWord\PhpWord $phpWord = null) : \PhpOffice\PhpWord\Writer\WriterInterface|\PhpOffice\PhpWord\Reader\ReaderInterface</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
                                                                                     <tr>
                                                 <th>
                                                     throws
@@ -237,12 +257,20 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
                                                 <h4>$name</h4>
                                                 <code>string</code><p></p>
                                             </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$phpWord</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                            </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/PhpOffice.PhpWord.Reader.ReaderInterface.html">\PhpOffice\PhpWord\Reader\ReaderInterface</a></code><p></p>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Writer.WriterInterface.html">\PhpOffice\PhpWord\Writer\WriterInterface</a>|<a href="../classes/PhpOffice.PhpWord.Reader.ReaderInterface.html">\PhpOffice\PhpWord\Reader\ReaderInterface</a></code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -270,7 +298,7 @@
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                        <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p><p>$phpWord</p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -320,7 +348,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Mon, 02 Jun 2014 16:51:42 +0000.<br/>
+            generated on Wed, 04 Jun 2014 16:52:58 +0000.<br/>
     </footer>
     </body>
 </html>

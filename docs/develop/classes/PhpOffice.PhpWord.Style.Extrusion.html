@@ -186,6 +186,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_getChildStyleValue" title="getChildStyleValue :: Return style value of child style object, e.g. `left` from `Indentation` child style of `Paragraph`">
+            <span class="description">Return style value of child style object, e.g. `left` from `Indentation` child style of `Paragraph`</span><pre>getChildStyleValue</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_setStyleValue" title="setStyleValue :: Set style value template method">
             <span class="description">Set style value template method</span><pre>setStyleValue</pre>
         </a>
@@ -197,7 +203,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method public inherited">
         <a href="#method_setArrayStyle" title="setArrayStyle :: Set style using associative array">
             <span class="description">Set style using associative array</span><pre>setArrayStyle</pre>
         </a>
@@ -207,7 +213,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
                             <a href="#method_setNonEmptyVal" title="setNonEmptyVal :: Set default for null and empty value">
                                 <span class="description">Set default for null and empty value</span><pre>setNonEmptyVal</pre>
                             </a>
@@ -242,11 +248,16 @@
                                 <span class="description">Set object value</span><pre>setObjectVal</pre>
                             </a>
                         </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setPairedVal" title="setPairedVal :: Set $property value and set $pairProperty = false when $value = true">
+                                <span class="description">Set $property value and set $pairProperty = false when $value = true</span><pre>setPairedVal</pre>
+                            </a>
+                        </li>
                                                                                     </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -580,6 +591,43 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_getChildStyleValue"></a>
+                        <div class="element clickable method public  method_getChildStyleValue inherited" data-toggle="collapse" data-target=".method_getChildStyleValue .collapse">
+                            <h2>Return style value of child style object, e.g. `left` from `Indentation` child style of `Paragraph`</h2>
+                            <pre>getChildStyleValue(\PhpOffice\PhpWord\Style\AbstractStyle $substyleObject, string $substyleProperty) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.12.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$substyleObject</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.AbstractStyle.html">\PhpOffice\PhpWord\Style\AbstractStyle</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$substyleProperty</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_setStyleValue"></a>
                         <div class="element clickable method public  method_setStyleValue inherited" data-toggle="collapse" data-target=".method_setStyleValue .collapse">
                             <h2>Set style value template method</h2>
@@ -845,6 +893,38 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPairedVal"></a>
+                        <div class="element clickable method protected  method_setPairedVal inherited" data-toggle="collapse" data-target=".method_setPairedVal .collapse">
+                            <h2>Set $property value and set $pairProperty = false when $value = true</h2>
+                            <pre>setPairedVal(bool &$property, bool &$pairProperty, bool $value) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$property</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pairProperty</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -1128,7 +1208,7 @@ Check if the set method is exists. Throws an exception?</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Mon, 02 Jun 2014 16:51:52 +0000.<br/>
+            generated on Wed, 04 Jun 2014 16:52:52 +0000.<br/>
     </footer>
     </body>
 </html>
