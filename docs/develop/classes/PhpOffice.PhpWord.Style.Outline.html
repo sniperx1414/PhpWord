@@ -126,6 +126,12 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_getUnit" title="getUnit :: Get unit">
+            <span class="description">Get unit</span><pre>getUnit</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_getWeight" title="getWeight :: Get weight">
             <span class="description">Get weight</span><pre>getWeight</pre>
         </a>
@@ -170,6 +176,18 @@
                                                                                                         <li class="method public">
         <a href="#method_setLine" title="setLine :: Set line style">
             <span class="description">Set line style</span><pre>setLine</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getEndCap" title="getEndCap :: Get endCap style">
+            <span class="description">Get endCap style</span><pre>getEndCap</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setEndCap" title="setEndCap :: Set endCap style">
+            <span class="description">Set endCap style</span><pre>setEndCap</pre>
         </a>
     </li>
 
@@ -261,7 +279,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_setNonEmptyVal" title="setNonEmptyVal :: Set default for null and empty value">
                                 <span class="description">Set default for null and empty value</span><pre>setNonEmptyVal</pre>
                             </a>
@@ -305,7 +323,7 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -333,6 +351,21 @@
                                 <li class="constant ">
                     <a href="#constant_LINE_THICK_BETWEEN_THIN" title="LINE_THICK_BETWEEN_THIN :: ">
                         <span class="description"></span><pre>LINE_THICK_BETWEEN_THIN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ENDCAP_FLAT" title="ENDCAP_FLAT :: Line style constants">
+                        <span class="description">Line style constants</span><pre>ENDCAP_FLAT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ENDCAP_SQUARE" title="ENDCAP_SQUARE :: ">
+                        <span class="description"></span><pre>ENDCAP_SQUARE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_ENDCAP_ROUND" title="ENDCAP_ROUND :: ">
+                        <span class="description"></span><pre>ENDCAP_ROUND</pre>
                     </a>
                 </li>
                                 <li class="constant ">
@@ -393,6 +426,15 @@
                                                                                 <p><a href="http://www.schemacentral.com/sc/ooxml/t-v_CT_Stroke.html">http://www.schemacentral.com/sc/ooxml/t-v_CT_Stroke.html</a></p>
                                     </td>
                                 </tr>
+                                                            <tr>
+                                    <th>
+                                        link
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p><a href="http://www.w3.org/TR/1998/NOTE-VML-19980513#_Toc416858395">http://www.w3.org/TR/1998/NOTE-VML-19980513#_Toc416858395</a></p>
+                                    </td>
+                                </tr>
                                                                                                                 <tr>
                                     <th>
                                         since
@@ -431,6 +473,32 @@
                                                 <code>array</code><p></p>
                                             </div>
                                                                             
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getUnit"></a>
+                        <div class="element clickable method public  method_getUnit" data-toggle="collapse" data-target=".method_getUnit .collapse">
+                            <h2>Get unit</h2>
+                            <pre>getUnit() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -614,6 +682,56 @@
                         <div class="element clickable method public  method_setLine" data-toggle="collapse" data-target=".method_setLine .collapse">
                             <h2>Set line style</h2>
                             <pre>setLine(string $value = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getEndCap"></a>
+                        <div class="element clickable method public  method_getEndCap" data-toggle="collapse" data-target=".method_getEndCap .collapse">
+                            <h2>Get endCap style</h2>
+                            <pre>getEndCap() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setEndCap"></a>
+                        <div class="element clickable method public  method_setEndCap" data-toggle="collapse" data-target=".method_setEndCap .collapse">
+                            <h2>Set endCap style</h2>
+                            <pre>setEndCap(string $value = null) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -1386,6 +1504,85 @@ Check if the set method is exists. Throws an exception?</p></div>
                                     </div>
                                 </div>
                             </div>
+                                                    <a id="constant_ENDCAP_FLAT"> </a>
+                            <div class="element clickable constant  constant_ENDCAP_FLAT" data-toggle="collapse" data-target=".constant_ENDCAP_FLAT .collapse">
+                                <h2>Line style constants</h2>
+                                <pre>ENDCAP_FLAT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/t-v_ST_StrokeEndCap.html">http://www.schemacentral.com/sc/ooxml/t-v_ST_StrokeEndCap.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ENDCAP_SQUARE"> </a>
+                            <div class="element clickable constant  constant_ENDCAP_SQUARE" data-toggle="collapse" data-target=".constant_ENDCAP_SQUARE .collapse">
+                                <h2>ENDCAP_SQUARE</h2>
+                                <pre>ENDCAP_SQUARE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_ENDCAP_ROUND"> </a>
+                            <div class="element clickable constant  constant_ENDCAP_ROUND" data-toggle="collapse" data-target=".constant_ENDCAP_ROUND .collapse">
+                                <h2>ENDCAP_ROUND</h2>
+                                <pre>ENDCAP_ROUND</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
                                                     <a id="constant_ARROW_NONE"> </a>
                             <div class="element clickable constant  constant_ARROW_NONE" data-toggle="collapse" data-target=".constant_ARROW_NONE .collapse">
                                 <h2>Arrowhead type constants</h2>
@@ -1530,6 +1727,32 @@ Check if the set method is exists. Throws an exception?</p></div>
                             </div>
                                             
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_unit"> </a>
+                            <div class="element clickable property  private property_unit" data-toggle="collapse" data-target=".property_unit .collapse">
+                                <h2>Unit; No set method for now</h2>
+                                <pre>unit : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_weight"> </a>
                             <div class="element clickable property  private property_weight" data-toggle="collapse" data-target=".property_weight .collapse">
                                 <h2>Outline weight</h2>
@@ -1625,6 +1848,40 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                     </th>
                                                     <td>
                                                                                                                     
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_endCap"> </a>
+                            <div class="element clickable property  private property_endCap" data-toggle="collapse" data-target=".property_endCap .collapse">
+                                <h2>End cap</h2>
+                                <pre>endCap : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/t-v_ST_StrokeEndCap.html">http://www.schemacentral.com/sc/ooxml/t-v_ST_StrokeEndCap.html</a></p>
                                                                                                             </td>
                                                 </tr>
                                                                                     </table>
@@ -1818,7 +2075,7 @@ Check if the set method is exists. Throws an exception?</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 04 Jun 2014 16:52:55 +0000.<br/>
+            generated on Thu, 05 Jun 2014 09:43:26 +0000.<br/>
     </footer>
     </body>
 </html>

@@ -119,15 +119,15 @@
         <li class="nav-header">
             <i class="icon-custom icon-method"></i> Methods
             <ul>
-                                                                                                    <li class="method public inherited">
-        <a href="#method_write" title="write :: Write style">
-            <span class="description">Write style</span><pre>write</pre>
+                                                                                                    <li class="method public">
+        <a href="#method_writeStroke" title="writeStroke :: Write Line stroke">
+            <span class="description">Write Line stroke</span><pre>writeStroke</pre>
         </a>
     </li>
 
-                                                                                                                                                                <li class="method public">
-        <a href="#method_writeStroke" title="writeStroke :: Write Line stroke">
-            <span class="description">Write Line stroke</span><pre>writeStroke</pre>
+                                                                                                        <li class="method public inherited">
+        <a href="#method_write" title="write :: Write style">
+            <span class="description">Write style</span><pre>write</pre>
         </a>
     </li>
 
@@ -137,13 +137,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
-        <a href="#method_writeW10Wrap" title="writeW10Wrap :: Write w10 wrapping">
-            <span class="description">Write w10 wrapping</span><pre>writeW10Wrap</pre>
-        </a>
-    </li>
-
-                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                        <li class="method public inherited">
         <a href="#method___construct" title="__construct :: Create new instance">
             <span class="description">Create new instance</span><pre>__construct</pre>
         </a>
@@ -153,17 +147,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                <li class="method protected inherited">
-                            <a href="#method_writeStyle" title="writeStyle :: Write style attribute">
-                                <span class="description">Write style attribute</span><pre>writeStyle</pre>
-                            </a>
-                        </li>
-                                                                                                                                                                                            <li class="method protected inherited">
-                            <a href="#method_getElementStyle" title="getElementStyle :: Get element style">
-                                <span class="description">Get element style</span><pre>getElementStyle</pre>
-                            </a>
-                        </li>
-                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
                             <a href="#method_getXmlWriter" title="getXmlWriter :: Get XML Writer">
                                 <span class="description">Get XML Writer</span><pre>getXmlWriter</pre>
                             </a>
@@ -192,7 +176,17 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                        <li class="method private inherited">
+                            <a href="#method_writeWrap" title="writeWrap :: Write alignment">
+                                <span class="description">Write alignment</span><pre>writeWrap</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_getStyles" title="getStyles :: Get style values in associative array">
+                                <span class="description">Get style values in associative array</span><pre>getStyles</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -208,7 +202,7 @@
             <div class="element class">
                 <h1>Line</h1>
                 <small style="display: block; text-align: right">
-                                            Extends <a href="../classes/PhpOffice.PhpWord.Writer.Word2007.Style.Image.html">\PhpOffice\PhpWord\Writer\Word2007\Style\Image</a>
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Writer.Word2007.Style.Frame.html">\PhpOffice\PhpWord\Writer\Word2007\Style\Frame</a>
                                                         </small>
                 <p class="short_description">Line style writer</p>
                 <div class="details">
@@ -219,17 +213,26 @@
                                                                                                                                                                                                         </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_write"></a>
-                        <div class="element clickable method public  method_write inherited" data-toggle="collapse" data-target=".method_write .collapse">
-                            <h2>Write style</h2>
-                            <pre>write() </pre>
+                                                                <a id="method_writeStroke"></a>
+                        <div class="element clickable method public  method_writeStroke" data-toggle="collapse" data-target=".method_writeStroke .collapse">
+                            <h2>Write Line stroke</h2>
+                            <pre>writeStroke() </pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
+                                                                                                                                                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Merge with <code>Stroke</code> style</p>
+                                                                                                    </td>
+                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -250,41 +253,12 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_writeStyle"></a>
-                        <div class="element clickable method protected  method_writeStyle inherited" data-toggle="collapse" data-target=".method_writeStyle .collapse">
-                            <h2>Write style attribute</h2>
-                            <pre>writeStyle(\PhpOffice\PhpWord\Style\Image $style) </pre>
+                                            <a id="method_write"></a>
+                        <div class="element clickable method public  method_write inherited" data-toggle="collapse" data-target=".method_write .collapse">
+                            <h2>Write style</h2>
+                            <pre>write() </pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$style</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Image.html">\PhpOffice\PhpWord\Style\Image</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeStroke"></a>
-                        <div class="element clickable method public  method_writeStroke" data-toggle="collapse" data-target=".method_writeStroke .collapse">
-                            <h2>Write Line stroke</h2>
-                            <pre>writeStroke() </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
+                                <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -341,10 +315,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_writeW10Wrap"></a>
-                        <div class="element clickable method public  method_writeW10Wrap inherited" data-toggle="collapse" data-target=".method_writeW10Wrap .collapse">
-                            <h2>Write w10 wrapping</h2>
-                            <pre>writeW10Wrap() </pre>
+                                            <a id="method_writeWrap"></a>
+                        <div class="element clickable method private  method_writeWrap inherited" data-toggle="collapse" data-target=".method_writeWrap .collapse">
+                            <h2>Write alignment</h2>
+                            <pre>writeWrap(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\Style\Frame $style, string $wrap) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -359,23 +333,29 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
-                                    
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Frame.html">\PhpOffice\PhpWord\Style\Frame</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$wrap</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_getElementStyle"></a>
-                        <div class="element clickable method protected  method_getElementStyle inherited" data-toggle="collapse" data-target=".method_getElementStyle .collapse">
-                            <h2>Get element style</h2>
-                            <pre>getElementStyle(\PhpOffice\PhpWord\Style\Image $style) : array</pre>
+                                            <a id="method_getStyles"></a>
+                        <div class="element clickable method private  method_getStyles inherited" data-toggle="collapse" data-target=".method_getStyles .collapse">
+                            <h2>Get style values in associative array</h2>
+                            <pre>getStyles(\PhpOffice\PhpWord\Style\Frame $style, array $properties, string $suffix = &#039;&#039;) : array</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -388,7 +368,15 @@
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$style</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Image.html">\PhpOffice\PhpWord\Style\Image</a></code><p></p>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Frame.html">\PhpOffice\PhpWord\Style\Frame</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$properties</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$suffix</h4>
+                                                <code>string</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -573,32 +561,6 @@
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_w10wrap"> </a>
-                            <div class="element clickable property  protected property_w10wrap inherited" data-toggle="collapse" data-target=".property_w10wrap .collapse">
-                                <h2>w10 namespace wrapping type</h2>
-                                <pre>w10wrap : string</pre>
-                                <div class="labels">
-                                    <span class="label">inherited</span>                                                                    </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        var
-                                                    </th>
-                                                    <td>
-                                                                                                                    
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code>string</code>
-                                                                            </div>
-                                </div>
-                            </div>
                                                     <a id="property_xmlWriter"> </a>
                             <div class="element clickable property  private property_xmlWriter inherited" data-toggle="collapse" data-target=".property_xmlWriter .collapse">
                                 <h2>XML writer</h2>
@@ -671,7 +633,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 04 Jun 2014 16:53:03 +0000.<br/>
+            generated on Thu, 05 Jun 2014 09:43:14 +0000.<br/>
     </footer>
     </body>
 </html>
