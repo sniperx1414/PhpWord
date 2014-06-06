@@ -137,7 +137,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
         <a href="#method_setParentWriter" title="setParentWriter :: Set parent writer">
             <span class="description">Set parent writer</span><pre>setParentWriter</pre>
         </a>
@@ -153,7 +153,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -188,13 +188,18 @@
                             </a>
                         </li>
                                                                                 <li class="method private">
+                            <a href="#method_registerBorderColor" title="registerBorderColor :: Register border colors">
+                                <span class="description">Register border colors</span><pre>registerBorderColor</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
                             <a href="#method_registerFontItems" title="registerFontItems :: Register fonts and colors">
                                 <span class="description">Register fonts and colors</span><pre>registerFontItems</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
-                            <a href="#method_registerFontItem" title="registerFontItem :: Register individual font and color">
-                                <span class="description">Register individual font and color</span><pre>registerFontItem</pre>
+                            <a href="#method_registerTableItem" title="registerTableItem :: Register individual font and color">
+                                <span class="description">Register individual font and color</span><pre>registerTableItem</pre>
                             </a>
                         </li>
                                                                                                                         </ul>
@@ -218,7 +223,14 @@
                 <p class="short_description">RTF header part writer</p>
                 <div class="details">
                     <div class="long_description">
-                        
+                        <ul>
+<li>Character set</li>
+<li>Font table</li>
+<li>File table (not supported yet)</li>
+<li>Color table</li>
+<li>Style sheet (not supported yet)</li>
+<li>List table (not supported yet)</li>
+</ul>
                     </div>
                     <table class="table table-bordered">
                                                                                     <tr>
@@ -228,6 +240,15 @@
                                     <td>
                                                                                     0.11.0
                                                                                 
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        link
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p><a href="http://www.biblioscape.com/rtf15_spec.htm#Heading6">http://www.biblioscape.com/rtf15_spec.htm#Heading6</a></p>
                                     </td>
                                 </tr>
                                                                                                                                                                                                                                     </table>
@@ -482,6 +503,35 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_registerBorderColor"></a>
+                        <div class="element clickable method private  method_registerBorderColor" data-toggle="collapse" data-target=".method_registerBorderColor .collapse">
+                            <h2>Register border colors</h2>
+                            <pre>registerBorderColor(\PhpOffice\PhpWord\Style\Border $style) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Border.html">\PhpOffice\PhpWord\Style\Border</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_registerFontItems"></a>
                         <div class="element clickable method private  method_registerFontItems" data-toggle="collapse" data-target=".method_registerFontItems .collapse">
                             <h2>Register fonts and colors</h2>
@@ -511,10 +561,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_registerFontItem"></a>
-                        <div class="element clickable method private  method_registerFontItem" data-toggle="collapse" data-target=".method_registerFontItem .collapse">
+                                            <a id="method_registerTableItem"></a>
+                        <div class="element clickable method private  method_registerTableItem" data-toggle="collapse" data-target=".method_registerTableItem .collapse">
                             <h2>Register individual font and color</h2>
-                            <pre>registerFontItem(array &$table, string $value, string $default) </pre>
+                            <pre>registerTableItem(array &$table, string $value, string $default = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -713,7 +763,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 06 Jun 2014 01:46:30 +0000.<br/>
+            generated on Fri, 06 Jun 2014 11:45:36 +0000.<br/>
     </footer>
     </body>
 </html>
