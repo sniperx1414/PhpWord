@@ -295,23 +295,23 @@
      <tr><td><div align="right"><a name="23"></a><a href="#23">23</a></div></td><td class="codeLine">/**</td></tr>
      <tr><td><div align="right"><a name="24"></a><a href="#24">24</a></div></td><td class="codeLine"> * Container abstract class</td></tr>
      <tr><td><div align="right"><a name="25"></a><a href="#25">25</a></div></td><td class="codeLine"> *</td></tr>
-     <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine"> * @method Text addText($text, $fStyle = null, $pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine"> * @method TextRun addTextRun($pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine"> * @method Link addLink($target, $text = null, $fStyle = null, $pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine"> * @method PreserveText addPreserveText($text, $fStyle = null, $pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine"> * @method void addTextBreak($count = 1, $fStyle = null, $pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="31"></a><a href="#31">31</a></div></td><td class="codeLine"> * @method ListItem addListItem($text, $depth = 0, $fStyle = null, $listStyle = null, $pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="32"></a><a href="#32">32</a></div></td><td class="codeLine"> * @method ListItemRun addListItemRun($depth = 0, $listStyle = null, $pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="33"></a><a href="#33">33</a></div></td><td class="codeLine"> * @method Table addTable($style = null)</td></tr>
-     <tr><td><div align="right"><a name="34"></a><a href="#34">34</a></div></td><td class="codeLine"> * @method Image addImage($source, $style = null, $isWatermark = false)</td></tr>
-     <tr><td><div align="right"><a name="35"></a><a href="#35">35</a></div></td><td class="codeLine"> * @method Object addObject($source, $style = null)</td></tr>
-     <tr><td><div align="right"><a name="36"></a><a href="#36">36</a></div></td><td class="codeLine"> * @method Footnote addFootnote($pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="37"></a><a href="#37">37</a></div></td><td class="codeLine"> * @method Endnote addEndnote($pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="38"></a><a href="#38">38</a></div></td><td class="codeLine"> * @method CheckBox addCheckBox($name, $text, $fStyle = null, $pStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="39"></a><a href="#39">39</a></div></td><td class="codeLine"> * @method TextBox addTextBox($style = null)</td></tr>
-     <tr><td><div align="right"><a name="40"></a><a href="#40">40</a></div></td><td class="codeLine"> * @method Field addField($type = null, $properties = array(), $options = array())</td></tr>
-     <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"> * @method Line addLine($lineStyle = null)</td></tr>
-     <tr><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine"> * @method Shape addObject($type, $style = null)</td></tr>
+     <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine"> * @method Text addText(string $text, mixed $fStyle = null, mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine"> * @method TextRun addTextRun(mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine"> * @method Link addLink(string $target, string $text = null, mixed $fStyle = null, mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine"> * @method PreserveText addPreserveText(string $text, mixed $fStyle = null, mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine"> * @method void addTextBreak(int $count = 1, mixed $fStyle = null, mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="31"></a><a href="#31">31</a></div></td><td class="codeLine"> * @method ListItem addListItem(string $text, int $depth = 0, mixed $fStyle = null, mixed $listStyle = null, mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="32"></a><a href="#32">32</a></div></td><td class="codeLine"> * @method ListItemRun addListItemRun(int $depth = 0, mixed $listStyle = null, mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="33"></a><a href="#33">33</a></div></td><td class="codeLine"> * @method Footnote addFootnote(mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="34"></a><a href="#34">34</a></div></td><td class="codeLine"> * @method Endnote addEndnote(mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="35"></a><a href="#35">35</a></div></td><td class="codeLine"> * @method CheckBox addCheckBox(string $name, $text, mixed $fStyle = null, mixed $pStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="36"></a><a href="#36">36</a></div></td><td class="codeLine"> * @method Table addTable(mixed $style = null)</td></tr>
+     <tr><td><div align="right"><a name="37"></a><a href="#37">37</a></div></td><td class="codeLine"> * @method Image addImage(string $source, mixed $style = null, bool $isWatermark = false)</td></tr>
+     <tr><td><div align="right"><a name="38"></a><a href="#38">38</a></div></td><td class="codeLine"> * @method Object addObject(string $source, mixed $style = null)</td></tr>
+     <tr><td><div align="right"><a name="39"></a><a href="#39">39</a></div></td><td class="codeLine"> * @method TextBox addTextBox(mixed $style = null)</td></tr>
+     <tr><td><div align="right"><a name="40"></a><a href="#40">40</a></div></td><td class="codeLine"> * @method Field addField(string $type = null, array $properties = array(), array $options = array())</td></tr>
+     <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"> * @method Line addLine(mixed $lineStyle = null)</td></tr>
+     <tr><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine"> * @method Shape addObject(string $type, mixed $style = null)</td></tr>
      <tr><td><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine"> *</td></tr>
      <tr><td><div align="right"><a name="44"></a><a href="#44">44</a></div></td><td class="codeLine"> * @since 0.10.0</td></tr>
      <tr><td><div align="right"><a name="45"></a><a href="#45">45</a></div></td><td class="codeLine"> */</td></tr>
@@ -625,7 +625,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.11</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Fri Jun 6 11:40:21 UTC 2014.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.11</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Fri Jun 6 12:02:02 UTC 2014.</small>
     </p>
    </footer>
   </div>

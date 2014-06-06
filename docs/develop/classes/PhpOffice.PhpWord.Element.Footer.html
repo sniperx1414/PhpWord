@@ -324,24 +324,6 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_addTable" title="addTable :: ">
-            <span class="description"></span><pre>addTable</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public inherited">
-        <a href="#method_addImage" title="addImage :: ">
-            <span class="description"></span><pre>addImage</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public inherited">
-        <a href="#method_addObject" title="addObject :: ">
-            <span class="description"></span><pre>addObject</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public inherited">
         <a href="#method_addFootnote" title="addFootnote :: ">
             <span class="description"></span><pre>addFootnote</pre>
         </a>
@@ -356,6 +338,24 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_addCheckBox" title="addCheckBox :: ">
             <span class="description"></span><pre>addCheckBox</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addTable" title="addTable :: ">
+            <span class="description"></span><pre>addTable</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addImage" title="addImage :: ">
+            <span class="description"></span><pre>addImage</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addObject" title="addObject :: ">
+            <span class="description"></span><pre>addObject</pre>
         </a>
     </li>
 
@@ -1523,7 +1523,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addText"></a>
                         <div class="element clickable method public  method_addText inherited" data-toggle="collapse" data-target=".method_addText .collapse">
                             <h2>addText</h2>
-                            <pre>addText(mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\Text</pre>
+                            <pre>addText(string $text, mixed $fStyle, mixed $pStyle) : \PhpOffice\PhpWord\Element\Text</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1536,11 +1536,15 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$text</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fStyle</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1551,7 +1555,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addTextRun"></a>
                         <div class="element clickable method public  method_addTextRun inherited" data-toggle="collapse" data-target=".method_addTextRun .collapse">
                             <h2>addTextRun</h2>
-                            <pre>addTextRun($pStyle =) : \PhpOffice\PhpWord\Element\TextRun</pre>
+                            <pre>addTextRun(mixed $pStyle) : \PhpOffice\PhpWord\Element\TextRun</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1563,8 +1567,8 @@ add the model in the class docblock with <code>@method</code>.</p>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1575,7 +1579,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addLink"></a>
                         <div class="element clickable method public  method_addLink inherited" data-toggle="collapse" data-target=".method_addLink .collapse">
                             <h2>addLink</h2>
-                            <pre>addLink(mixed $target, $pStyle =) : \PhpOffice\PhpWord\Element\Link</pre>
+                            <pre>addLink(string $target, string $text, mixed $fStyle, mixed $pStyle) : \PhpOffice\PhpWord\Element\Link</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1588,11 +1592,19 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$target</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fStyle</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1603,7 +1615,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addPreserveText"></a>
                         <div class="element clickable method public  method_addPreserveText inherited" data-toggle="collapse" data-target=".method_addPreserveText .collapse">
                             <h2>addPreserveText</h2>
-                            <pre>addPreserveText(mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\PreserveText</pre>
+                            <pre>addPreserveText(string $text, mixed $fStyle, mixed $pStyle) : \PhpOffice\PhpWord\Element\PreserveText</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1616,11 +1628,15 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$text</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fStyle</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1631,7 +1647,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addTextBreak"></a>
                         <div class="element clickable method public  method_addTextBreak inherited" data-toggle="collapse" data-target=".method_addTextBreak .collapse">
                             <h2>addTextBreak</h2>
-                            <pre>addTextBreak($pStyle =) : void</pre>
+                            <pre>addTextBreak(int $count, mixed $fStyle, mixed $pStyle) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1643,8 +1659,16 @@ add the model in the class docblock with <code>@method</code>.</p>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$count</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1653,7 +1677,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addListItem"></a>
                         <div class="element clickable method public  method_addListItem inherited" data-toggle="collapse" data-target=".method_addListItem .collapse">
                             <h2>addListItem</h2>
-                            <pre>addListItem(mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\ListItem</pre>
+                            <pre>addListItem(string $text, int $depth, mixed $fStyle, mixed $listStyle, mixed $pStyle) : \PhpOffice\PhpWord\Element\ListItem</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1666,11 +1690,23 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$text</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$depth</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$fStyle</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$listStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1681,7 +1717,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addListItemRun"></a>
                         <div class="element clickable method public  method_addListItemRun inherited" data-toggle="collapse" data-target=".method_addListItemRun .collapse">
                             <h2>addListItemRun</h2>
-                            <pre>addListItemRun($pStyle =) : \PhpOffice\PhpWord\Element\ListItemRun</pre>
+                            <pre>addListItemRun(int $depth, mixed $listStyle, mixed $pStyle) : \PhpOffice\PhpWord\Element\ListItemRun</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1693,8 +1729,16 @@ add the model in the class docblock with <code>@method</code>.</p>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$depth</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$listStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1702,90 +1746,10 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_addTable"></a>
-                        <div class="element clickable method public  method_addTable inherited" data-toggle="collapse" data-target=".method_addTable .collapse">
-                            <h2>addTable</h2>
-                            <pre>addTable($style =) : \PhpOffice\PhpWord\Element\Table</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$style</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>\PhpOffice\PhpWord\Element\Table</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_addImage"></a>
-                        <div class="element clickable method public  method_addImage inherited" data-toggle="collapse" data-target=".method_addImage .collapse">
-                            <h2>addImage</h2>
-                            <pre>addImage(mixed $source, $isWatermark =) : \PhpOffice\PhpWord\Element\Image</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$source</h4>
-                                                <code>mixed</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$isWatermark</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>\PhpOffice\PhpWord\Element\Image</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_addObject"></a>
-                        <div class="element clickable method public  method_addObject inherited" data-toggle="collapse" data-target=".method_addObject .collapse">
-                            <h2>addObject</h2>
-                            <pre>addObject(mixed $source, $style =) : Object</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$source</h4>
-                                                <code>mixed</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$style</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>Object</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
                                             <a id="method_addFootnote"></a>
                         <div class="element clickable method public  method_addFootnote inherited" data-toggle="collapse" data-target=".method_addFootnote .collapse">
                             <h2>addFootnote</h2>
-                            <pre>addFootnote($pStyle =) : \PhpOffice\PhpWord\Element\Footnote</pre>
+                            <pre>addFootnote(mixed $pStyle) : \PhpOffice\PhpWord\Element\Footnote</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1797,8 +1761,8 @@ add the model in the class docblock with <code>@method</code>.</p>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1809,7 +1773,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addEndnote"></a>
                         <div class="element clickable method public  method_addEndnote inherited" data-toggle="collapse" data-target=".method_addEndnote .collapse">
                             <h2>addEndnote</h2>
-                            <pre>addEndnote($pStyle =) : \PhpOffice\PhpWord\Element\Endnote</pre>
+                            <pre>addEndnote(mixed $pStyle) : \PhpOffice\PhpWord\Element\Endnote</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1821,8 +1785,8 @@ add the model in the class docblock with <code>@method</code>.</p>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1833,7 +1797,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addCheckBox"></a>
                         <div class="element clickable method public  method_addCheckBox inherited" data-toggle="collapse" data-target=".method_addCheckBox .collapse">
                             <h2>addCheckBox</h2>
-                            <pre>addCheckBox(mixed $name, mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\CheckBox</pre>
+                            <pre>addCheckBox(string $name, mixed $text, mixed $fStyle, mixed $pStyle) : \PhpOffice\PhpWord\Element\CheckBox</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1846,15 +1810,19 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$name</h4>
-                                                <code>mixed</code><p></p>
+                                                <code>string</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$text</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$pStyle</code><p></p>
+                                                <h4>$fStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1862,10 +1830,10 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_addTextBox"></a>
-                        <div class="element clickable method public  method_addTextBox inherited" data-toggle="collapse" data-target=".method_addTextBox .collapse">
-                            <h2>addTextBox</h2>
-                            <pre>addTextBox($style =) : \PhpOffice\PhpWord\Element\TextBox</pre>
+                                            <a id="method_addTable"></a>
+                        <div class="element clickable method public  method_addTable inherited" data-toggle="collapse" data-target=".method_addTable .collapse">
+                            <h2>addTable</h2>
+                            <pre>addTable(mixed $style) : \PhpOffice\PhpWord\Element\Table</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1877,8 +1845,92 @@ add the model in the class docblock with <code>@method</code>.</p>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$style</code><p></p>
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Table</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addImage"></a>
+                        <div class="element clickable method public  method_addImage inherited" data-toggle="collapse" data-target=".method_addImage .collapse">
+                            <h2>addImage</h2>
+                            <pre>addImage(string $source, mixed $style, bool $isWatermark) : \PhpOffice\PhpWord\Element\Image</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$source</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$isWatermark</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Image</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addObject"></a>
+                        <div class="element clickable method public  method_addObject inherited" data-toggle="collapse" data-target=".method_addObject .collapse">
+                            <h2>addObject</h2>
+                            <pre>addObject(string $source, mixed $style) : Object</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$source</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Object</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTextBox"></a>
+                        <div class="element clickable method public  method_addTextBox inherited" data-toggle="collapse" data-target=".method_addTextBox .collapse">
+                            <h2>addTextBox</h2>
+                            <pre>addTextBox(mixed $style) : \PhpOffice\PhpWord\Element\TextBox</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1889,20 +1941,24 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addField"></a>
                         <div class="element clickable method public  method_addField inherited" data-toggle="collapse" data-target=".method_addField .collapse">
                             <h2>addField</h2>
-                            <pre>addField($properties =) : \PhpOffice\PhpWord\Element\Field</pre>
+                            <pre>addField(string $type, array $properties) : \PhpOffice\PhpWord\Element\Field</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"><p>, $options = array())</p></div>
+                                    <div class="long_description"><p>, array $options = array())</p></div>
 
                                     <table class="table">
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$properties</code><p></p>
+                                                <h4>$type</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$properties</h4>
+                                                <code>array</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1913,7 +1969,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addLine"></a>
                         <div class="element clickable method public  method_addLine inherited" data-toggle="collapse" data-target=".method_addLine .collapse">
                             <h2>addLine</h2>
-                            <pre>addLine($lineStyle =) : \PhpOffice\PhpWord\Element\Line</pre>
+                            <pre>addLine(mixed $lineStyle) : \PhpOffice\PhpWord\Element\Line</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1925,8 +1981,8 @@ add the model in the class docblock with <code>@method</code>.</p>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$lineStyle</code><p></p>
+                                                <h4>$lineStyle</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1937,7 +1993,7 @@ add the model in the class docblock with <code>@method</code>.</p>
                                             <a id="method_addObject"></a>
                         <div class="element clickable method public  method_addObject inherited" data-toggle="collapse" data-target=".method_addObject .collapse">
                             <h2>addObject</h2>
-                            <pre>addObject(mixed $type, $style =) : \PhpOffice\PhpWord\Element\Shape</pre>
+                            <pre>addObject(string $type, mixed $style) : \PhpOffice\PhpWord\Element\Shape</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1950,11 +2006,11 @@ add the model in the class docblock with <code>@method</code>.</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$type</h4>
-                                                <code>mixed</code><p></p>
+                                                <code>string</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>=</h4>
-                                                <code>$style</code><p></p>
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -2348,7 +2404,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 06 Jun 2014 11:45:51 +0000.<br/>
+            generated on Fri, 06 Jun 2014 12:06:11 +0000.<br/>
     </footer>
     </body>
 </html>
