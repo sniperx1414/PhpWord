@@ -197,7 +197,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                                                                                <li class="method public inherited">
         <a href="#method_getElementIndex" title="getElementIndex :: Get element index">
             <span class="description">Get element index</span><pre>getElementIndex</pre>
         </a>
@@ -240,12 +240,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_setNestedLevel" title="setNestedLevel :: Set nested level">
-            <span class="description">Set nested level</span><pre>setNestedLevel</pre>
+        <a href="#method_setParentContainer" title="setParentContainer :: Set parent container">
+            <span class="description">Set parent container</span><pre>setParentContainer</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                                                                                                                                        <li class="method public inherited">
         <a href="#method_isInSection" title="isInSection :: Check if element is located in Section doc part (as opposed to Header/Footer)">
             <span class="description">Check if element is located in Section doc part (as opposed to Header/Footer)</span><pre>isInSection</pre>
         </a>
@@ -255,7 +255,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_setStyle" title="setStyle :: Set style value">
                                 <span class="description">Set style value</span><pre>setStyle</pre>
                             </a>
@@ -269,7 +269,22 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                            <a href="#method_getMediaPart" title="getMediaPart :: Return media element (image, object, link) container name">
+                                <span class="description">Return media element (image, object, link) container name</span><pre>getMediaPart</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                            <a href="#method_setMediaRelation" title="setMediaRelation :: Set relation Id for media elements (link, image, object; legacy of OOXML)">
+                                <span class="description">Set relation Id for media elements (link, image, object; legacy of OOXML)</span><pre>setMediaRelation</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_setCollectionRelation" title="setCollectionRelation :: Set relation Id for elements that will be registered in the Collection subnamespaces">
+                                <span class="description">Set relation Id for elements that will be registered in the Collection subnamespaces</span><pre>setCollectionRelation</pre>
+                            </a>
+                        </li>
+                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -694,6 +709,32 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_getMediaPart"></a>
+                        <div class="element clickable method private  method_getMediaPart inherited" data-toggle="collapse" data-target=".method_getMediaPart .collapse">
+                            <h2>Return media element (image, object, link) container name</h2>
+                            <pre>getMediaPart() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>section|headerx|footerx|footnote|endnote</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_getElementIndex"></a>
                         <div class="element clickable method public  method_getElementIndex inherited" data-toggle="collapse" data-target=".method_getElementIndex .collapse">
                             <h2>Get element index</h2>
@@ -887,10 +928,73 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_setNestedLevel"></a>
-                        <div class="element clickable method public  method_setNestedLevel inherited" data-toggle="collapse" data-target=".method_setNestedLevel .collapse">
-                            <h2>Set nested level</h2>
-                            <pre>setNestedLevel(int $value) </pre>
+                                            <a id="method_setParentContainer"></a>
+                        <div class="element clickable method public  method_setParentContainer inherited" data-toggle="collapse" data-target=".method_setParentContainer .collapse">
+                            <h2>Set parent container</h2>
+                            <pre>setParentContainer(\PhpOffice\PhpWord\Element\AbstractElement $container) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Passed parameter should be a container, except for Table (contain Row) and Row (contain Cell)</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$container</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setMediaRelation"></a>
+                        <div class="element clickable method private  method_setMediaRelation inherited" data-toggle="collapse" data-target=".method_setMediaRelation .collapse">
+                            <h2>Set relation Id for media elements (link, image, object; legacy of OOXML)</h2>
+                            <pre>setMediaRelation() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><ul>
+<li>Image element needs to be passed to Media object</li>
+<li>Icon needs to be set for Object element</li>
+</ul></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setCollectionRelation"></a>
+                        <div class="element clickable method private  method_setCollectionRelation inherited" data-toggle="collapse" data-target=".method_setCollectionRelation .collapse">
+                            <h2>Set relation Id for elements that will be registered in the Collection subnamespaces</h2>
+                            <pre>setCollectionRelation() </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -905,14 +1009,16 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                             </table>
 
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$value</h4>
-                                                <code>int</code><p></p>
-                                            </div>
-                                                                            
+                                    
                                                                     </div>
                             </div>
                         </div>
@@ -1186,7 +1292,7 @@ and options</h2>
                             </div>
                                                     <a id="property_docPart"> </a>
                             <div class="element clickable property  protected property_docPart inherited" data-toggle="collapse" data-target=".property_docPart .collapse">
-                                <h2>Document part type: section|header|footer</h2>
+                                <h2>Document part type: Section|Header|Footer|Footnote|Endnote</h2>
                                 <pre>docPart : string</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
@@ -1344,6 +1450,84 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_parentContainer"> </a>
+                            <div class="element clickable property  private property_parentContainer inherited" data-toggle="collapse" data-target=".property_parentContainer .collapse">
+                                <h2>Parent container type</h2>
+                                <pre>parentContainer : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_mediaRelation"> </a>
+                            <div class="element clickable property  protected property_mediaRelation inherited" data-toggle="collapse" data-target=".property_mediaRelation .collapse">
+                                <h2>Has media relation flag; true for Link, Image, and Object</h2>
+                                <pre>mediaRelation : bool</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>bool</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_collectionRelation"> </a>
+                            <div class="element clickable property  protected property_collectionRelation inherited" data-toggle="collapse" data-target=".property_collectionRelation .collapse">
+                                <h2>Is part of collection; true for Title, Footnote, and Endnote</h2>
+                                <pre>collectionRelation : bool</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>bool</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                             </div>
             </div>
             <a id="\PhpOffice\PhpWord\Element\Field"></a>
@@ -1364,7 +1548,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 07 Jun 2014 11:03:49 +0000.<br/>
+            generated on Sun, 08 Jun 2014 02:05:34 +0000.<br/>
     </footer>
     </body>
 </html>
