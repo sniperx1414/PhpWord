@@ -132,14 +132,14 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_getDocumentProperties" title="getDocumentProperties :: Get document properties object">
-            <span class="description">Get document properties object</span><pre>getDocumentProperties</pre>
+        <a href="#method_getDocInfo" title="getDocInfo :: Get document properties object">
+            <span class="description">Get document properties object</span><pre>getDocInfo</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_setDocumentProperties" title="setDocumentProperties :: Set document properties object">
-            <span class="description">Set document properties object</span><pre>setDocumentProperties</pre>
+        <a href="#method_getProtection" title="getProtection :: Get protection">
+            <span class="description">Get protection</span><pre>getProtection</pre>
         </a>
     </li>
 
@@ -200,6 +200,18 @@
                                                                                                         <li class="method public">
         <a href="#method_createSection" title="createSection :: Create new section">
             <span class="description">Create new section</span><pre>createSection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDocumentProperties" title="getDocumentProperties :: Get document properties object">
+            <span class="description">Get document properties object</span><pre>getDocumentProperties</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setDocumentProperties" title="setDocumentProperties :: Set document properties object">
+            <span class="description">Set document properties object</span><pre>setDocumentProperties</pre>
         </a>
     </li>
 
@@ -291,11 +303,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -413,10 +425,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_getDocumentProperties"></a>
-                        <div class="element clickable method public  method_getDocumentProperties" data-toggle="collapse" data-target=".method_getDocumentProperties .collapse">
+                                            <a id="method_getDocInfo"></a>
+                        <div class="element clickable method public  method_getDocInfo" data-toggle="collapse" data-target=".method_getDocInfo .collapse">
                             <h2>Get document properties object</h2>
-                            <pre>getDocumentProperties() : \PhpOffice\PhpWord\DocumentProperties</pre>
+                            <pre>getDocInfo() : \PhpOffice\PhpWord\Metadata\DocInfo</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -435,14 +447,14 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/PhpOffice.PhpWord.DocumentProperties.html">\PhpOffice\PhpWord\DocumentProperties</a></code><p></p>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Metadata.DocInfo.html">\PhpOffice\PhpWord\Metadata\DocInfo</a></code><p></p>
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_setDocumentProperties"></a>
-                        <div class="element clickable method public  method_setDocumentProperties" data-toggle="collapse" data-target=".method_setDocumentProperties .collapse">
-                            <h2>Set document properties object</h2>
-                            <pre>setDocumentProperties(\PhpOffice\PhpWord\DocumentProperties $documentProperties) : self</pre>
+                                            <a id="method_getProtection"></a>
+                        <div class="element clickable method public  method_getProtection" data-toggle="collapse" data-target=".method_getProtection .collapse">
+                            <h2>Get protection</h2>
+                            <pre>getProtection() : \PhpOffice\PhpWord\Metadata\Protection</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -450,16 +462,27 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.12.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                             </table>
 
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$documentProperties</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.DocumentProperties.html">\PhpOffice\PhpWord\DocumentProperties</a></code><p></p>
-                                            </div>
-                                                                            
+                                    
                                                                             <h3>Response</h3>
-                                        <code>self</code><p></p>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Metadata.Protection.html">\PhpOffice\PhpWord\Metadata\Protection</a></code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -751,6 +774,92 @@
                                                                             
                                                                             <h3>Response</h3>
                                         <code><a href="../classes/PhpOffice.PhpWord.Element.Section.html">\PhpOffice\PhpWord\Element\Section</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDocumentProperties"></a>
+                        <div class="element clickable method public deprecated method_getDocumentProperties" data-toggle="collapse" data-target=".method_getDocumentProperties .collapse">
+                            <h2>Get document properties object</h2>
+                            <pre>getDocumentProperties() : \PhpOffice\PhpWord\Metadata\DocInfo</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.12.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Metadata.DocInfo.html">\PhpOffice\PhpWord\Metadata\DocInfo</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDocumentProperties"></a>
+                        <div class="element clickable method public deprecated method_setDocumentProperties" data-toggle="collapse" data-target=".method_setDocumentProperties .collapse">
+                            <h2>Set document properties object</h2>
+                            <pre>setDocumentProperties($documentProperties) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.12.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$documentProperties</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -1210,32 +1319,6 @@
                             </div>
                                             
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_documentProperties"> </a>
-                            <div class="element clickable property  private property_documentProperties" data-toggle="collapse" data-target=".property_documentProperties .collapse">
-                                <h2>Document properties object</h2>
-                                <pre>documentProperties : \PhpOffice\PhpWord\DocumentProperties</pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        var
-                                                    </th>
-                                                    <td>
-                                                                                                                    
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code><a href="../classes/PhpOffice.PhpWord.DocumentProperties.html">\PhpOffice\PhpWord\DocumentProperties</a></code>
-                                                                            </div>
-                                </div>
-                            </div>
                                                     <a id="property_sections"> </a>
                             <div class="element clickable property  private property_sections" data-toggle="collapse" data-target=".property_sections .collapse">
                                 <h2>Collection of sections</h2>
@@ -1288,6 +1371,40 @@
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_metadata"> </a>
+                            <div class="element clickable property  private property_metadata" data-toggle="collapse" data-target=".property_metadata .collapse">
+                                <h2>Metadata</h2>
+                                <pre>metadata : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        since
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                             </div>
             </div>
             <a id="\PhpOffice\PhpWord\PhpWord"></a>
@@ -1308,7 +1425,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 15 Jun 2014 17:41:38 +0000.<br/>
+            generated on Mon, 16 Jun 2014 05:17:54 +0000.<br/>
     </footer>
     </body>
 </html>
