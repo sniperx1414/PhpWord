@@ -489,7 +489,7 @@
      <tr><td><div align="right"><a name="191"></a><a href="#191">191</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="192"></a><a href="#192">192</a></div></td><td class="codeLine">     * @param \DOMNode $node</td></tr>
      <tr><td><div align="right"><a name="193"></a><a href="#193">193</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\AbstractContainer $element</td></tr>
-     <tr><td><div align="right"><a name="194"></a><a href="#194">194</a></div></td><td class="codeLine">     * @param array $styles</td></tr>
+     <tr><td><div align="right"><a name="194"></a><a href="#194">194</a></div></td><td class="codeLine">     * @param array &amp;$styles</td></tr>
      <tr><td><div align="right"><a name="195"></a><a href="#195">195</a></div></td><td class="codeLine">     * @return \PhpOffice\PhpWord\Element\TextRun</td></tr>
      <tr><td><div align="right"><a name="196"></a><a href="#196">196</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="197"></a><a href="#197">197</a></div></td><td class="codeLine">    private static function parseParagraph($node, $element, &amp;$styles)</td></tr>
@@ -504,7 +504,7 @@
      <tr><td><div align="right"><a name="206"></a><a href="#206">206</a></div></td><td class="codeLine">     * Parse heading node</td></tr>
      <tr><td><div align="right"><a name="207"></a><a href="#207">207</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="208"></a><a href="#208">208</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\AbstractContainer $element</td></tr>
-     <tr><td><div align="right"><a name="209"></a><a href="#209">209</a></div></td><td class="codeLine">     * @param array $styles</td></tr>
+     <tr><td><div align="right"><a name="209"></a><a href="#209">209</a></div></td><td class="codeLine">     * @param array &amp;$styles</td></tr>
      <tr><td><div align="right"><a name="210"></a><a href="#210">210</a></div></td><td class="codeLine">     * @param string $argument1 Name of heading style</td></tr>
      <tr><td><div align="right"><a name="211"></a><a href="#211">211</a></div></td><td class="codeLine">     * @return \PhpOffice\PhpWord\Element\TextRun</td></tr>
      <tr><td><div align="right"><a name="212"></a><a href="#212">212</a></div></td><td class="codeLine">     *</td></tr>
@@ -524,7 +524,7 @@
      <tr><td><div align="right"><a name="226"></a><a href="#226">226</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="227"></a><a href="#227">227</a></div></td><td class="codeLine">     * @param \DOMNode $node</td></tr>
      <tr><td><div align="right"><a name="228"></a><a href="#228">228</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\AbstractContainer $element</td></tr>
-     <tr><td><div align="right"><a name="229"></a><a href="#229">229</a></div></td><td class="codeLine">     * @param array $styles</td></tr>
+     <tr><td><div align="right"><a name="229"></a><a href="#229">229</a></div></td><td class="codeLine">     * @param array &amp;$styles</td></tr>
      <tr><td><div align="right"><a name="230"></a><a href="#230">230</a></div></td><td class="codeLine">     * @return null</td></tr>
      <tr><td><div align="right"><a name="231"></a><a href="#231">231</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="232"></a><a href="#232">232</a></div></td><td class="codeLine">    private static function parseText($node, $element, &amp;$styles)</td></tr>
@@ -543,7 +543,7 @@
      <tr><td><div align="right"><a name="245"></a><a href="#245">245</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="246"></a><a href="#246">246</a></div></td><td class="codeLine">     * Parse property node</td></tr>
      <tr><td><div align="right"><a name="247"></a><a href="#247">247</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="248"></a><a href="#248">248</a></div></td><td class="codeLine">     * @param array $styles</td></tr>
+     <tr><td><div align="right"><a name="248"></a><a href="#248">248</a></div></td><td class="codeLine">     * @param array &amp;$styles</td></tr>
      <tr><td><div align="right"><a name="249"></a><a href="#249">249</a></div></td><td class="codeLine">     * @param string $argument1 Style name</td></tr>
      <tr><td><div align="right"><a name="250"></a><a href="#250">250</a></div></td><td class="codeLine">     * @param string $argument2 Style value</td></tr>
      <tr><td><div align="right"><a name="251"></a><a href="#251">251</a></div></td><td class="codeLine">     * @return null</td></tr>
@@ -560,7 +560,7 @@
      <tr><td><div align="right"><a name="262"></a><a href="#262">262</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="263"></a><a href="#263">263</a></div></td><td class="codeLine">     * @param \DOMNode $node</td></tr>
      <tr><td><div align="right"><a name="264"></a><a href="#264">264</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\AbstractContainer $element</td></tr>
-     <tr><td><div align="right"><a name="265"></a><a href="#265">265</a></div></td><td class="codeLine">     * @param array $styles</td></tr>
+     <tr><td><div align="right"><a name="265"></a><a href="#265">265</a></div></td><td class="codeLine">     * @param array &amp;$styles</td></tr>
      <tr><td><div align="right"><a name="266"></a><a href="#266">266</a></div></td><td class="codeLine">     * @param string $argument1 Method name</td></tr>
      <tr><td><div align="right"><a name="267"></a><a href="#267">267</a></div></td><td class="codeLine">     * @return \PhpOffice\PhpWord\Element\AbstractContainer $element</td></tr>
      <tr><td><div align="right"><a name="268"></a><a href="#268">268</a></div></td><td class="codeLine">     *</td></tr>
@@ -590,8 +590,8 @@
      <tr><td><div align="right"><a name="292"></a><a href="#292">292</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="293"></a><a href="#293">293</a></div></td><td class="codeLine">     * Parse list node</td></tr>
      <tr><td><div align="right"><a name="294"></a><a href="#294">294</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="295"></a><a href="#295">295</a></div></td><td class="codeLine">     * @param array $styles</td></tr>
-     <tr><td><div align="right"><a name="296"></a><a href="#296">296</a></div></td><td class="codeLine">     * @param array $data</td></tr>
+     <tr><td><div align="right"><a name="295"></a><a href="#295">295</a></div></td><td class="codeLine">     * @param array &amp;$styles</td></tr>
+     <tr><td><div align="right"><a name="296"></a><a href="#296">296</a></div></td><td class="codeLine">     * @param array &amp;$data</td></tr>
      <tr><td><div align="right"><a name="297"></a><a href="#297">297</a></div></td><td class="codeLine">     * @param string $argument1 List type</td></tr>
      <tr><td><div align="right"><a name="298"></a><a href="#298">298</a></div></td><td class="codeLine">     * @return null</td></tr>
      <tr><td><div align="right"><a name="299"></a><a href="#299">299</a></div></td><td class="codeLine">     */</td></tr>
@@ -612,7 +612,7 @@
      <tr><td><div align="right"><a name="314"></a><a href="#314">314</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="315"></a><a href="#315">315</a></div></td><td class="codeLine">     * @param \DOMNode $node</td></tr>
      <tr><td><div align="right"><a name="316"></a><a href="#316">316</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\AbstractContainer $element</td></tr>
-     <tr><td><div align="right"><a name="317"></a><a href="#317">317</a></div></td><td class="codeLine">     * @param array $styles</td></tr>
+     <tr><td><div align="right"><a name="317"></a><a href="#317">317</a></div></td><td class="codeLine">     * @param array &amp;$styles</td></tr>
      <tr><td><div align="right"><a name="318"></a><a href="#318">318</a></div></td><td class="codeLine">     * @param array $data</td></tr>
      <tr><td><div align="right"><a name="319"></a><a href="#319">319</a></div></td><td class="codeLine">     * @return null</td></tr>
      <tr><td><div align="right"><a name="320"></a><a href="#320">320</a></div></td><td class="codeLine">     *</td></tr>
@@ -685,7 +685,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.13</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Thu Jul 3 11:49:02 UTC 2014.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.13</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Thu Jul 3 12:16:49 UTC 2014.</small>
     </p>
    </footer>
   </div>

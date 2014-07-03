@@ -352,7 +352,7 @@
                                             <a id="method_parseParagraph"></a>
                         <div class="element clickable method private  method_parseParagraph" data-toggle="collapse" data-target=".method_parseParagraph .collapse">
                             <h2>Parse paragraph node</h2>
-                            <pre>parseParagraph(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles) : \PhpOffice\PhpWord\Element\TextRun</pre>
+                            <pre>parseParagraph(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, &$styles) : \PhpOffice\PhpWord\Element\TextRun</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -373,7 +373,7 @@
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -384,7 +384,7 @@
                                             <a id="method_parseHeading"></a>
                         <div class="element clickable method private  method_parseHeading" data-toggle="collapse" data-target=".method_parseHeading .collapse">
                             <h2>Parse heading node</h2>
-                            <pre>parseHeading(\PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles, string $argument1) : \PhpOffice\PhpWord\Element\TextRun</pre>
+                            <pre>parseHeading(\PhpOffice\PhpWord\Element\AbstractContainer $element, &$styles, string $argument1) : \PhpOffice\PhpWord\Element\TextRun</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -411,7 +411,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$argument1</h4>
@@ -426,7 +426,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             <a id="method_parseText"></a>
                         <div class="element clickable method private  method_parseText" data-toggle="collapse" data-target=".method_parseText .collapse">
                             <h2>Parse text node</h2>
-                            <pre>parseText(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles) : null</pre>
+                            <pre>parseText(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, &$styles) : null</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -447,7 +447,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -458,7 +458,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             <a id="method_parseProperty"></a>
                         <div class="element clickable method private  method_parseProperty" data-toggle="collapse" data-target=".method_parseProperty .collapse">
                             <h2>Parse property node</h2>
-                            <pre>parseProperty(array &$styles, string $argument1, string $argument2) : null</pre>
+                            <pre>parseProperty(&$styles, string $argument1, string $argument2) : null</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -471,7 +471,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$argument1</h4>
@@ -490,7 +490,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             <a id="method_parseTable"></a>
                         <div class="element clickable method private  method_parseTable" data-toggle="collapse" data-target=".method_parseTable .collapse">
                             <h2>Parse table node</h2>
-                            <pre>parseTable(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles, string $argument1) : \PhpOffice\PhpWord\Element\AbstractContainer</pre>
+                            <pre>parseTable(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, &$styles, string $argument1) : \PhpOffice\PhpWord\Element\AbstractContainer</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -520,7 +520,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$argument1</h4>
@@ -535,7 +535,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             <a id="method_parseList"></a>
                         <div class="element clickable method private  method_parseList" data-toggle="collapse" data-target=".method_parseList .collapse">
                             <h2>Parse list node</h2>
-                            <pre>parseList(array &$styles, array &$data, string $argument1) : null</pre>
+                            <pre>parseList(&$styles, &$data, string $argument1) : null</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -548,11 +548,11 @@ Heading1 - Heading6 are already defined somewhere</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$data</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$argument1</h4>
@@ -567,7 +567,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             <a id="method_parseListItem"></a>
                         <div class="element clickable method private  method_parseListItem" data-toggle="collapse" data-target=".method_parseListItem .collapse">
                             <h2>Parse list item node</h2>
-                            <pre>parseListItem(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, array &$styles, array $data) : null</pre>
+                            <pre>parseListItem(\DOMNode $node, \PhpOffice\PhpWord\Element\AbstractContainer $element, &$styles, array $data) : null</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
                             <div class="row collapse">
@@ -599,7 +599,7 @@ Heading1 - Heading6 are already defined somewhere</p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$styles</h4>
-                                                <code>array</code><p></p>
+                                                <code></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$data</h4>
@@ -661,7 +661,7 @@ Heading1 - Heading6 are already defined somewhere</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 03 Jul 2014 11:53:41 +0000.<br/>
+            generated on Thu, 03 Jul 2014 12:20:20 +0000.<br/>
     </footer>
     </body>
 </html>

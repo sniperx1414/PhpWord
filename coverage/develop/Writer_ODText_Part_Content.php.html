@@ -221,10 +221,10 @@
      <tr><td><div align="right"><a name="23"></a><a href="#23">23</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Element\TextRun;</td></tr>
      <tr><td><div align="right"><a name="24"></a><a href="#24">24</a></div></td><td class="codeLine">use PhpOffice\PhpWord\PhpWord;</td></tr>
      <tr><td><div align="right"><a name="25"></a><a href="#25">25</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Shared\XMLWriter;</td></tr>
-     <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style\Font;</td></tr>
-     <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style\Paragraph;</td></tr>
-     <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style\Table as TableStyle;</td></tr>
-     <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style;</td></tr>
+     <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style;</td></tr>
+     <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style\Font;</td></tr>
+     <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style\Paragraph;</td></tr>
+     <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Style\Table as TableStyle;</td></tr>
      <tr><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Writer\ODText\Element\Container;</td></tr>
      <tr><td><div align="right"><a name="31"></a><a href="#31">31</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Writer\ODText\Style\Paragraph as ParagraphStyleWriter;</td></tr>
      <tr><td><div align="right"><a name="32"></a><a href="#32">32</a></div></td><td class="codeLine"></td></tr>
@@ -388,8 +388,8 @@
      <tr><td><div align="right"><a name="190"></a><a href="#190">190</a></div></td><td class="codeLine">     * Table style can be null or string of the style name</td></tr>
      <tr><td><div align="right"><a name="191"></a><a href="#191">191</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="192"></a><a href="#192">192</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\AbstractContainer $container</td></tr>
-     <tr><td><div align="right"><a name="193"></a><a href="#193">193</a></div></td><td class="codeLine">     * @param int $paragraphStyleCount</td></tr>
-     <tr><td><div align="right"><a name="194"></a><a href="#194">194</a></div></td><td class="codeLine">     * @param int $fontStyleCount</td></tr>
+     <tr><td><div align="right"><a name="193"></a><a href="#193">193</a></div></td><td class="codeLine">     * @param int &amp;$paragraphStyleCount</td></tr>
+     <tr><td><div align="right"><a name="194"></a><a href="#194">194</a></div></td><td class="codeLine">     * @param int &amp;$fontStyleCount</td></tr>
      <tr><td><div align="right"><a name="195"></a><a href="#195">195</a></div></td><td class="codeLine">     * @return void</td></tr>
      <tr><td><div align="right"><a name="196"></a><a href="#196">196</a></div></td><td class="codeLine">     * @todo Simplify the logic</td></tr>
      <tr><td><div align="right"><a name="197"></a><a href="#197">197</a></div></td><td class="codeLine">     */</td></tr>
@@ -421,9 +421,9 @@
      <tr><td><div align="right"><a name="223"></a><a href="#223">223</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="224"></a><a href="#224">224</a></div></td><td class="codeLine">     * Get style of individual element</td></tr>
      <tr><td><div align="right"><a name="225"></a><a href="#225">225</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="226"></a><a href="#226">226</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\Text $element</td></tr>
-     <tr><td><div align="right"><a name="227"></a><a href="#227">227</a></div></td><td class="codeLine">     * @param int $paragraphStyleCount</td></tr>
-     <tr><td><div align="right"><a name="228"></a><a href="#228">228</a></div></td><td class="codeLine">     * @param int $fontStyleCount</td></tr>
+     <tr><td><div align="right"><a name="226"></a><a href="#226">226</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Element\Text &amp;$element</td></tr>
+     <tr><td><div align="right"><a name="227"></a><a href="#227">227</a></div></td><td class="codeLine">     * @param int &amp;$paragraphStyleCount</td></tr>
+     <tr><td><div align="right"><a name="228"></a><a href="#228">228</a></div></td><td class="codeLine">     * @param int &amp;$fontStyleCount</td></tr>
      <tr><td><div align="right"><a name="229"></a><a href="#229">229</a></div></td><td class="codeLine">     * @return void</td></tr>
      <tr><td><div align="right"><a name="230"></a><a href="#230">230</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="231"></a><a href="#231">231</a></div></td><td class="codeLine">    private function getElementStyle(&amp;$element, &amp;$paragraphStyleCount, &amp;$fontStyleCount)</td></tr>
@@ -459,7 +459,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.13</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Thu Jul 3 11:49:02 UTC 2014.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.13</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Thu Jul 3 12:16:49 UTC 2014.</small>
     </p>
    </footer>
   </div>
