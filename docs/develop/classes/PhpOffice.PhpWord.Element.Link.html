@@ -167,6 +167,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_isInternal" title="isInternal :: is internal">
+            <span class="description">is internal</span><pre>isInternal</pre>
+        </a>
+    </li>
+
                                                                                                         <li class="method public inherited">
         <a href="#method_getPhpWord" title="getPhpWord :: Get PhpWord">
             <span class="description">Get PhpWord</span><pre>getPhpWord</pre>
@@ -261,7 +267,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_setNewStyle" title="setNewStyle :: Set new style value">
                                 <span class="description">Set new style value</span><pre>setNewStyle</pre>
                             </a>
@@ -275,7 +281,7 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
                             <a href="#method_getMediaPart" title="getMediaPart :: Return media element (image, object, link) container name">
                                 <span class="description">Return media element (image, object, link) container name</span><pre>getMediaPart</pre>
                             </a>
@@ -320,7 +326,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>Create a new Link Element</h2>
-                            <pre>__construct(string $source, string $text = null, mixed $fontStyle = null, mixed $paragraphStyle = null) </pre>
+                            <pre>__construct(string $source, string $text = null, mixed $fontStyle = null, mixed $paragraphStyle = null, $internal = false) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -353,6 +359,10 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$paragraphStyle</h4>
                                                 <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$internal</h4>
+                                                <code></code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -591,6 +601,32 @@
                                     
                                                                             <h3>Response</h3>
                                         <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_isInternal"></a>
+                        <div class="element clickable method public  method_isInternal" data-toggle="collapse" data-target=".method_isInternal .collapse">
+                            <h2>is internal</h2>
+                            <pre>isInternal() : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -1258,6 +1294,32 @@
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_internal"> </a>
+                            <div class="element clickable property  protected property_internal" data-toggle="collapse" data-target=".property_internal .collapse">
+                                <h2>Has internal flag - anchor to internal bookmark</h2>
+                                <pre>internal : bool</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>bool</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_phpWord"> </a>
                             <div class="element clickable property  protected property_phpWord inherited" data-toggle="collapse" data-target=".property_phpWord .collapse">
                                 <h2>PhpWord object</h2>
@@ -1542,7 +1604,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 04 Jul 2014 13:03:27 +0000.<br/>
+            generated on Sun, 06 Jul 2014 20:22:08 +0000.<br/>
     </footer>
     </body>
 </html>
