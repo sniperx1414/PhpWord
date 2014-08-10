@@ -325,7 +325,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#326">createSection($settings = null)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#325">createSection($settings = null)</a></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -339,7 +339,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#338">getDocumentProperties()</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#337">getDocumentProperties()</a></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -353,7 +353,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#351">setDocumentProperties($documentProperties)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#350">setDocumentProperties($documentProperties)</a></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -670,64 +670,63 @@
      <tr class="success popin" data-title="1 test covers line 297" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="297"></a><a href="#297">297</a></div></td><td class="codeLine">            'PDF'       =&gt; 'application/pdf',</td></tr>
      <tr class="success popin" data-title="1 test covers line 298" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="298"></a><a href="#298">298</a></div></td><td class="codeLine">        );</td></tr>
      <tr><td><div align="right"><a name="299"></a><a href="#299">299</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="300"></a><a href="#300">300</a></div></td><td class="codeLine">        /** @var \PhpOffice\PhpWord\Writer\WriterInterface $writer */</td></tr>
-     <tr class="success popin" data-title="1 test covers line 301" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="301"></a><a href="#301">301</a></div></td><td class="codeLine">        $writer = IOFactory::createWriter($this, $format);</td></tr>
-     <tr><td><div align="right"><a name="302"></a><a href="#302">302</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 303" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="303"></a><a href="#303">303</a></div></td><td class="codeLine">        if ($download === true) {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 304" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="304"></a><a href="#304">304</a></div></td><td class="codeLine">            header(&quot;Content-Description: File Transfer&quot;);</td></tr>
-     <tr class="success popin" data-title="1 test covers line 305" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="305"></a><a href="#305">305</a></div></td><td class="codeLine">            header('Content-Disposition: attachment; filename=&quot;' . $filename . '&quot;');</td></tr>
-     <tr class="success popin" data-title="1 test covers line 306" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="306"></a><a href="#306">306</a></div></td><td class="codeLine">            header('Content-Type: ' . $mime[$format]);</td></tr>
-     <tr class="success popin" data-title="1 test covers line 307" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="307"></a><a href="#307">307</a></div></td><td class="codeLine">            header('Content-Transfer-Encoding: binary');</td></tr>
-     <tr class="success popin" data-title="1 test covers line 308" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="308"></a><a href="#308">308</a></div></td><td class="codeLine">            header('Cache-Control: must-revalidate, post-check=0, pre-check=0');</td></tr>
-     <tr class="success popin" data-title="1 test covers line 309" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="309"></a><a href="#309">309</a></div></td><td class="codeLine">            header('Expires: 0');</td></tr>
-     <tr class="success popin" data-title="1 test covers line 310" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="310"></a><a href="#310">310</a></div></td><td class="codeLine">            $filename = 'php://output'; // Change filename to force download</td></tr>
-     <tr class="success popin" data-title="1 test covers line 311" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="311"></a><a href="#311">311</a></div></td><td class="codeLine">        }</td></tr>
-     <tr><td><div align="right"><a name="312"></a><a href="#312">312</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 313" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="313"></a><a href="#313">313</a></div></td><td class="codeLine">        $writer-&gt;save($filename);</td></tr>
-     <tr><td><div align="right"><a name="314"></a><a href="#314">314</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 315" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="315"></a><a href="#315">315</a></div></td><td class="codeLine">        return true;</td></tr>
-     <tr class="warning"><td><div align="right"><a name="316"></a><a href="#316">316</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="317"></a><a href="#317">317</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="318"></a><a href="#318">318</a></div></td><td class="codeLine">    /**</td></tr>
-     <tr><td><div align="right"><a name="319"></a><a href="#319">319</a></div></td><td class="codeLine">     * Create new section</td></tr>
-     <tr><td><div align="right"><a name="320"></a><a href="#320">320</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="321"></a><a href="#321">321</a></div></td><td class="codeLine">     * @param array $settings</td></tr>
-     <tr><td><div align="right"><a name="322"></a><a href="#322">322</a></div></td><td class="codeLine">     * @return \PhpOffice\PhpWord\Element\Section</td></tr>
-     <tr><td><div align="right"><a name="323"></a><a href="#323">323</a></div></td><td class="codeLine">     * @deprecated 0.10.0</td></tr>
-     <tr><td><div align="right"><a name="324"></a><a href="#324">324</a></div></td><td class="codeLine">     * @codeCoverageIgnore</td></tr>
-     <tr><td><div align="right"><a name="325"></a><a href="#325">325</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="326"></a><a href="#326">326</a></div></td><td class="codeLine">    public function createSection($settings = null)</td></tr>
-     <tr><td><div align="right"><a name="327"></a><a href="#327">327</a></div></td><td class="codeLine">    {</td></tr>
-     <tr><td><div align="right"><a name="328"></a><a href="#328">328</a></div></td><td class="codeLine">        return $this-&gt;addSection($settings);</td></tr>
-     <tr><td><div align="right"><a name="329"></a><a href="#329">329</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="330"></a><a href="#330">330</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="331"></a><a href="#331">331</a></div></td><td class="codeLine">    /**</td></tr>
-     <tr><td><div align="right"><a name="332"></a><a href="#332">332</a></div></td><td class="codeLine">     * Get document properties object</td></tr>
-     <tr><td><div align="right"><a name="333"></a><a href="#333">333</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="334"></a><a href="#334">334</a></div></td><td class="codeLine">     * @return \PhpOffice\PhpWord\Metadata\DocInfo</td></tr>
-     <tr><td><div align="right"><a name="335"></a><a href="#335">335</a></div></td><td class="codeLine">     * @deprecated 0.12.0</td></tr>
-     <tr><td><div align="right"><a name="336"></a><a href="#336">336</a></div></td><td class="codeLine">     * @codeCoverageIgnore</td></tr>
-     <tr><td><div align="right"><a name="337"></a><a href="#337">337</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="338"></a><a href="#338">338</a></div></td><td class="codeLine">    public function getDocumentProperties()</td></tr>
-     <tr><td><div align="right"><a name="339"></a><a href="#339">339</a></div></td><td class="codeLine">    {</td></tr>
-     <tr><td><div align="right"><a name="340"></a><a href="#340">340</a></div></td><td class="codeLine">        return $this-&gt;getDocInfo();</td></tr>
-     <tr><td><div align="right"><a name="341"></a><a href="#341">341</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="342"></a><a href="#342">342</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="343"></a><a href="#343">343</a></div></td><td class="codeLine">    /**</td></tr>
-     <tr><td><div align="right"><a name="344"></a><a href="#344">344</a></div></td><td class="codeLine">     * Set document properties object</td></tr>
-     <tr><td><div align="right"><a name="345"></a><a href="#345">345</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="346"></a><a href="#346">346</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Metadata\DocInfo $documentProperties</td></tr>
-     <tr><td><div align="right"><a name="347"></a><a href="#347">347</a></div></td><td class="codeLine">     * @return self</td></tr>
-     <tr><td><div align="right"><a name="348"></a><a href="#348">348</a></div></td><td class="codeLine">     * @deprecated 0.12.0</td></tr>
-     <tr><td><div align="right"><a name="349"></a><a href="#349">349</a></div></td><td class="codeLine">     * @codeCoverageIgnore</td></tr>
-     <tr><td><div align="right"><a name="350"></a><a href="#350">350</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="351"></a><a href="#351">351</a></div></td><td class="codeLine">    public function setDocumentProperties($documentProperties)</td></tr>
-     <tr><td><div align="right"><a name="352"></a><a href="#352">352</a></div></td><td class="codeLine">    {</td></tr>
-     <tr><td><div align="right"><a name="353"></a><a href="#353">353</a></div></td><td class="codeLine">        $this-&gt;metadata['Document'] = $documentProperties;</td></tr>
-     <tr><td><div align="right"><a name="354"></a><a href="#354">354</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="355"></a><a href="#355">355</a></div></td><td class="codeLine">        return $this;</td></tr>
-     <tr><td><div align="right"><a name="356"></a><a href="#356">356</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="357"></a><a href="#357">357</a></div></td><td class="codeLine">}</td></tr>
+     <tr class="success popin" data-title="1 test covers line 300" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="300"></a><a href="#300">300</a></div></td><td class="codeLine">        $writer = IOFactory::createWriter($this, $format);</td></tr>
+     <tr><td><div align="right"><a name="301"></a><a href="#301">301</a></div></td><td class="codeLine"></td></tr>
+     <tr class="success popin" data-title="1 test covers line 302" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="302"></a><a href="#302">302</a></div></td><td class="codeLine">        if ($download === true) {</td></tr>
+     <tr class="success popin" data-title="1 test covers line 303" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="303"></a><a href="#303">303</a></div></td><td class="codeLine">            header(&quot;Content-Description: File Transfer&quot;);</td></tr>
+     <tr class="success popin" data-title="1 test covers line 304" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="304"></a><a href="#304">304</a></div></td><td class="codeLine">            header('Content-Disposition: attachment; filename=&quot;' . $filename . '&quot;');</td></tr>
+     <tr class="success popin" data-title="1 test covers line 305" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="305"></a><a href="#305">305</a></div></td><td class="codeLine">            header('Content-Type: ' . $mime[$format]);</td></tr>
+     <tr class="success popin" data-title="1 test covers line 306" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="306"></a><a href="#306">306</a></div></td><td class="codeLine">            header('Content-Transfer-Encoding: binary');</td></tr>
+     <tr class="success popin" data-title="1 test covers line 307" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="307"></a><a href="#307">307</a></div></td><td class="codeLine">            header('Cache-Control: must-revalidate, post-check=0, pre-check=0');</td></tr>
+     <tr class="success popin" data-title="1 test covers line 308" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="308"></a><a href="#308">308</a></div></td><td class="codeLine">            header('Expires: 0');</td></tr>
+     <tr class="success popin" data-title="1 test covers line 309" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="309"></a><a href="#309">309</a></div></td><td class="codeLine">            $filename = 'php://output'; // Change filename to force download</td></tr>
+     <tr class="success popin" data-title="1 test covers line 310" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="310"></a><a href="#310">310</a></div></td><td class="codeLine">        }</td></tr>
+     <tr><td><div align="right"><a name="311"></a><a href="#311">311</a></div></td><td class="codeLine"></td></tr>
+     <tr class="success popin" data-title="1 test covers line 312" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="312"></a><a href="#312">312</a></div></td><td class="codeLine">        $writer-&gt;save($filename);</td></tr>
+     <tr><td><div align="right"><a name="313"></a><a href="#313">313</a></div></td><td class="codeLine"></td></tr>
+     <tr class="success popin" data-title="1 test covers line 314" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\PhpWordTest::testSave&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="314"></a><a href="#314">314</a></div></td><td class="codeLine">        return true;</td></tr>
+     <tr class="warning"><td><div align="right"><a name="315"></a><a href="#315">315</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="316"></a><a href="#316">316</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="317"></a><a href="#317">317</a></div></td><td class="codeLine">    /**</td></tr>
+     <tr><td><div align="right"><a name="318"></a><a href="#318">318</a></div></td><td class="codeLine">     * Create new section</td></tr>
+     <tr><td><div align="right"><a name="319"></a><a href="#319">319</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="320"></a><a href="#320">320</a></div></td><td class="codeLine">     * @param array $settings</td></tr>
+     <tr><td><div align="right"><a name="321"></a><a href="#321">321</a></div></td><td class="codeLine">     * @return \PhpOffice\PhpWord\Element\Section</td></tr>
+     <tr><td><div align="right"><a name="322"></a><a href="#322">322</a></div></td><td class="codeLine">     * @deprecated 0.10.0</td></tr>
+     <tr><td><div align="right"><a name="323"></a><a href="#323">323</a></div></td><td class="codeLine">     * @codeCoverageIgnore</td></tr>
+     <tr><td><div align="right"><a name="324"></a><a href="#324">324</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="325"></a><a href="#325">325</a></div></td><td class="codeLine">    public function createSection($settings = null)</td></tr>
+     <tr><td><div align="right"><a name="326"></a><a href="#326">326</a></div></td><td class="codeLine">    {</td></tr>
+     <tr><td><div align="right"><a name="327"></a><a href="#327">327</a></div></td><td class="codeLine">        return $this-&gt;addSection($settings);</td></tr>
+     <tr><td><div align="right"><a name="328"></a><a href="#328">328</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="329"></a><a href="#329">329</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="330"></a><a href="#330">330</a></div></td><td class="codeLine">    /**</td></tr>
+     <tr><td><div align="right"><a name="331"></a><a href="#331">331</a></div></td><td class="codeLine">     * Get document properties object</td></tr>
+     <tr><td><div align="right"><a name="332"></a><a href="#332">332</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="333"></a><a href="#333">333</a></div></td><td class="codeLine">     * @return \PhpOffice\PhpWord\Metadata\DocInfo</td></tr>
+     <tr><td><div align="right"><a name="334"></a><a href="#334">334</a></div></td><td class="codeLine">     * @deprecated 0.12.0</td></tr>
+     <tr><td><div align="right"><a name="335"></a><a href="#335">335</a></div></td><td class="codeLine">     * @codeCoverageIgnore</td></tr>
+     <tr><td><div align="right"><a name="336"></a><a href="#336">336</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="337"></a><a href="#337">337</a></div></td><td class="codeLine">    public function getDocumentProperties()</td></tr>
+     <tr><td><div align="right"><a name="338"></a><a href="#338">338</a></div></td><td class="codeLine">    {</td></tr>
+     <tr><td><div align="right"><a name="339"></a><a href="#339">339</a></div></td><td class="codeLine">        return $this-&gt;getDocInfo();</td></tr>
+     <tr><td><div align="right"><a name="340"></a><a href="#340">340</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="341"></a><a href="#341">341</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="342"></a><a href="#342">342</a></div></td><td class="codeLine">    /**</td></tr>
+     <tr><td><div align="right"><a name="343"></a><a href="#343">343</a></div></td><td class="codeLine">     * Set document properties object</td></tr>
+     <tr><td><div align="right"><a name="344"></a><a href="#344">344</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="345"></a><a href="#345">345</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Metadata\DocInfo $documentProperties</td></tr>
+     <tr><td><div align="right"><a name="346"></a><a href="#346">346</a></div></td><td class="codeLine">     * @return self</td></tr>
+     <tr><td><div align="right"><a name="347"></a><a href="#347">347</a></div></td><td class="codeLine">     * @deprecated 0.12.0</td></tr>
+     <tr><td><div align="right"><a name="348"></a><a href="#348">348</a></div></td><td class="codeLine">     * @codeCoverageIgnore</td></tr>
+     <tr><td><div align="right"><a name="349"></a><a href="#349">349</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="350"></a><a href="#350">350</a></div></td><td class="codeLine">    public function setDocumentProperties($documentProperties)</td></tr>
+     <tr><td><div align="right"><a name="351"></a><a href="#351">351</a></div></td><td class="codeLine">    {</td></tr>
+     <tr><td><div align="right"><a name="352"></a><a href="#352">352</a></div></td><td class="codeLine">        $this-&gt;metadata['Document'] = $documentProperties;</td></tr>
+     <tr><td><div align="right"><a name="353"></a><a href="#353">353</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="354"></a><a href="#354">354</a></div></td><td class="codeLine">        return $this;</td></tr>
+     <tr><td><div align="right"><a name="355"></a><a href="#355">355</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="356"></a><a href="#356">356</a></div></td><td class="codeLine">}</td></tr>
 
     </tbody>
    </table>
@@ -739,7 +738,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.15</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Sun Aug 10 16:35:25 UTC 2014.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.15</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Sun Aug 10 16:50:15 UTC 2014.</small>
     </p>
    </footer>
   </div>
