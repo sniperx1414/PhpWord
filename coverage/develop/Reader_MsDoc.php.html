@@ -752,7 +752,7 @@
      <tr class="danger"><td><div align="right"><a name="318"></a><a href="#318">318</a></div></td><td class="codeLine">                $pos = $this-&gt;readBlockFibRgFcLcb($data, $pos, self::VERSION_2000);</td></tr>
      <tr class="danger"><td><div align="right"><a name="319"></a><a href="#319">319</a></div></td><td class="codeLine">                $pos = $this-&gt;readBlockFibRgFcLcb($data, $pos, self::VERSION_2002);</td></tr>
      <tr class="danger"><td><div align="right"><a name="320"></a><a href="#320">320</a></div></td><td class="codeLine">                break;</td></tr>
-     <tr class="danger"><td><div align="right"><a name="321"></a><a href="#321">321</a></div></td><td class="codeLine">            case 0x00A4 :</td></tr>
+     <tr class="danger"><td><div align="right"><a name="321"></a><a href="#321">321</a></div></td><td class="codeLine">            case 0x00A4:</td></tr>
      <tr class="danger"><td><div align="right"><a name="322"></a><a href="#322">322</a></div></td><td class="codeLine">                $pos = $this-&gt;readBlockFibRgFcLcb($data, $pos, self::VERSION_97);</td></tr>
      <tr class="danger"><td><div align="right"><a name="323"></a><a href="#323">323</a></div></td><td class="codeLine">                $pos = $this-&gt;readBlockFibRgFcLcb($data, $pos, self::VERSION_2000);</td></tr>
      <tr class="danger"><td><div align="right"><a name="324"></a><a href="#324">324</a></div></td><td class="codeLine">                $pos = $this-&gt;readBlockFibRgFcLcb($data, $pos, self::VERSION_2002);</td></tr>
@@ -1872,10 +1872,10 @@
      <tr class="danger"><td><div align="right"><a name="1438"></a><a href="#1438">1438</a></div></td><td class="codeLine">            $aPnBteChpx[$inc] = self::getInt4d($this-&gt;data1Table, $posMem);</td></tr>
      <tr class="danger"><td><div align="right"><a name="1439"></a><a href="#1439">1439</a></div></td><td class="codeLine">            $posMem += 4;</td></tr>
      <tr class="danger"><td><div align="right"><a name="1440"></a><a href="#1440">1440</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="danger"><td><div align="right"><a name="1441"></a><a href="#1441">1441</a></div></td><td class="codeLine">        $PnFkpChpx = self::getInt4d($this-&gt;data1Table, $posMem);</td></tr>
+     <tr class="danger"><td><div align="right"><a name="1441"></a><a href="#1441">1441</a></div></td><td class="codeLine">        $pnFkpChpx = self::getInt4d($this-&gt;data1Table, $posMem);</td></tr>
      <tr class="danger"><td><div align="right"><a name="1442"></a><a href="#1442">1442</a></div></td><td class="codeLine">        $posMem += 4;</td></tr>
      <tr><td><div align="right"><a name="1443"></a><a href="#1443">1443</a></div></td><td class="codeLine"></td></tr>
-     <tr class="danger"><td><div align="right"><a name="1444"></a><a href="#1444">1444</a></div></td><td class="codeLine">        $offsetBase = $PnFkpChpx * 512;</td></tr>
+     <tr class="danger"><td><div align="right"><a name="1444"></a><a href="#1444">1444</a></div></td><td class="codeLine">        $offsetBase = $pnFkpChpx * 512;</td></tr>
      <tr class="danger"><td><div align="right"><a name="1445"></a><a href="#1445">1445</a></div></td><td class="codeLine">        $offset = $offsetBase;</td></tr>
      <tr><td><div align="right"><a name="1446"></a><a href="#1446">1446</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="1447"></a><a href="#1447">1447</a></div></td><td class="codeLine">        // ChpxFkp</td></tr>
@@ -2692,7 +2692,7 @@
      <tr class="danger"><td><div align="right"><a name="2258"></a><a href="#2258">2258</a></div></td><td class="codeLine">                            if (empty($sHYPERLINK)) {</td></tr>
      <tr class="danger"><td><div align="right"><a name="2259"></a><a href="#2259">2259</a></div></td><td class="codeLine">                                if (ord($sText[0]) &gt; 20) {</td></tr>
      <tr class="danger"><td><div align="right"><a name="2260"></a><a href="#2260">2260</a></div></td><td class="codeLine">                                    if (strpos(trim($sText), 'HYPERLINK &quot;') === 0) {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="2261"></a><a href="#2261">2261</a></div></td><td class="codeLine">                                       $sHYPERLINK = $sText;</td></tr>
+     <tr class="danger"><td><div align="right"><a name="2261"></a><a href="#2261">2261</a></div></td><td class="codeLine">                                        $sHYPERLINK = $sText;</td></tr>
      <tr class="danger"><td><div align="right"><a name="2262"></a><a href="#2262">2262</a></div></td><td class="codeLine">                                    } else {</td></tr>
      <tr class="danger"><td><div align="right"><a name="2263"></a><a href="#2263">2263</a></div></td><td class="codeLine">                                        $oSection-&gt;addText($sText, $styleFont);</td></tr>
      <tr><td><div align="right"><a name="2264"></a><a href="#2264">2264</a></div></td><td class="codeLine">                                        // print_r('&gt;addText&lt;'.$sText.'&gt;'.ord($sText[0]).EOL);</td></tr>
@@ -2784,7 +2784,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.15</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Sat Aug 16 10:41:50 UTC 2014.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.15</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Sat Aug 16 10:53:32 UTC 2014.</small>
     </p>
    </footer>
   </div>
