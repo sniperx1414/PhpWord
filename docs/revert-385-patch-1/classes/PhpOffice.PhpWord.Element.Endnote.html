@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Element\Endnote
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public inherited">
+        <a href="#method___construct" title="__construct :: Create new instance">
+            <span class="description">Create new instance</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getParagraphStyle" title="getParagraphStyle :: Get paragraph style">
+            <span class="description">Get paragraph style</span><pre>getParagraphStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getReferenceId" title="getReferenceId :: Get Footnote Reference ID">
+            <span class="description">Get Footnote Reference ID</span><pre>getReferenceId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setReferenceId" title="setReferenceId :: Set Footnote Reference ID">
+            <span class="description">Set Footnote Reference ID</span><pre>setReferenceId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method___call" title="__call :: Magic method to catch all &#039;addElement&#039; variation">
+            <span class="description">Magic method to catch all &#039;addElement&#039; variation</span><pre>__call</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_getElements" title="getElements :: Get all elements">
+            <span class="description">Get all elements</span><pre>getElements</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_countElements" title="countElements :: Count elements">
+            <span class="description">Count elements</span><pre>countElements</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                        <li class="method public inherited">
+        <a href="#method_addMemoryImage" title="addMemoryImage :: Add memory image element">
+            <span class="description">Add memory image element</span><pre>addMemoryImage</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_createTextRun" title="createTextRun :: Create textrun element">
+            <span class="description">Create textrun element</span><pre>createTextRun</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_createFootnote" title="createFootnote :: Create footnote element">
+            <span class="description">Create footnote element</span><pre>createFootnote</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getPhpWord" title="getPhpWord :: Get PhpWord">
+            <span class="description">Get PhpWord</span><pre>getPhpWord</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setPhpWord" title="setPhpWord :: Set PhpWord as reference">
+            <span class="description">Set PhpWord as reference</span><pre>setPhpWord</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getSectionId" title="getSectionId :: Get section number">
+            <span class="description">Get section number</span><pre>getSectionId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setDocPart" title="setDocPart :: Set doc part">
+            <span class="description">Set doc part</span><pre>setDocPart</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getDocPart" title="getDocPart :: Get doc part">
+            <span class="description">Get doc part</span><pre>getDocPart</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getDocPartId" title="getDocPartId :: Get doc part Id">
+            <span class="description">Get doc part Id</span><pre>getDocPartId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getElementIndex" title="getElementIndex :: Get element index">
+            <span class="description">Get element index</span><pre>getElementIndex</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setElementIndex" title="setElementIndex :: Set element index">
+            <span class="description">Set element index</span><pre>setElementIndex</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getElementId" title="getElementId :: Get element unique ID">
+            <span class="description">Get element unique ID</span><pre>getElementId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setElementId" title="setElementId :: Set element unique ID from 6 first digit of md5">
+            <span class="description">Set element unique ID from 6 first digit of md5</span><pre>setElementId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getRelationId" title="getRelationId :: Get relation Id">
+            <span class="description">Get relation Id</span><pre>getRelationId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setRelationId" title="setRelationId :: Set relation Id">
+            <span class="description">Set relation Id</span><pre>setRelationId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getNestedLevel" title="getNestedLevel :: Get nested level">
+            <span class="description">Get nested level</span><pre>getNestedLevel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setNestedLevel" title="setNestedLevel :: Set nested level">
+            <span class="description">Set nested level</span><pre>setNestedLevel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_isInSection" title="isInSection :: Check if element is located in Section doc part (as opposed to Header/Footer)">
+            <span class="description">Check if element is located in Section doc part (as opposed to Header/Footer)</span><pre>isInSection</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_addText" title="addText :: ">
+            <span class="description"></span><pre>addText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addTextRun" title="addTextRun :: ">
+            <span class="description"></span><pre>addTextRun</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addLink" title="addLink :: ">
+            <span class="description"></span><pre>addLink</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addPreserveText" title="addPreserveText :: ">
+            <span class="description"></span><pre>addPreserveText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addTextBreak" title="addTextBreak :: ">
+            <span class="description"></span><pre>addTextBreak</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addListItem" title="addListItem :: ">
+            <span class="description"></span><pre>addListItem</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addListItemRun" title="addListItemRun :: ">
+            <span class="description"></span><pre>addListItemRun</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addTable" title="addTable :: ">
+            <span class="description"></span><pre>addTable</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addImage" title="addImage :: ">
+            <span class="description"></span><pre>addImage</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addObject" title="addObject :: ">
+            <span class="description"></span><pre>addObject</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addFootnote" title="addFootnote :: ">
+            <span class="description"></span><pre>addFootnote</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addEndnote" title="addEndnote :: ">
+            <span class="description"></span><pre>addEndnote</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addCheckBox" title="addCheckBox :: ">
+            <span class="description"></span><pre>addCheckBox</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addTextBox" title="addTextBox :: ">
+            <span class="description"></span><pre>addTextBox</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addField" title="addField :: ">
+            <span class="description"></span><pre>addField</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addLine" title="addLine :: ">
+            <span class="description"></span><pre>addLine</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                <li class="method protected inherited">
+                            <a href="#method_addElement" title="addElement :: Add element">
+                                <span class="description">Add element</span><pre>addElement</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
+                            <a href="#method_setStyle" title="setStyle :: Set style value">
+                                <span class="description">Set style value</span><pre>setStyle</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                            <a href="#method_setElementNestedLevel" title="setElementNestedLevel :: Set element nested level based on container; add one when it&#039;s inside a cell">
+                                <span class="description">Set element nested level based on container; add one when it&#039;s inside a cell</span><pre>setElementNestedLevel</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_setElementRelationId" title="setElementRelationId :: Set relation Id">
+                                <span class="description">Set relation Id</span><pre>setElementRelationId</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_checkValidity" title="checkValidity :: Check if a method is allowed for the current container">
+                                <span class="description">Check if a method is allowed for the current container</span><pre>checkValidity</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_getMediaContainer" title="getMediaContainer :: Return media element (image, object, link) container name">
+                                <span class="description">Return media element (image, object, link) container name</span><pre>getMediaContainer</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Endnote</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Element.Footnote.html">\PhpOffice\PhpWord\Element\Footnote</a>
+                                                        </small>
+                <p class="short_description">Endnote element</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        since
+                                                                            </th>
+                                    <td>
+                                                                                    0.10.0
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                    </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Create new instance</h2>
+                            <pre>__construct(string|array|\PhpOffice\PhpWord\Style\Paragraph $paragraphStyle = null) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$paragraphStyle</h4>
+                                                <code>string|array|<a href="../classes/PhpOffice.PhpWord.Style.Paragraph.html">\PhpOffice\PhpWord\Style\Paragraph</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getParagraphStyle"></a>
+                        <div class="element clickable method public  method_getParagraphStyle inherited" data-toggle="collapse" data-target=".method_getParagraphStyle .collapse">
+                            <h2>Get paragraph style</h2>
+                            <pre>getParagraphStyle() : string|\PhpOffice\PhpWord\Style\Paragraph</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string|<a href="../classes/PhpOffice.PhpWord.Style.Paragraph.html">\PhpOffice\PhpWord\Style\Paragraph</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getReferenceId"></a>
+                        <div class="element clickable method public deprecated method_getReferenceId inherited" data-toggle="collapse" data-target=".method_getReferenceId .collapse">
+                            <h2>Get Footnote Reference ID</h2>
+                            <pre>getReferenceId() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setReferenceId"></a>
+                        <div class="element clickable method public deprecated method_setReferenceId inherited" data-toggle="collapse" data-target=".method_setReferenceId .collapse">
+                            <h2>Set Footnote Reference ID</h2>
+                            <pre>setReferenceId(int $rId) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$rId</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___call"></a>
+                        <div class="element clickable method public  method___call inherited" data-toggle="collapse" data-target=".method___call .collapse">
+                            <h2>Magic method to catch all &#039;addElement&#039; variation</h2>
+                            <pre>__call(mixed $function, mixed $args) : \PhpOffice\PhpWord\Element\AbstractElement</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This removes addText, addTextRun, etc. When adding new element, we have to
+add the model in the class docblock with <code>@method</code>.</p>
+<p>Warning: This makes capitalization matters, e.g. addCheckbox or addcheckbox won't work.</p></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$function</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addElement"></a>
+                        <div class="element clickable method protected  method_addElement inherited" data-toggle="collapse" data-target=".method_addElement .collapse">
+                            <h2>Add element</h2>
+                            <pre>addElement(string $elementName) : \PhpOffice\PhpWord\Element\AbstractElement</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Each element has different number of parameters passed</p></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$elementName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getElements"></a>
+                        <div class="element clickable method public  method_getElements inherited" data-toggle="collapse" data-target=".method_getElements .collapse">
+                            <h2>Get all elements</h2>
+                            <pre>getElements() : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_countElements"></a>
+                        <div class="element clickable method public  method_countElements inherited" data-toggle="collapse" data-target=".method_countElements .collapse">
+                            <h2>Count elements</h2>
+                            <pre>countElements() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setElementNestedLevel"></a>
+                        <div class="element clickable method private  method_setElementNestedLevel inherited" data-toggle="collapse" data-target=".method_setElementNestedLevel .collapse">
+                            <h2>Set element nested level based on container; add one when it&#039;s inside a cell</h2>
+                            <pre>setElementNestedLevel(\PhpOffice\PhpWord\Element\AbstractElement $element) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setElementRelationId"></a>
+                        <div class="element clickable method private  method_setElementRelationId inherited" data-toggle="collapse" data-target=".method_setElementRelationId .collapse">
+                            <h2>Set relation Id</h2>
+                            <pre>setElementRelationId(\PhpOffice\PhpWord\Element\AbstractElement $element, string $elementName, string $source) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$elementName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$source</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_checkValidity"></a>
+                        <div class="element clickable method private  method_checkValidity inherited" data-toggle="collapse" data-target=".method_checkValidity .collapse">
+                            <h2>Check if a method is allowed for the current container</h2>
+                            <pre>checkValidity(string $method) : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMediaContainer"></a>
+                        <div class="element clickable method private  method_getMediaContainer inherited" data-toggle="collapse" data-target=".method_getMediaContainer .collapse">
+                            <h2>Return media element (image, object, link) container name</h2>
+                            <pre>getMediaContainer() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>section|headerx|footerx|footnote|endnote</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addMemoryImage"></a>
+                        <div class="element clickable method public deprecated method_addMemoryImage inherited" data-toggle="collapse" data-target=".method_addMemoryImage .collapse">
+                            <h2>Add memory image element</h2>
+                            <pre>addMemoryImage(string $src, mixed $style = null) : \PhpOffice\PhpWord\Element\Image</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.9.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$src</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.Image.html">\PhpOffice\PhpWord\Element\Image</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_createTextRun"></a>
+                        <div class="element clickable method public deprecated method_createTextRun inherited" data-toggle="collapse" data-target=".method_createTextRun .collapse">
+                            <h2>Create textrun element</h2>
+                            <pre>createTextRun(mixed $paragraphStyle = null) : \PhpOffice\PhpWord\Element\TextRun</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$paragraphStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.TextRun.html">\PhpOffice\PhpWord\Element\TextRun</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_createFootnote"></a>
+                        <div class="element clickable method public deprecated method_createFootnote inherited" data-toggle="collapse" data-target=".method_createFootnote .collapse">
+                            <h2>Create footnote element</h2>
+                            <pre>createFootnote(mixed $paragraphStyle = null) : \PhpOffice\PhpWord\Element\Footnote</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$paragraphStyle</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.Footnote.html">\PhpOffice\PhpWord\Element\Footnote</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getPhpWord"></a>
+                        <div class="element clickable method public  method_getPhpWord inherited" data-toggle="collapse" data-target=".method_getPhpWord .collapse">
+                            <h2>Get PhpWord</h2>
+                            <pre>getPhpWord() : \PhpOffice\PhpWord\PhpWord</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPhpWord"></a>
+                        <div class="element clickable method public  method_setPhpWord inherited" data-toggle="collapse" data-target=".method_setPhpWord .collapse">
+                            <h2>Set PhpWord as reference</h2>
+                            <pre>setPhpWord(\PhpOffice\PhpWord\PhpWord &$phpWord = null) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$phpWord</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSectionId"></a>
+                        <div class="element clickable method public  method_getSectionId inherited" data-toggle="collapse" data-target=".method_getSectionId .collapse">
+                            <h2>Get section number</h2>
+                            <pre>getSectionId() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setDocPart"></a>
+                        <div class="element clickable method public  method_setDocPart inherited" data-toggle="collapse" data-target=".method_setDocPart .collapse">
+                            <h2>Set doc part</h2>
+                            <pre>setDocPart(string $docPart, int $docPartId = 1) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$docPart</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$docPartId</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDocPart"></a>
+                        <div class="element clickable method public  method_getDocPart inherited" data-toggle="collapse" data-target=".method_getDocPart .collapse">
+                            <h2>Get doc part</h2>
+                            <pre>getDocPart() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getDocPartId"></a>
+                        <div class="element clickable method public  method_getDocPartId inherited" data-toggle="collapse" data-target=".method_getDocPartId .collapse">
+                            <h2>Get doc part Id</h2>
+                            <pre>getDocPartId() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getElementIndex"></a>
+                        <div class="element clickable method public  method_getElementIndex inherited" data-toggle="collapse" data-target=".method_getElementIndex .collapse">
+                            <h2>Get element index</h2>
+                            <pre>getElementIndex() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setElementIndex"></a>
+                        <div class="element clickable method public  method_setElementIndex inherited" data-toggle="collapse" data-target=".method_setElementIndex .collapse">
+                            <h2>Set element index</h2>
+                            <pre>setElementIndex(int $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getElementId"></a>
+                        <div class="element clickable method public  method_getElementId inherited" data-toggle="collapse" data-target=".method_getElementId .collapse">
+                            <h2>Get element unique ID</h2>
+                            <pre>getElementId() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setElementId"></a>
+                        <div class="element clickable method public  method_setElementId inherited" data-toggle="collapse" data-target=".method_setElementId .collapse">
+                            <h2>Set element unique ID from 6 first digit of md5</h2>
+                            <pre>setElementId() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getRelationId"></a>
+                        <div class="element clickable method public  method_getRelationId inherited" data-toggle="collapse" data-target=".method_getRelationId .collapse">
+                            <h2>Get relation Id</h2>
+                            <pre>getRelationId() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setRelationId"></a>
+                        <div class="element clickable method public  method_setRelationId inherited" data-toggle="collapse" data-target=".method_setRelationId .collapse">
+                            <h2>Set relation Id</h2>
+                            <pre>setRelationId(int $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getNestedLevel"></a>
+                        <div class="element clickable method public  method_getNestedLevel inherited" data-toggle="collapse" data-target=".method_getNestedLevel .collapse">
+                            <h2>Get nested level</h2>
+                            <pre>getNestedLevel() : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setNestedLevel"></a>
+                        <div class="element clickable method public  method_setNestedLevel inherited" data-toggle="collapse" data-target=".method_setNestedLevel .collapse">
+                            <h2>Set nested level</h2>
+                            <pre>setNestedLevel(int $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_isInSection"></a>
+                        <div class="element clickable method public  method_isInSection inherited" data-toggle="collapse" data-target=".method_isInSection .collapse">
+                            <h2>Check if element is located in Section doc part (as opposed to Header/Footer)</h2>
+                            <pre>isInSection() : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setStyle"></a>
+                        <div class="element clickable method protected  method_setStyle inherited" data-toggle="collapse" data-target=".method_setStyle .collapse">
+                            <h2>Set style value</h2>
+                            <pre>setStyle(mixed $styleObject, mixed $styleValue = null, bool $returnObject = false) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleObject</h4>
+                                                <code>mixed</code><p><p>Style object</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleValue</h4>
+                                                <code>mixed</code><p><p>Style value</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$returnObject</h4>
+                                                <code>bool</code><p><p>Always return object</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addText"></a>
+                        <div class="element clickable method public  method_addText inherited" data-toggle="collapse" data-target=".method_addText .collapse">
+                            <h2>addText</h2>
+                            <pre>addText(mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\Text</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Text</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTextRun"></a>
+                        <div class="element clickable method public  method_addTextRun inherited" data-toggle="collapse" data-target=".method_addTextRun .collapse">
+                            <h2>addTextRun</h2>
+                            <pre>addTextRun($pStyle =) : \PhpOffice\PhpWord\Element\TextRun</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\TextRun</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addLink"></a>
+                        <div class="element clickable method public  method_addLink inherited" data-toggle="collapse" data-target=".method_addLink .collapse">
+                            <h2>addLink</h2>
+                            <pre>addLink(mixed $target, $pStyle =) : \PhpOffice\PhpWord\Element\Link</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$target</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Link</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addPreserveText"></a>
+                        <div class="element clickable method public  method_addPreserveText inherited" data-toggle="collapse" data-target=".method_addPreserveText .collapse">
+                            <h2>addPreserveText</h2>
+                            <pre>addPreserveText(mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\PreserveText</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\PreserveText</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTextBreak"></a>
+                        <div class="element clickable method public  method_addTextBreak inherited" data-toggle="collapse" data-target=".method_addTextBreak .collapse">
+                            <h2>addTextBreak</h2>
+                            <pre>addTextBreak($pStyle =) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addListItem"></a>
+                        <div class="element clickable method public  method_addListItem inherited" data-toggle="collapse" data-target=".method_addListItem .collapse">
+                            <h2>addListItem</h2>
+                            <pre>addListItem(mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\ListItem</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\ListItem</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addListItemRun"></a>
+                        <div class="element clickable method public  method_addListItemRun inherited" data-toggle="collapse" data-target=".method_addListItemRun .collapse">
+                            <h2>addListItemRun</h2>
+                            <pre>addListItemRun($pStyle =) : \PhpOffice\PhpWord\Element\ListItemRun</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\ListItemRun</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTable"></a>
+                        <div class="element clickable method public  method_addTable inherited" data-toggle="collapse" data-target=".method_addTable .collapse">
+                            <h2>addTable</h2>
+                            <pre>addTable($style =) : \PhpOffice\PhpWord\Element\Table</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$style</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Table</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addImage"></a>
+                        <div class="element clickable method public  method_addImage inherited" data-toggle="collapse" data-target=".method_addImage .collapse">
+                            <h2>addImage</h2>
+                            <pre>addImage(mixed $source, $isWatermark =) : \PhpOffice\PhpWord\Element\Image</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$source</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$isWatermark</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Image</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addObject"></a>
+                        <div class="element clickable method public  method_addObject inherited" data-toggle="collapse" data-target=".method_addObject .collapse">
+                            <h2>addObject</h2>
+                            <pre>addObject(mixed $source, $style =) : Object</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$source</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$style</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>Object</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addFootnote"></a>
+                        <div class="element clickable method public  method_addFootnote inherited" data-toggle="collapse" data-target=".method_addFootnote .collapse">
+                            <h2>addFootnote</h2>
+                            <pre>addFootnote($pStyle =) : \PhpOffice\PhpWord\Element\Footnote</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Footnote</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addEndnote"></a>
+                        <div class="element clickable method public  method_addEndnote inherited" data-toggle="collapse" data-target=".method_addEndnote .collapse">
+                            <h2>addEndnote</h2>
+                            <pre>addEndnote($pStyle =) : \PhpOffice\PhpWord\Element\Endnote</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Endnote</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addCheckBox"></a>
+                        <div class="element clickable method public  method_addCheckBox inherited" data-toggle="collapse" data-target=".method_addCheckBox .collapse">
+                            <h2>addCheckBox</h2>
+                            <pre>addCheckBox(mixed $name, mixed $text, $pStyle =) : \PhpOffice\PhpWord\Element\CheckBox</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$pStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\CheckBox</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTextBox"></a>
+                        <div class="element clickable method public  method_addTextBox inherited" data-toggle="collapse" data-target=".method_addTextBox .collapse">
+                            <h2>addTextBox</h2>
+                            <pre>addTextBox($style =) : \PhpOffice\PhpWord\Element\TextBox</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$style</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\TextBox</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addField"></a>
+                        <div class="element clickable method public  method_addField inherited" data-toggle="collapse" data-target=".method_addField .collapse">
+                            <h2>addField</h2>
+                            <pre>addField($properties =) : \PhpOffice\PhpWord\Element\Field</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>, $options = array())</p></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$properties</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Field</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addLine"></a>
+                        <div class="element clickable method public  method_addLine inherited" data-toggle="collapse" data-target=".method_addLine .collapse">
+                            <h2>addLine</h2>
+                            <pre>addLine($lineStyle =) : \PhpOffice\PhpWord\Element\Line</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>=</h4>
+                                                <code>$lineStyle</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\PhpOffice\PhpWord\Element\Line</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_container"> </a>
+                            <div class="element clickable property  protected property_container inherited" data-toggle="collapse" data-target=".property_container .collapse">
+                                <h2>Container type Section|Header|Footer|Footnote|Endnote|Cell|TextRun|TextBox|ListItemRun</h2>
+                                <pre>container : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_paragraphStyle"> </a>
+                            <div class="element clickable property  protected property_paragraphStyle inherited" data-toggle="collapse" data-target=".property_paragraphStyle .collapse">
+                                <h2>Paragraph style</h2>
+                                <pre>paragraphStyle : string|\PhpOffice\PhpWord\Style\Paragraph</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string|<a href="../classes/PhpOffice.PhpWord.Style.Paragraph.html">\PhpOffice\PhpWord\Style\Paragraph</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_elements"> </a>
+                            <div class="element clickable property  protected property_elements inherited" data-toggle="collapse" data-target=".property_elements .collapse">
+                                <h2>Elements collection</h2>
+                                <pre>elements : array</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_phpWord"> </a>
+                            <div class="element clickable property  protected property_phpWord inherited" data-toggle="collapse" data-target=".property_phpWord .collapse">
+                                <h2>PhpWord object</h2>
+                                <pre>phpWord : \PhpOffice\PhpWord\PhpWord</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sectionId"> </a>
+                            <div class="element clickable property  protected property_sectionId inherited" data-toggle="collapse" data-target=".property_sectionId .collapse">
+                                <h2>Section Id</h2>
+                                <pre>sectionId : int</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_docPart"> </a>
+                            <div class="element clickable property  protected property_docPart inherited" data-toggle="collapse" data-target=".property_docPart .collapse">
+                                <h2>Document part type: section|header|footer</h2>
+                                <pre>docPart : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Used by textrun and cell container to determine where the element is
+located because it will affect the availability of other element,
+e.g. footnote will not be available when $docPart is header or footer.</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_docPartId"> </a>
+                            <div class="element clickable property  protected property_docPartId inherited" data-toggle="collapse" data-target=".property_docPartId .collapse">
+                                <h2>Document part Id</h2>
+                                <pre>docPartId : int</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>For header and footer, this will be = ($sectionId - 1) * 3 + $index
+because the max number of header/footer in every page is 3, i.e.
+AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_elementIndex"> </a>
+                            <div class="element clickable property  protected property_elementIndex inherited" data-toggle="collapse" data-target=".property_elementIndex .collapse">
+                                <h2>Index of element in the elements collection (start with 1)</h2>
+                                <pre>elementIndex : int</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_elementId"> </a>
+                            <div class="element clickable property  protected property_elementId inherited" data-toggle="collapse" data-target=".property_elementId .collapse">
+                                <h2>Unique Id for element</h2>
+                                <pre>elementId : int</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_relationId"> </a>
+                            <div class="element clickable property  protected property_relationId inherited" data-toggle="collapse" data-target=".property_relationId .collapse">
+                                <h2>Relation Id</h2>
+                                <pre>relationId : int</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_nestedLevel"> </a>
+                            <div class="element clickable property  private property_nestedLevel inherited" data-toggle="collapse" data-target=".property_nestedLevel .collapse">
+                                <h2>Depth of table container nested level; Primarily used for RTF writer/reader</h2>
+                                <pre>nestedLevel : int</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>0 = Not in a table; 1 = in a table; 2 = in a table inside another table, etc.</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\Element\Endnote"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.Element.html">Element</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Element.Endnote.html">Endnote</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Mon, 29 Sep 2014 15:34:39 +0000.<br/>
+    </footer>
+    </body>
+</html>
