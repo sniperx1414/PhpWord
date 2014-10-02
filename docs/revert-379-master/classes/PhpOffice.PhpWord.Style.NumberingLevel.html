@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Style\NumberingLevel
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_getLevel" title="getLevel :: Get level">
+            <span class="description">Get level</span><pre>getLevel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setLevel" title="setLevel :: Set level">
+            <span class="description">Set level</span><pre>setLevel</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getStart" title="getStart :: Get start">
+            <span class="description">Get start</span><pre>getStart</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setStart" title="setStart :: Set start">
+            <span class="description">Set start</span><pre>setStart</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFormat" title="getFormat :: Get format">
+            <span class="description">Get format</span><pre>getFormat</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setFormat" title="setFormat :: Set format">
+            <span class="description">Set format</span><pre>setFormat</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getRestart" title="getRestart :: Get start">
+            <span class="description">Get start</span><pre>getRestart</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setRestart" title="setRestart :: Set start">
+            <span class="description">Set start</span><pre>setRestart</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getPStyle" title="getPStyle :: Get related paragraph style">
+            <span class="description">Get related paragraph style</span><pre>getPStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setPStyle" title="setPStyle :: Set  related paragraph style">
+            <span class="description">Set  related paragraph style</span><pre>setPStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSuffix" title="getSuffix :: Get suffix">
+            <span class="description">Get suffix</span><pre>getSuffix</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSuffix" title="setSuffix :: Set suffix">
+            <span class="description">Set suffix</span><pre>setSuffix</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getText" title="getText :: Get text">
+            <span class="description">Get text</span><pre>getText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setText" title="setText :: Set text">
+            <span class="description">Set text</span><pre>setText</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAlign" title="getAlign :: Get align">
+            <span class="description">Get align</span><pre>getAlign</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setAlign" title="setAlign :: Set align">
+            <span class="description">Set align</span><pre>setAlign</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getLeft" title="getLeft :: Get left">
+            <span class="description">Get left</span><pre>getLeft</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setLeft" title="setLeft :: Set left">
+            <span class="description">Set left</span><pre>setLeft</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getHanging" title="getHanging :: Get hanging">
+            <span class="description">Get hanging</span><pre>getHanging</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setHanging" title="setHanging :: Set hanging">
+            <span class="description">Set hanging</span><pre>setHanging</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getTabPos" title="getTabPos :: Get tab">
+            <span class="description">Get tab</span><pre>getTabPos</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setTabPos" title="setTabPos :: Set tab">
+            <span class="description">Set tab</span><pre>setTabPos</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getFont" title="getFont :: Get font">
+            <span class="description">Get font</span><pre>getFont</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setFont" title="setFont :: Set font">
+            <span class="description">Set font</span><pre>setFont</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getHint" title="getHint :: Get hint">
+            <span class="description">Get hint</span><pre>getHint</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setHint" title="setHint :: Set hint">
+            <span class="description">Set hint</span><pre>setHint</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getStyleName" title="getStyleName :: Get style name">
+            <span class="description">Get style name</span><pre>getStyleName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setStyleName" title="setStyleName :: Set style name">
+            <span class="description">Set style name</span><pre>setStyleName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getIndex" title="getIndex :: Get index number">
+            <span class="description">Get index number</span><pre>getIndex</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setIndex" title="setIndex :: Set index number">
+            <span class="description">Set index number</span><pre>setIndex</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_isAuto" title="isAuto :: Get is automatic style flag">
+            <span class="description">Get is automatic style flag</span><pre>isAuto</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setAuto" title="setAuto :: Set is automatic style flag">
+            <span class="description">Set is automatic style flag</span><pre>setAuto</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setStyleValue" title="setStyleValue :: Set style value template method">
+            <span class="description">Set style value template method</span><pre>setStyleValue</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setStyleByArray" title="setStyleByArray :: Set style by using associative array">
+            <span class="description">Set style by using associative array</span><pre>setStyleByArray</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_setArrayStyle" title="setArrayStyle :: Set style using associative array">
+            <span class="description">Set style using associative array</span><pre>setArrayStyle</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                            <a href="#method_setNonEmptyVal" title="setNonEmptyVal :: Set default for null and empty value">
+                                <span class="description">Set default for null and empty value</span><pre>setNonEmptyVal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setBoolVal" title="setBoolVal :: Set bool value">
+                                <span class="description">Set bool value</span><pre>setBoolVal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setNumericVal" title="setNumericVal :: Set numeric value">
+                                <span class="description">Set numeric value</span><pre>setNumericVal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setIntVal" title="setIntVal :: Set integer value: Convert string that contains only numeric into integer">
+                                <span class="description">Set integer value: Convert string that contains only numeric into integer</span><pre>setIntVal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setFloatVal" title="setFloatVal :: Set float value: Convert string that contains only numeric into float">
+                                <span class="description">Set float value: Convert string that contains only numeric into float</span><pre>setFloatVal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setEnumVal" title="setEnumVal :: Set enum value">
+                                <span class="description">Set enum value</span><pre>setEnumVal</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setObjectVal" title="setObjectVal :: Set object value">
+                                <span class="description">Set object value</span><pre>setObjectVal</pre>
+                            </a>
+                        </li>
+                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>NumberingLevel</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Style.AbstractStyle.html">\PhpOffice\PhpWord\Style\AbstractStyle</a>
+                                                        </small>
+                <p class="short_description">Numbering level definition</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        link
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p><a href="http://www.schemacentral.com/sc/ooxml/e-w_lvl-1.html">http://www.schemacentral.com/sc/ooxml/e-w_lvl-1.html</a></p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        since
+                                                                            </th>
+                                    <td>
+                                                                                    0.10.0
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                    </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_getLevel"></a>
+                        <div class="element clickable method public  method_getLevel" data-toggle="collapse" data-target=".method_getLevel .collapse">
+                            <h2>Get level</h2>
+                            <pre>getLevel() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setLevel"></a>
+                        <div class="element clickable method public  method_setLevel" data-toggle="collapse" data-target=".method_setLevel .collapse">
+                            <h2>Set level</h2>
+                            <pre>setLevel(integer $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getStart"></a>
+                        <div class="element clickable method public  method_getStart" data-toggle="collapse" data-target=".method_getStart .collapse">
+                            <h2>Get start</h2>
+                            <pre>getStart() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setStart"></a>
+                        <div class="element clickable method public  method_setStart" data-toggle="collapse" data-target=".method_setStart .collapse">
+                            <h2>Set start</h2>
+                            <pre>setStart(integer $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getFormat"></a>
+                        <div class="element clickable method public  method_getFormat" data-toggle="collapse" data-target=".method_getFormat .collapse">
+                            <h2>Get format</h2>
+                            <pre>getFormat() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setFormat"></a>
+                        <div class="element clickable method public  method_setFormat" data-toggle="collapse" data-target=".method_setFormat .collapse">
+                            <h2>Set format</h2>
+                            <pre>setFormat(string $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getRestart"></a>
+                        <div class="element clickable method public  method_getRestart" data-toggle="collapse" data-target=".method_getRestart .collapse">
+                            <h2>Get start</h2>
+                            <pre>getRestart() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setRestart"></a>
+                        <div class="element clickable method public  method_setRestart" data-toggle="collapse" data-target=".method_setRestart .collapse">
+                            <h2>Set start</h2>
+                            <pre>setRestart(integer $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getPStyle"></a>
+                        <div class="element clickable method public  method_getPStyle" data-toggle="collapse" data-target=".method_getPStyle .collapse">
+                            <h2>Get related paragraph style</h2>
+                            <pre>getPStyle() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPStyle"></a>
+                        <div class="element clickable method public  method_setPStyle" data-toggle="collapse" data-target=".method_setPStyle .collapse">
+                            <h2>Set  related paragraph style</h2>
+                            <pre>setPStyle(string $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSuffix"></a>
+                        <div class="element clickable method public  method_getSuffix" data-toggle="collapse" data-target=".method_getSuffix .collapse">
+                            <h2>Get suffix</h2>
+                            <pre>getSuffix() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setSuffix"></a>
+                        <div class="element clickable method public  method_setSuffix" data-toggle="collapse" data-target=".method_setSuffix .collapse">
+                            <h2>Set suffix</h2>
+                            <pre>setSuffix(string $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getText"></a>
+                        <div class="element clickable method public  method_getText" data-toggle="collapse" data-target=".method_getText .collapse">
+                            <h2>Get text</h2>
+                            <pre>getText() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setText"></a>
+                        <div class="element clickable method public  method_setText" data-toggle="collapse" data-target=".method_setText .collapse">
+                            <h2>Set text</h2>
+                            <pre>setText(string $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getAlign"></a>
+                        <div class="element clickable method public  method_getAlign" data-toggle="collapse" data-target=".method_getAlign .collapse">
+                            <h2>Get align</h2>
+                            <pre>getAlign() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setAlign"></a>
+                        <div class="element clickable method public  method_setAlign" data-toggle="collapse" data-target=".method_setAlign .collapse">
+                            <h2>Set align</h2>
+                            <pre>setAlign(string $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getLeft"></a>
+                        <div class="element clickable method public  method_getLeft" data-toggle="collapse" data-target=".method_getLeft .collapse">
+                            <h2>Get left</h2>
+                            <pre>getLeft() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setLeft"></a>
+                        <div class="element clickable method public  method_setLeft" data-toggle="collapse" data-target=".method_setLeft .collapse">
+                            <h2>Set left</h2>
+                            <pre>setLeft(integer $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getHanging"></a>
+                        <div class="element clickable method public  method_getHanging" data-toggle="collapse" data-target=".method_getHanging .collapse">
+                            <h2>Get hanging</h2>
+                            <pre>getHanging() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setHanging"></a>
+                        <div class="element clickable method public  method_setHanging" data-toggle="collapse" data-target=".method_setHanging .collapse">
+                            <h2>Set hanging</h2>
+                            <pre>setHanging(integer $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getTabPos"></a>
+                        <div class="element clickable method public  method_getTabPos" data-toggle="collapse" data-target=".method_getTabPos .collapse">
+                            <h2>Get tab</h2>
+                            <pre>getTabPos() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTabPos"></a>
+                        <div class="element clickable method public  method_setTabPos" data-toggle="collapse" data-target=".method_setTabPos .collapse">
+                            <h2>Set tab</h2>
+                            <pre>setTabPos(integer $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getFont"></a>
+                        <div class="element clickable method public  method_getFont" data-toggle="collapse" data-target=".method_getFont .collapse">
+                            <h2>Get font</h2>
+                            <pre>getFont() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setFont"></a>
+                        <div class="element clickable method public  method_setFont" data-toggle="collapse" data-target=".method_setFont .collapse">
+                            <h2>Set font</h2>
+                            <pre>setFont(string $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getHint"></a>
+                        <div class="element clickable method public  method_getHint" data-toggle="collapse" data-target=".method_getHint .collapse">
+                            <h2>Get hint</h2>
+                            <pre>getHint() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setHint"></a>
+                        <div class="element clickable method public  method_setHint" data-toggle="collapse" data-target=".method_setHint .collapse">
+                            <h2>Set hint</h2>
+                            <pre>setHint(string $value = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getStyleName"></a>
+                        <div class="element clickable method public  method_getStyleName inherited" data-toggle="collapse" data-target=".method_getStyleName .collapse">
+                            <h2>Get style name</h2>
+                            <pre>getStyleName() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setStyleName"></a>
+                        <div class="element clickable method public  method_setStyleName inherited" data-toggle="collapse" data-target=".method_setStyleName .collapse">
+                            <h2>Set style name</h2>
+                            <pre>setStyleName(string $value) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getIndex"></a>
+                        <div class="element clickable method public  method_getIndex inherited" data-toggle="collapse" data-target=".method_getIndex .collapse">
+                            <h2>Get index number</h2>
+                            <pre>getIndex() : int|null</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int|null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setIndex"></a>
+                        <div class="element clickable method public  method_setIndex inherited" data-toggle="collapse" data-target=".method_setIndex .collapse">
+                            <h2>Set index number</h2>
+                            <pre>setIndex(int|null $value = null) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int|null</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_isAuto"></a>
+                        <div class="element clickable method public  method_isAuto inherited" data-toggle="collapse" data-target=".method_isAuto .collapse">
+                            <h2>Get is automatic style flag</h2>
+                            <pre>isAuto() : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setAuto"></a>
+                        <div class="element clickable method public  method_setAuto inherited" data-toggle="collapse" data-target=".method_setAuto .collapse">
+                            <h2>Set is automatic style flag</h2>
+                            <pre>setAuto(bool $value = true) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setStyleValue"></a>
+                        <div class="element clickable method public  method_setStyleValue inherited" data-toggle="collapse" data-target=".method_setStyleValue .collapse">
+                            <h2>Set style value template method</h2>
+                            <pre>setStyleValue(string $key, string $value) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Some child classes have their own specific overrides.
+Backward compability check for versions &lt; 0.10.0 which use underscore
+prefix for their private properties.
+Check if the set method is exists. Throws an exception?</p></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setStyleByArray"></a>
+                        <div class="element clickable method public  method_setStyleByArray inherited" data-toggle="collapse" data-target=".method_setStyleByArray .collapse">
+                            <h2>Set style by using associative array</h2>
+                            <pre>setStyleByArray(array $values = array()) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$values</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setNonEmptyVal"></a>
+                        <div class="element clickable method protected  method_setNonEmptyVal inherited" data-toggle="collapse" data-target=".method_setNonEmptyVal .collapse">
+                            <h2>Set default for null and empty value</h2>
+                            <pre>setNonEmptyVal(string $value, string $default) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p><p>(was: mixed)</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>string</code><p><p>(was: mixed)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>(was: mixed)</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setBoolVal"></a>
+                        <div class="element clickable method protected  method_setBoolVal inherited" data-toggle="collapse" data-target=".method_setBoolVal .collapse">
+                            <h2>Set bool value</h2>
+                            <pre>setBoolVal(bool $value, bool $default) : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setNumericVal"></a>
+                        <div class="element clickable method protected  method_setNumericVal inherited" data-toggle="collapse" data-target=".method_setNumericVal .collapse">
+                            <h2>Set numeric value</h2>
+                            <pre>setNumericVal(mixed $value, int|float|null $default = null) : int|float|null</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>int|float|null</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>int|float|null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setIntVal"></a>
+                        <div class="element clickable method protected  method_setIntVal inherited" data-toggle="collapse" data-target=".method_setIntVal .collapse">
+                            <h2>Set integer value: Convert string that contains only numeric into integer</h2>
+                            <pre>setIntVal(int|null $value, int|null $default = null) : int|null</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int|null</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>int|null</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>int|null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setFloatVal"></a>
+                        <div class="element clickable method protected  method_setFloatVal inherited" data-toggle="collapse" data-target=".method_setFloatVal .collapse">
+                            <h2>Set float value: Convert string that contains only numeric into float</h2>
+                            <pre>setFloatVal(mixed $value, float|null $default = null) : float|null</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>float|null</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>float|null</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setEnumVal"></a>
+                        <div class="element clickable method protected  method_setEnumVal inherited" data-toggle="collapse" data-target=".method_setEnumVal .collapse">
+                            <h2>Set enum value</h2>
+                            <pre>setEnumVal(mixed $value = null, array $enum = array(), mixed $default = null) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$enum</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setObjectVal"></a>
+                        <div class="element clickable method protected  method_setObjectVal inherited" data-toggle="collapse" data-target=".method_setObjectVal .collapse">
+                            <h2>Set object value</h2>
+                            <pre>setObjectVal(mixed $value, string $styleName, mixed &$style) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setArrayStyle"></a>
+                        <div class="element clickable method public deprecated method_setArrayStyle inherited" data-toggle="collapse" data-target=".method_setArrayStyle .collapse">
+                            <h2>Set style using associative array</h2>
+                            <pre>setArrayStyle(array $style = array()) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_level"> </a>
+                            <div class="element clickable property  private property_level" data-toggle="collapse" data-target=".property_level .collapse">
+                                <h2>Level number, 0 to 8 (total 9 levels)</h2>
+                                <pre>level : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_start"> </a>
+                            <div class="element clickable property  private property_start" data-toggle="collapse" data-target=".property_start .collapse">
+                                <h2>Starting value w:start</h2>
+                                <pre>start : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/e-w_start-1.html">http://www.schemacentral.com/sc/ooxml/e-w_start-1.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_format"> </a>
+                            <div class="element clickable property  private property_format" data-toggle="collapse" data-target=".property_format .collapse">
+                                <h2>Numbering format bullet|decimal|upperRoman|lowerRoman|upperLetter|lowerLetter</h2>
+                                <pre>format : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/t-w_ST_NumberFormat.html">http://www.schemacentral.com/sc/ooxml/t-w_ST_NumberFormat.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_restart"> </a>
+                            <div class="element clickable property  private property_restart" data-toggle="collapse" data-target=".property_restart .collapse">
+                                <h2>Restart numbering level symbol w:lvlRestart</h2>
+                                <pre>restart : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/e-w_lvlRestart-1.html">http://www.schemacentral.com/sc/ooxml/e-w_lvlRestart-1.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_pStyle"> </a>
+                            <div class="element clickable property  private property_pStyle" data-toggle="collapse" data-target=".property_pStyle .collapse">
+                                <h2>Related paragraph style</h2>
+                                <pre>pStyle : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/e-w_pStyle-2.html">http://www.schemacentral.com/sc/ooxml/e-w_pStyle-2.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_suffix"> </a>
+                            <div class="element clickable property  private property_suffix" data-toggle="collapse" data-target=".property_suffix .collapse">
+                                <h2>Content between numbering symbol and paragraph text</h2>
+                                <pre>suffix : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>tab|space|nothing</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/e-w_suff-1.html">http://www.schemacentral.com/sc/ooxml/e-w_suff-1.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_text"> </a>
+                            <div class="element clickable property  private property_text" data-toggle="collapse" data-target=".property_text .collapse">
+                                <h2>Numbering level text e.g. %1 for nonbullet or bullet character</h2>
+                                <pre>text : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/e-w_lvlText-1.html">http://www.schemacentral.com/sc/ooxml/e-w_lvlText-1.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_align"> </a>
+                            <div class="element clickable property  private property_align" data-toggle="collapse" data-target=".property_align .collapse">
+                                <h2>Align left|center|right|both</h2>
+                                <pre>align : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/e-w_lvlJc-1.html">http://www.schemacentral.com/sc/ooxml/e-w_lvlJc-1.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_left"> </a>
+                            <div class="element clickable property  private property_left" data-toggle="collapse" data-target=".property_left .collapse">
+                                <h2>Left</h2>
+                                <pre>left : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_hanging"> </a>
+                            <div class="element clickable property  private property_hanging" data-toggle="collapse" data-target=".property_hanging .collapse">
+                                <h2>Hanging</h2>
+                                <pre>hanging : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_tabPos"> </a>
+                            <div class="element clickable property  private property_tabPos" data-toggle="collapse" data-target=".property_tabPos .collapse">
+                                <h2>Tab position</h2>
+                                <pre>tabPos : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_font"> </a>
+                            <div class="element clickable property  private property_font" data-toggle="collapse" data-target=".property_font .collapse">
+                                <h2>Font family</h2>
+                                <pre>font : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_hint"> </a>
+                            <div class="element clickable property  private property_hint" data-toggle="collapse" data-target=".property_hint .collapse">
+                                <h2>Hint default|eastAsia|cs</h2>
+                                <pre>hint : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        link
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p><a href="http://www.schemacentral.com/sc/ooxml/a-w_hint-1.html">http://www.schemacentral.com/sc/ooxml/a-w_hint-1.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_styleName"> </a>
+                            <div class="element clickable property  protected property_styleName inherited" data-toggle="collapse" data-target=".property_styleName .collapse">
+                                <h2>Style name</h2>
+                                <pre>styleName : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_index"> </a>
+                            <div class="element clickable property  protected property_index inherited" data-toggle="collapse" data-target=".property_index .collapse">
+                                <h2>Index number in Style collection for named style</h2>
+                                <pre>index : int|null</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>This number starts from one and defined in Style::setStyleValues()</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int|null</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_aliases"> </a>
+                            <div class="element clickable property  protected property_aliases inherited" data-toggle="collapse" data-target=".property_aliases .collapse">
+                                <h2>Aliases</h2>
+                                <pre>aliases : array</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_isAuto"> </a>
+                            <div class="element clickable property  private property_isAuto inherited" data-toggle="collapse" data-target=".property_isAuto .collapse">
+                                <h2>Is this an automatic style? (Used primarily in OpenDocument driver)</h2>
+                                <pre>isAuto : bool</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        since
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>bool</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\Style\NumberingLevel"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.Style.html">Style</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Style.NumberingLevel.html">NumberingLevel</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Thu, 02 Oct 2014 15:49:01 +0000.<br/>
+    </footer>
+    </body>
+</html>
