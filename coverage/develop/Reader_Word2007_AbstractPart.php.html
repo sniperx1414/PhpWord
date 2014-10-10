@@ -58,11 +58,11 @@
       <td class="success small"><div align="right">11&nbsp;/&nbsp;13</div></td>
       <td class="success small"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
-        <div class="bar" style="width: 98.78%;"></div>
+        <div class="bar" style="width: 98.77%;"></div>
        </div>
 </td>
-      <td class="success small"><div align="right">98.78%</div></td>
-      <td class="success small"><div align="right">242&nbsp;/&nbsp;245</div></td>
+      <td class="success small"><div align="right">98.77%</div></td>
+      <td class="success small"><div align="right">240&nbsp;/&nbsp;243</div></td>
      </tr>
 
      <tr>
@@ -81,11 +81,11 @@
       <td class="success small"><div align="right">11&nbsp;/&nbsp;13</div></td>
       <td class="success small">68</td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
-        <div class="bar" style="width: 98.78%;"></div>
+        <div class="bar" style="width: 98.77%;"></div>
        </div>
 </td>
-      <td class="success small"><div align="right">98.78%</div></td>
-      <td class="success small"><div align="right">242&nbsp;/&nbsp;245</div></td>
+      <td class="success small"><div align="right">98.77%</div></td>
+      <td class="success small"><div align="right">240&nbsp;/&nbsp;243</div></td>
      </tr>
 
      <tr>
@@ -306,7 +306,7 @@
        </div>
 </td>
       <td class="success small"><div align="right">100.00%</div></td>
-      <td class="success small"><div align="right">7&nbsp;/&nbsp;7</div></td>
+      <td class="success small"><div align="right">5&nbsp;/&nbsp;5</div></td>
      </tr>
 
 
@@ -423,7 +423,7 @@
      <tr class="success popin" data-title="2 tests cover line 107" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="107"></a><a href="#107">107</a></div></td><td class="codeLine">        $headingMatches = array();</td></tr>
      <tr class="success popin" data-title="2 tests cover line 108" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="108"></a><a href="#108">108</a></div></td><td class="codeLine">        if ($xmlReader-&gt;elementExists('w:pPr', $domNode)) {</td></tr>
      <tr class="success popin" data-title="2 tests cover line 109" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="109"></a><a href="#109">109</a></div></td><td class="codeLine">            $paragraphStyle = $this-&gt;readParagraphStyle($xmlReader, $domNode);</td></tr>
-     <tr class="success popin" data-title="2 tests cover line 110" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="110"></a><a href="#110">110</a></div></td><td class="codeLine">            if (is_array($paragraphStyle) &amp;&amp; array_key_exists('styleName', $paragraphStyle)) {</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 110" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="110"></a><a href="#110">110</a></div></td><td class="codeLine">            if (is_array($paragraphStyle) &amp;&amp; isset($paragraphStyle['styleName'])) {</td></tr>
      <tr class="success popin" data-title="2 tests cover line 111" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="111"></a><a href="#111">111</a></div></td><td class="codeLine">                preg_match('/Heading(\d)/', $paragraphStyle['styleName'], $headingMatches);</td></tr>
      <tr class="success popin" data-title="2 tests cover line 112" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="112"></a><a href="#112">112</a></div></td><td class="codeLine">            }</td></tr>
      <tr class="success popin" data-title="2 tests cover line 113" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="113"></a><a href="#113">113</a></div></td><td class="codeLine">        }</td></tr>
@@ -821,15 +821,14 @@
      <tr><td><div align="right"><a name="505"></a><a href="#505">505</a></div></td><td class="codeLine">    private function getMediaTarget($docPart, $rId)</td></tr>
      <tr><td><div align="right"><a name="506"></a><a href="#506">506</a></div></td><td class="codeLine">    {</td></tr>
      <tr class="success popin" data-title="1 test covers line 507" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="507"></a><a href="#507">507</a></div></td><td class="codeLine">        $target = null;</td></tr>
-     <tr class="success popin" data-title="1 test covers line 508" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="508"></a><a href="#508">508</a></div></td><td class="codeLine">        if (array_key_exists($docPart, $this-&gt;rels)) {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 509" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="509"></a><a href="#509">509</a></div></td><td class="codeLine">            if (array_key_exists($rId, $this-&gt;rels[$docPart])) {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 510" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="510"></a><a href="#510">510</a></div></td><td class="codeLine">                $target = $this-&gt;rels[$docPart][$rId]['target'];</td></tr>
-     <tr class="success popin" data-title="1 test covers line 511" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="511"></a><a href="#511">511</a></div></td><td class="codeLine">            }</td></tr>
-     <tr class="success popin" data-title="1 test covers line 512" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="512"></a><a href="#512">512</a></div></td><td class="codeLine">        }</td></tr>
-     <tr><td><div align="right"><a name="513"></a><a href="#513">513</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 514" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="514"></a><a href="#514">514</a></div></td><td class="codeLine">        return $target;</td></tr>
-     <tr class="warning"><td><div align="right"><a name="515"></a><a href="#515">515</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="516"></a><a href="#516">516</a></div></td><td class="codeLine">}</td></tr>
+     <tr><td><div align="right"><a name="508"></a><a href="#508">508</a></div></td><td class="codeLine"></td></tr>
+     <tr class="success popin" data-title="1 test covers line 509" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="509"></a><a href="#509">509</a></div></td><td class="codeLine">        if (isset($this-&gt;rels[$docPart]) &amp;&amp; isset($this-&gt;rels[$docPart][$rId])) {</td></tr>
+     <tr class="success popin" data-title="1 test covers line 510" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="510"></a><a href="#510">510</a></div></td><td class="codeLine">            $target = $this-&gt;rels[$docPart][$rId]['target'];</td></tr>
+     <tr class="success popin" data-title="1 test covers line 511" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="511"></a><a href="#511">511</a></div></td><td class="codeLine">        }</td></tr>
+     <tr><td><div align="right"><a name="512"></a><a href="#512">512</a></div></td><td class="codeLine"></td></tr>
+     <tr class="success popin" data-title="1 test covers line 513" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="513"></a><a href="#513">513</a></div></td><td class="codeLine">        return $target;</td></tr>
+     <tr class="warning"><td><div align="right"><a name="514"></a><a href="#514">514</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="515"></a><a href="#515">515</a></div></td><td class="codeLine">}</td></tr>
 
     </tbody>
    </table>
@@ -841,7 +840,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.16</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Fri Oct 3 7:21:01 UTC 2014.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.16</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Fri Oct 10 17:18:49 UTC 2014.</small>
     </p>
    </footer>
   </div>
