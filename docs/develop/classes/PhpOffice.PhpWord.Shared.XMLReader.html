@@ -120,26 +120,14 @@
             <i class="icon-custom icon-method"></i> Methods
             <ul>
                                                                                                     <li class="method public">
-        <a href="#method_getDomFromZip" title="getDomFromZip :: Get DOMDocument from ZipArchive">
-            <span class="description">Get DOMDocument from ZipArchive</span><pre>getDomFromZip</pre>
+        <a href="#method_countElements" title="countElements :: Count elements">
+            <span class="description">Count elements</span><pre>countElements</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_getDomFromString" title="getDomFromString :: Get DOMDocument from content string">
-            <span class="description">Get DOMDocument from content string</span><pre>getDomFromString</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_getElements" title="getElements :: Get elements">
-            <span class="description">Get elements</span><pre>getElements</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_getElement" title="getElement :: Get element">
-            <span class="description">Get element</span><pre>getElement</pre>
+        <a href="#method_elementExists" title="elementExists :: Element exists">
+            <span class="description">Element exists</span><pre>elementExists</pre>
         </a>
     </li>
 
@@ -150,20 +138,32 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_getDomFromString" title="getDomFromString :: Get DOMDocument from content string">
+            <span class="description">Get DOMDocument from content string</span><pre>getDomFromString</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getDomFromZip" title="getDomFromZip :: Get DOMDocument from ZipArchive">
+            <span class="description">Get DOMDocument from ZipArchive</span><pre>getDomFromZip</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getElement" title="getElement :: Get element">
+            <span class="description">Get element</span><pre>getElement</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getElements" title="getElements :: Get elements">
+            <span class="description">Get elements</span><pre>getElements</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_getValue" title="getValue :: Get element value">
             <span class="description">Get element value</span><pre>getValue</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_countElements" title="countElements :: Count elements">
-            <span class="description">Count elements</span><pre>countElements</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_elementExists" title="elementExists :: Element exists">
-            <span class="description">Element exists</span><pre>elementExists</pre>
         </a>
     </li>
 
@@ -207,15 +207,150 @@
                                                                                 
                                     </td>
                                 </tr>
-                                                                                                                                                                                                                                    </table>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_getDomFromZip"></a>
+                                                                <a id="method_countElements"></a>
+                        <div class="element clickable method public  method_countElements" data-toggle="collapse" data-target=".method_countElements .collapse">
+                            <h2>Count elements</h2>
+                            <pre>countElements(string $path, \DOMElement $contextNode = null) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$contextNode</h4>
+                                                <code>\DOMElement</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_elementExists"></a>
+                        <div class="element clickable method public  method_elementExists" data-toggle="collapse" data-target=".method_elementExists .collapse">
+                            <h2>Element exists</h2>
+                            <pre>elementExists(string $path, \DOMElement $contextNode = null) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$contextNode</h4>
+                                                <code>\DOMElement</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAttribute"></a>
+                        <div class="element clickable method public  method_getAttribute" data-toggle="collapse" data-target=".method_getAttribute .collapse">
+                            <h2>Get element attribute</h2>
+                            <pre>getAttribute(string $attribute, \DOMElement $contextNode = null, string $path = null) : string|null</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$attribute</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$contextNode</h4>
+                                                <code>\DOMElement</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string|null</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDomFromString"></a>
+                        <div class="element clickable method public  method_getDomFromString" data-toggle="collapse" data-target=".method_getDomFromString .collapse">
+                            <h2>Get DOMDocument from content string</h2>
+                            <pre>getDomFromString(string $content) : \DOMDocument</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$content</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\DOMDocument</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getDomFromZip"></a>
                         <div class="element clickable method public  method_getDomFromZip" data-toggle="collapse" data-target=".method_getDomFromZip .collapse">
                             <h2>Get DOMDocument from ZipArchive</h2>
                             <pre>getDomFromZip(string $zipFile, string $xmlFile) : \DOMDocument|false</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -246,58 +381,7 @@
                                         <code>\DOMDocument|false</code><p></p>
                                                                     </div>
                             </div>
-                        </div>
-                                            <a id="method_getDomFromString"></a>
-                        <div class="element clickable method public  method_getDomFromString" data-toggle="collapse" data-target=".method_getDomFromString .collapse">
-                            <h2>Get DOMDocument from content string</h2>
-                            <pre>getDomFromString(string $content) : \DOMDocument</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
 
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$content</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>\DOMDocument</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getElements"></a>
-                        <div class="element clickable method public  method_getElements" data-toggle="collapse" data-target=".method_getElements .collapse">
-                            <h2>Get elements</h2>
-                            <pre>getElements(string $path, \DOMElement $contextNode = null) : \DOMNodeList</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$path</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$contextNode</h4>
-                                                <code>\DOMElement</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>\DOMNodeList</code><p></p>
-                                                                    </div>
-                            </div>
                         </div>
                                             <a id="method_getElement"></a>
                         <div class="element clickable method public  method_getElement" data-toggle="collapse" data-target=".method_getElement .collapse">
@@ -305,6 +389,8 @@
                             <pre>getElement(string $path, \DOMElement $contextNode = null) : \DOMElement|null</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -326,13 +412,16 @@
                                         <code>\DOMElement|null</code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
-                                            <a id="method_getAttribute"></a>
-                        <div class="element clickable method public  method_getAttribute" data-toggle="collapse" data-target=".method_getAttribute .collapse">
-                            <h2>Get element attribute</h2>
-                            <pre>getAttribute(string $attribute, \DOMElement $contextNode = null, string $path = null) : string|null</pre>
+                                            <a id="method_getElements"></a>
+                        <div class="element clickable method public  method_getElements" data-toggle="collapse" data-target=".method_getElements .collapse">
+                            <h2>Get elements</h2>
+                            <pre>getElements(string $path, \DOMElement $contextNode = null) : \DOMNodeList</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -342,22 +431,19 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$attribute</h4>
+                                                <h4>$path</h4>
                                                 <code>string</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$contextNode</h4>
                                                 <code>\DOMElement</code><p></p>
                                             </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$path</h4>
-                                                <code>string</code><p></p>
-                                            </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>string|null</code><p></p>
+                                        <code>\DOMNodeList</code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
                                             <a id="method_getValue"></a>
                         <div class="element clickable method public  method_getValue" data-toggle="collapse" data-target=".method_getValue .collapse">
@@ -365,6 +451,8 @@
                             <pre>getValue(string $path, \DOMElement $contextNode = null) : string|null</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -386,62 +474,7 @@
                                         <code>string|null</code><p></p>
                                                                     </div>
                             </div>
-                        </div>
-                                            <a id="method_countElements"></a>
-                        <div class="element clickable method public  method_countElements" data-toggle="collapse" data-target=".method_countElements .collapse">
-                            <h2>Count elements</h2>
-                            <pre>countElements(string $path, \DOMElement $contextNode = null) : integer</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
 
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$path</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$contextNode</h4>
-                                                <code>\DOMElement</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>integer</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_elementExists"></a>
-                        <div class="element clickable method public  method_elementExists" data-toggle="collapse" data-target=".method_elementExists .collapse">
-                            <h2>Element exists</h2>
-                            <pre>elementExists(string $path, \DOMElement $contextNode = null) : boolean</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$path</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$contextNode</h4>
-                                                <code>\DOMElement</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
                         </div>
                     
                     
@@ -518,7 +551,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 10 Dec 2014 19:18:08 +0000.<br/>
+            generated on Thu, 11 Dec 2014 21:55:44 +0000.<br/>
     </footer>
     </body>
 </html>

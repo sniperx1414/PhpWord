@@ -132,14 +132,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_setValue" title="setValue :: ">
-            <span class="description"></span><pre>setValue</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public inherited">
-        <a href="#method_getVariables" title="getVariables :: Returns array of all variables in template.">
-            <span class="description">Returns array of all variables in template.</span><pre>getVariables</pre>
+        <a href="#method_cloneBlock" title="cloneBlock :: Clone a block.">
+            <span class="description">Clone a block.</span><pre>cloneBlock</pre>
         </a>
     </li>
 
@@ -150,20 +144,20 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_cloneBlock" title="cloneBlock :: Clone a block.">
-            <span class="description">Clone a block.</span><pre>cloneBlock</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public inherited">
-        <a href="#method_replaceBlock" title="replaceBlock :: Replace a block.">
-            <span class="description">Replace a block.</span><pre>replaceBlock</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public inherited">
         <a href="#method_deleteBlock" title="deleteBlock :: Delete a block of text.">
             <span class="description">Delete a block of text.</span><pre>deleteBlock</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_getVariables" title="getVariables :: Returns array of all variables in template.">
+            <span class="description">Returns array of all variables in template.</span><pre>getVariables</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_replaceBlock" title="replaceBlock :: Replace a block.">
+            <span class="description">Replace a block.</span><pre>replaceBlock</pre>
         </a>
     </li>
 
@@ -179,25 +173,41 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setValue" title="setValue :: ">
+            <span class="description"></span><pre>setValue</pre>
+        </a>
+    </li>
+
+                                                                                                        </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
-                            <a href="#method_setValueForPart" title="setValueForPart :: Find and replace placeholders in the given XML section.">
-                                <span class="description">Find and replace placeholders in the given XML section.</span><pre>setValueForPart</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_getVariablesForPart" title="getVariablesForPart :: Find all variables in $documentPartXML.">
                                 <span class="description">Find all variables in $documentPartXML.</span><pre>getVariablesForPart</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                <li class="method protected inherited">
+                            <a href="#method_setValueForPart" title="setValueForPart :: Find and replace placeholders in the given XML section.">
+                                <span class="description">Find and replace placeholders in the given XML section.</span><pre>setValueForPart</pre>
+                            </a>
+                        </li>
+                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                                                                                                                                                                                                                                                                <li class="method private inherited">
+                            <a href="#method_findRowEnd" title="findRowEnd :: Find the end position of the nearest table row after $offset.">
+                                <span class="description">Find the end position of the nearest table row after $offset.</span><pre>findRowEnd</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_findRowStart" title="findRowStart :: Find the start position of the nearest table row before $offset.">
+                                <span class="description">Find the start position of the nearest table row before $offset.</span><pre>findRowStart</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
                             <a href="#method_getFooterName" title="getFooterName :: Get the name of the footer file for $index.">
                                 <span class="description">Get the name of the footer file for $index.</span><pre>getFooterName</pre>
                             </a>
@@ -208,21 +218,11 @@
                             </a>
                         </li>
                                                                                 <li class="method private inherited">
-                            <a href="#method_findRowStart" title="findRowStart :: Find the start position of the nearest table row before $offset.">
-                                <span class="description">Find the start position of the nearest table row before $offset.</span><pre>findRowStart</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private inherited">
-                            <a href="#method_findRowEnd" title="findRowEnd :: Find the end position of the nearest table row after $offset.">
-                                <span class="description">Find the end position of the nearest table row after $offset.</span><pre>findRowEnd</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private inherited">
                             <a href="#method_getSlice" title="getSlice :: Get a slice of a string.">
                                 <span class="description">Get a slice of a string.</span><pre>getSlice</pre>
                             </a>
                         </li>
-                                                </ul>
+                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -255,7 +255,16 @@
                                                                                 <p>Use \PhpOffice\PhpWord\TemplateProcessor instead.</p>
                                     </td>
                                 </tr>
-                                                                                                                                                                                                                                    </table>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
@@ -264,6 +273,8 @@
                             <pre>__construct(string $documentTemplate) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -306,6 +317,7 @@
                                                                             
                                                                     </div>
                             </div>
+
                         </div>
                                             <a id="method_applyXslStyleSheet"></a>
                         <div class="element clickable method public  method_applyXslStyleSheet inherited" data-toggle="collapse" data-target=".method_applyXslStyleSheet .collapse">
@@ -313,6 +325,8 @@
                             <pre>applyXslStyleSheet(\DOMDocument $xslDOMDocument, array $xslOptions = array(), string $xslOptionsURI = &#039;&#039;) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -345,13 +359,16 @@
                                                                             
                                                                     </div>
                             </div>
+
                         </div>
-                                            <a id="method_setValue"></a>
-                        <div class="element clickable method public  method_setValue inherited" data-toggle="collapse" data-target=".method_setValue .collapse">
-                            <h2>setValue</h2>
-                            <pre>setValue(mixed $search, mixed $replace, integer $limit = -1) : void</pre>
+                                            <a id="method_cloneBlock"></a>
+                        <div class="element clickable method public  method_cloneBlock inherited" data-toggle="collapse" data-target=".method_cloneBlock .collapse">
+                            <h2>Clone a block.</h2>
+                            <pre>cloneBlock(string $blockname, integer $clones = 1, boolean $replace = true) : string|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -361,46 +378,23 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$search</h4>
-                                                <code>mixed</code><p></p>
+                                                <h4>$blockname</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$clones</h4>
+                                                <code>integer</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$replace</h4>
-                                                <code>mixed</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$limit</h4>
-                                                <code>integer</code><p></p>
+                                                <code>boolean</code><p></p>
                                             </div>
                                                                             
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getVariables"></a>
-                        <div class="element clickable method public  method_getVariables inherited" data-toggle="collapse" data-target=".method_getVariables .collapse">
-                            <h2>Returns array of all variables in template.</h2>
-                            <pre>getVariables() : string[]</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
                                                                             <h3>Response</h3>
-                                        <code>string[]</code><p></p>
+                                        <code>string|null</code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
                                             <a id="method_cloneRow"></a>
                         <div class="element clickable method public  method_cloneRow inherited" data-toggle="collapse" data-target=".method_cloneRow .collapse">
@@ -408,6 +402,8 @@
                             <pre>cloneRow(string $search, integer $numberOfClones) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -436,13 +432,16 @@
                                                                             
                                                                     </div>
                             </div>
+
                         </div>
-                                            <a id="method_cloneBlock"></a>
-                        <div class="element clickable method public  method_cloneBlock inherited" data-toggle="collapse" data-target=".method_cloneBlock .collapse">
-                            <h2>Clone a block.</h2>
-                            <pre>cloneBlock(string $blockname, integer $clones = 1, boolean $replace = true) : string|null</pre>
+                                            <a id="method_deleteBlock"></a>
+                        <div class="element clickable method public  method_deleteBlock inherited" data-toggle="collapse" data-target=".method_deleteBlock .collapse">
+                            <h2>Delete a block of text.</h2>
+                            <pre>deleteBlock(string $blockname) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -455,19 +454,214 @@
                                                 <h4>$blockname</h4>
                                                 <code>string</code><p></p>
                                             </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_findRowEnd"></a>
+                        <div class="element clickable method private  method_findRowEnd inherited" data-toggle="collapse" data-target=".method_findRowEnd .collapse">
+                            <h2>Find the end position of the nearest table row after $offset.</h2>
+                            <pre>findRowEnd(integer $offset) : integer</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$clones</h4>
+                                                <h4>$offset</h4>
                                                 <code>integer</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$replace</h4>
-                                                <code>boolean</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>string|null</code><p></p>
+                                        <code>integer</code><p></p>
                                                                     </div>
                             </div>
+
+                        </div>
+                                            <a id="method_findRowStart"></a>
+                        <div class="element clickable method private  method_findRowStart inherited" data-toggle="collapse" data-target=".method_findRowStart .collapse">
+                            <h2>Find the start position of the nearest table row before $offset.</h2>
+                            <pre>findRowStart(integer $offset) : integer</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getFooterName"></a>
+                        <div class="element clickable method private  method_getFooterName inherited" data-toggle="collapse" data-target=".method_getFooterName .collapse">
+                            <h2>Get the name of the footer file for $index.</h2>
+                            <pre>getFooterName(integer $index) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getHeaderName"></a>
+                        <div class="element clickable method private  method_getHeaderName inherited" data-toggle="collapse" data-target=".method_getHeaderName .collapse">
+                            <h2>Get the name of the header file for $index.</h2>
+                            <pre>getHeaderName(integer $index) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSlice"></a>
+                        <div class="element clickable method private  method_getSlice inherited" data-toggle="collapse" data-target=".method_getSlice .collapse">
+                            <h2>Get a slice of a string.</h2>
+                            <pre>getSlice(integer $startPosition, integer $endPosition) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$startPosition</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$endPosition</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getVariables"></a>
+                        <div class="element clickable method public  method_getVariables inherited" data-toggle="collapse" data-target=".method_getVariables .collapse">
+                            <h2>Returns array of all variables in template.</h2>
+                            <pre>getVariables() : array&lt;mixed,string&gt;</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array&lt;mixed,string&gt;</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getVariablesForPart"></a>
+                        <div class="element clickable method protected  method_getVariablesForPart inherited" data-toggle="collapse" data-target=".method_getVariablesForPart .collapse">
+                            <h2>Find all variables in $documentPartXML.</h2>
+                            <pre>getVariablesForPart(string $documentPartXML) : array&lt;mixed,string&gt;</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$documentPartXML</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array&lt;mixed,string&gt;</code><p></p>
+                                                                    </div>
+                            </div>
+
                         </div>
                                             <a id="method_replaceBlock"></a>
                         <div class="element clickable method public  method_replaceBlock inherited" data-toggle="collapse" data-target=".method_replaceBlock .collapse">
@@ -475,6 +669,8 @@
                             <pre>replaceBlock(string $blockname, string $replacement) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -494,28 +690,7 @@
                                                                             
                                                                     </div>
                             </div>
-                        </div>
-                                            <a id="method_deleteBlock"></a>
-                        <div class="element clickable method public  method_deleteBlock inherited" data-toggle="collapse" data-target=".method_deleteBlock .collapse">
-                            <h2>Delete a block of text.</h2>
-                            <pre>deleteBlock(string $blockname) : void</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
 
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$blockname</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
                         </div>
                                             <a id="method_save"></a>
                         <div class="element clickable method public  method_save inherited" data-toggle="collapse" data-target=".method_save .collapse">
@@ -523,6 +698,8 @@
                             <pre>save() : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -551,6 +728,7 @@
                                         <code>string</code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
                                             <a id="method_saveAs"></a>
                         <div class="element clickable method public  method_saveAs inherited" data-toggle="collapse" data-target=".method_saveAs .collapse">
@@ -558,6 +736,8 @@
                             <pre>saveAs(string $fileName) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -582,6 +762,40 @@
                                                                             
                                                                     </div>
                             </div>
+
+                        </div>
+                                            <a id="method_setValue"></a>
+                        <div class="element clickable method public  method_setValue inherited" data-toggle="collapse" data-target=".method_setValue .collapse">
+                            <h2>setValue</h2>
+                            <pre>setValue(mixed $search, mixed $replace, integer $limit = -1) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$search</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$replace</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$limit</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
                         </div>
                                             <a id="method_setValueForPart"></a>
                         <div class="element clickable method protected  method_setValueForPart inherited" data-toggle="collapse" data-target=".method_setValueForPart .collapse">
@@ -589,6 +803,8 @@
                             <pre>setValueForPart(string $documentPartXML, string $search, string $replace, integer $limit) : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -618,163 +834,7 @@
                                         <code>string</code><p></p>
                                                                     </div>
                             </div>
-                        </div>
-                                            <a id="method_getVariablesForPart"></a>
-                        <div class="element clickable method protected  method_getVariablesForPart inherited" data-toggle="collapse" data-target=".method_getVariablesForPart .collapse">
-                            <h2>Find all variables in $documentPartXML.</h2>
-                            <pre>getVariablesForPart(string $documentPartXML) : string[]</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
 
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$documentPartXML</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string[]</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getFooterName"></a>
-                        <div class="element clickable method private  method_getFooterName inherited" data-toggle="collapse" data-target=".method_getFooterName .collapse">
-                            <h2>Get the name of the footer file for $index.</h2>
-                            <pre>getFooterName(integer $index) : string</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$index</h4>
-                                                <code>integer</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getHeaderName"></a>
-                        <div class="element clickable method private  method_getHeaderName inherited" data-toggle="collapse" data-target=".method_getHeaderName .collapse">
-                            <h2>Get the name of the header file for $index.</h2>
-                            <pre>getHeaderName(integer $index) : string</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$index</h4>
-                                                <code>integer</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_findRowStart"></a>
-                        <div class="element clickable method private  method_findRowStart inherited" data-toggle="collapse" data-target=".method_findRowStart .collapse">
-                            <h2>Find the start position of the nearest table row before $offset.</h2>
-                            <pre>findRowStart(integer $offset) : integer</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    throws
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$offset</h4>
-                                                <code>integer</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>integer</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_findRowEnd"></a>
-                        <div class="element clickable method private  method_findRowEnd inherited" data-toggle="collapse" data-target=".method_findRowEnd .collapse">
-                            <h2>Find the end position of the nearest table row after $offset.</h2>
-                            <pre>findRowEnd(integer $offset) : integer</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$offset</h4>
-                                                <code>integer</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>integer</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getSlice"></a>
-                        <div class="element clickable method private  method_getSlice inherited" data-toggle="collapse" data-target=".method_getSlice .collapse">
-                            <h2>Get a slice of a string.</h2>
-                            <pre>getSlice(integer $startPosition, integer $endPosition) : string</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$startPosition</h4>
-                                                <code>integer</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$endPosition</h4>
-                                                <code>integer</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
                         </div>
                     
                     
@@ -860,7 +920,7 @@
                                                     <a id="property_temporaryDocumentHeaders"> </a>
                             <div class="element clickable property  private property_temporaryDocumentHeaders inherited" data-toggle="collapse" data-target=".property_temporaryDocumentHeaders .collapse">
                                 <h2>Content of headers (in XML format) of the temporary document.</h2>
-                                <pre>temporaryDocumentHeaders : string[]</pre>
+                                <pre>temporaryDocumentHeaders : array&lt;mixed,string&gt;</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -879,14 +939,14 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>string[]</code>
+                                            <code>array&lt;mixed,string&gt;</code>
                                                                             </div>
                                 </div>
                             </div>
                                                     <a id="property_temporaryDocumentFooters"> </a>
                             <div class="element clickable property  private property_temporaryDocumentFooters inherited" data-toggle="collapse" data-target=".property_temporaryDocumentFooters .collapse">
                                 <h2>Content of footers (in XML format) of the temporary document.</h2>
-                                <pre>temporaryDocumentFooters : string[]</pre>
+                                <pre>temporaryDocumentFooters : array&lt;mixed,string&gt;</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -905,7 +965,7 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>string[]</code>
+                                            <code>array&lt;mixed,string&gt;</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -929,7 +989,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 10 Dec 2014 19:18:02 +0000.<br/>
+            generated on Thu, 11 Dec 2014 21:55:44 +0000.<br/>
     </footer>
     </body>
 </html>

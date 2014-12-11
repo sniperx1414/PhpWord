@@ -120,18 +120,6 @@
             <i class="icon-custom icon-method"></i> Methods
             <ul>
                                                                                                     <li class="method public">
-        <a href="#method_isReadDataOnly" title="isReadDataOnly :: Read data only?">
-            <span class="description">Read data only?</span><pre>isReadDataOnly</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_setReadDataOnly" title="setReadDataOnly :: Set read data only">
-            <span class="description">Set read data only</span><pre>setReadDataOnly</pre>
-        </a>
-    </li>
-
-                                                                                                                                                                <li class="method public">
         <a href="#method_canRead" title="canRead :: Can the current ReaderInterface read the file?">
             <span class="description">Can the current ReaderInterface read the file?</span><pre>canRead</pre>
         </a>
@@ -143,16 +131,28 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_isReadDataOnly" title="isReadDataOnly :: Read data only?">
+            <span class="description">Read data only?</span><pre>isReadDataOnly</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_setReadDataOnly" title="setReadDataOnly :: Set read data only">
+            <span class="description">Set read data only</span><pre>setReadDataOnly</pre>
+        </a>
+    </li>
+
                                                 </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                    <li class="method protected">
+                                                                                                                                                                                        <li class="method protected">
                             <a href="#method_openFile" title="openFile :: Open file for reading">
                                 <span class="description">Open file for reading</span><pre>openFile</pre>
                             </a>
                         </li>
-                                                                                                                        </ul>
+                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
@@ -198,98 +198,26 @@
                                                                                 <p>Abstract class</p>
                                     </td>
                                 </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                </table>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                                                                                                                            </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_isReadDataOnly"></a>
-                        <div class="element clickable method public  method_isReadDataOnly" data-toggle="collapse" data-target=".method_isReadDataOnly .collapse">
-                            <h2>Read data only?</h2>
-                            <pre>isReadDataOnly() : bool</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>bool</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_setReadDataOnly"></a>
-                        <div class="element clickable method public  method_setReadDataOnly" data-toggle="collapse" data-target=".method_setReadDataOnly .collapse">
-                            <h2>Set read data only</h2>
-                            <pre>setReadDataOnly(bool $value = true) : self</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$value</h4>
-                                                <code>bool</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>self</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_openFile"></a>
-                        <div class="element clickable method protected  method_openFile" data-toggle="collapse" data-target=".method_openFile .collapse">
-                            <h2>Open file for reading</h2>
-                            <pre>openFile(string $filename) : resource</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    throws
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$filename</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>resource</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_canRead"></a>
+                                                                <a id="method_canRead"></a>
                         <div class="element clickable method public  method_canRead" data-toggle="collapse" data-target=".method_canRead .collapse">
                             <h2>Can the current ReaderInterface read the file?</h2>
-                            <pre>canRead(string $filename) : bool</pre>
+                            <pre>canRead(string $filename) : boolean</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -304,9 +232,10 @@
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>bool</code><p></p>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
                                             <a id="method_getReadDataOnly"></a>
                         <div class="element clickable method public deprecated method_getReadDataOnly" data-toggle="collapse" data-target=".method_getReadDataOnly .collapse">
@@ -314,6 +243,8 @@
                             <pre>getReadDataOnly() </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -356,6 +287,99 @@
                                     
                                                                     </div>
                             </div>
+
+                        </div>
+                                            <a id="method_isReadDataOnly"></a>
+                        <div class="element clickable method public  method_isReadDataOnly" data-toggle="collapse" data-target=".method_isReadDataOnly .collapse">
+                            <h2>Read data only?</h2>
+                            <pre>isReadDataOnly() : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_openFile"></a>
+                        <div class="element clickable method protected  method_openFile" data-toggle="collapse" data-target=".method_openFile .collapse">
+                            <h2>Open file for reading</h2>
+                            <pre>openFile(string $filename) : resource</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>resource</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setReadDataOnly"></a>
+                        <div class="element clickable method public  method_setReadDataOnly" data-toggle="collapse" data-target=".method_setReadDataOnly .collapse">
+                            <h2>Set read data only</h2>
+                            <pre>setReadDataOnly(boolean $value = true) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+
                         </div>
                     
                     
@@ -363,7 +387,7 @@
                                                     <a id="property_readDataOnly"> </a>
                             <div class="element clickable property  protected property_readDataOnly" data-toggle="collapse" data-target=".property_readDataOnly .collapse">
                                 <h2>Read data only?</h2>
-                                <pre>readDataOnly : bool</pre>
+                                <pre>readDataOnly : boolean</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -382,14 +406,14 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>bool</code>
+                                            <code>boolean</code>
                                                                             </div>
                                 </div>
                             </div>
                                                     <a id="property_fileHandle"> </a>
                             <div class="element clickable property  protected property_fileHandle" data-toggle="collapse" data-target=".property_fileHandle .collapse">
                                 <h2>File pointer</h2>
-                                <pre>fileHandle : bool|resource</pre>
+                                <pre>fileHandle : boolean|resource</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -408,7 +432,7 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>bool|resource</code>
+                                            <code>boolean|resource</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -432,7 +456,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 10 Dec 2014 19:18:10 +0000.<br/>
+            generated on Thu, 11 Dec 2014 21:55:47 +0000.<br/>
     </footer>
     </body>
 </html>

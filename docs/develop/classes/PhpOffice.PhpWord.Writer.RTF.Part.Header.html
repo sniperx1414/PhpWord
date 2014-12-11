@@ -120,26 +120,14 @@
             <i class="icon-custom icon-method"></i> Methods
             <ul>
                                                                                                     <li class="method public">
-        <a href="#method_getFontTable" title="getFontTable :: Get font table.">
-            <span class="description">Get font table.</span><pre>getFontTable</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
         <a href="#method_getColorTable" title="getColorTable :: Get color table.">
             <span class="description">Get color table.</span><pre>getColorTable</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
-        <a href="#method_write" title="write :: Write part">
-            <span class="description">Write part</span><pre>write</pre>
-        </a>
-    </li>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
-        <a href="#method_setParentWriter" title="setParentWriter :: Set parent writer.">
-            <span class="description">Set parent writer.</span><pre>setParentWriter</pre>
+                                                                                                        <li class="method public">
+        <a href="#method_getFontTable" title="getFontTable :: Get font table.">
+            <span class="description">Get font table.</span><pre>getFontTable</pre>
         </a>
     </li>
 
@@ -149,7 +137,19 @@
         </a>
     </li>
 
-                                                </ul>
+                                                                                                                                                                                                                                                                                                                                        <li class="method public inherited">
+        <a href="#method_setParentWriter" title="setParentWriter :: Set parent writer.">
+            <span class="description">Set parent writer.</span><pre>setParentWriter</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_write" title="write :: Write part">
+            <span class="description">Write part</span><pre>write</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
@@ -158,8 +158,33 @@
         <li class="nav-header private">» Private
             <ul>
                                                                                                                                                                                         <li class="method private">
+                            <a href="#method_registerBorderColor" title="registerBorderColor :: Register border colors.">
+                                <span class="description">Register border colors.</span><pre>registerBorderColor</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_registerFont" title="registerFont :: Register all fonts and colors in both named and inline styles to appropriate header table.">
+                                <span class="description">Register all fonts and colors in both named and inline styles to appropriate header table.</span><pre>registerFont</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_registerFontItems" title="registerFontItems :: Register fonts and colors.">
+                                <span class="description">Register fonts and colors.</span><pre>registerFontItems</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_registerTableItem" title="registerTableItem :: Register individual font and color.">
+                                <span class="description">Register individual font and color.</span><pre>registerTableItem</pre>
+                            </a>
+                        </li>
+                                                                                                                                                        <li class="method private">
                             <a href="#method_writeCharset" title="writeCharset :: Write character set">
                                 <span class="description">Write character set</span><pre>writeCharset</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_writeColorTable" title="writeColorTable :: Write color table">
+                                <span class="description">Write color table</span><pre>writeColorTable</pre>
                             </a>
                         </li>
                                                                                 <li class="method private">
@@ -173,36 +198,11 @@
                             </a>
                         </li>
                                                                                 <li class="method private">
-                            <a href="#method_writeColorTable" title="writeColorTable :: Write color table">
-                                <span class="description">Write color table</span><pre>writeColorTable</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
                             <a href="#method_writeGenerator" title="writeGenerator :: Write">
                                 <span class="description">Write</span><pre>writeGenerator</pre>
                             </a>
                         </li>
-                                                                                <li class="method private">
-                            <a href="#method_registerFont" title="registerFont :: Register all fonts and colors in both named and inline styles to appropriate header table.">
-                                <span class="description">Register all fonts and colors in both named and inline styles to appropriate header table.</span><pre>registerFont</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
-                            <a href="#method_registerBorderColor" title="registerBorderColor :: Register border colors.">
-                                <span class="description">Register border colors.</span><pre>registerBorderColor</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
-                            <a href="#method_registerFontItems" title="registerFontItems :: Register fonts and colors.">
-                                <span class="description">Register fonts and colors.</span><pre>registerFontItems</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private">
-                            <a href="#method_registerTableItem" title="registerTableItem :: Register individual font and color.">
-                                <span class="description">Register individual font and color.</span><pre>registerTableItem</pre>
-                            </a>
-                        </li>
-                                                                                                                        </ul>
+                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -251,41 +251,26 @@
                                                                                 <p><a href="http://www.biblioscape.com/rtf15_spec.htm#Heading6">http://www.biblioscape.com/rtf15_spec.htm#Heading6</a></p>
                                     </td>
                                 </tr>
-                                                                                                                                                                                                                                    </table>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_getFontTable"></a>
-                        <div class="element clickable method public  method_getFontTable" data-toggle="collapse" data-target=".method_getFontTable .collapse">
-                            <h2>Get font table.</h2>
-                            <pre>getFontTable() : array</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>array</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getColorTable"></a>
+                                                                <a id="method_getColorTable"></a>
                         <div class="element clickable method public  method_getColorTable" data-toggle="collapse" data-target=".method_getColorTable .collapse">
                             <h2>Get color table.</h2>
                             <pre>getColorTable() : array</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -305,13 +290,16 @@
                                         <code>array</code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
-                                            <a id="method_write"></a>
-                        <div class="element clickable method public  method_write inherited" data-toggle="collapse" data-target=".method_write .collapse">
-                            <h2>Write part</h2>
-                            <pre>write() : string</pre>
+                                            <a id="method_getFontTable"></a>
+                        <div class="element clickable method public  method_getFontTable" data-toggle="collapse" data-target=".method_getFontTable .collapse">
+                            <h2>Get font table.</h2>
+                            <pre>getFontTable() : array</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
+                                                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -328,259 +316,10 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>string</code><p></p>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
-                        </div>
-                                            <a id="method_writeCharset"></a>
-                        <div class="element clickable method private  method_writeCharset" data-toggle="collapse" data-target=".method_writeCharset .collapse">
-                            <h2>Write character set</h2>
-                            <pre>writeCharset() : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
 
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeDefaults"></a>
-                        <div class="element clickable method private  method_writeDefaults" data-toggle="collapse" data-target=".method_writeDefaults .collapse">
-                            <h2>Write header defaults</h2>
-                            <pre>writeDefaults() : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeFontTable"></a>
-                        <div class="element clickable method private  method_writeFontTable" data-toggle="collapse" data-target=".method_writeFontTable .collapse">
-                            <h2>Write font table</h2>
-                            <pre>writeFontTable() : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeColorTable"></a>
-                        <div class="element clickable method private  method_writeColorTable" data-toggle="collapse" data-target=".method_writeColorTable .collapse">
-                            <h2>Write color table</h2>
-                            <pre>writeColorTable() : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeGenerator"></a>
-                        <div class="element clickable method private  method_writeGenerator" data-toggle="collapse" data-target=".method_writeGenerator .collapse">
-                            <h2>Write</h2>
-                            <pre>writeGenerator() : string</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_registerFont"></a>
-                        <div class="element clickable method private  method_registerFont" data-toggle="collapse" data-target=".method_registerFont .collapse">
-                            <h2>Register all fonts and colors in both named and inline styles to appropriate header table.</h2>
-                            <pre>registerFont() : void</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_registerBorderColor"></a>
-                        <div class="element clickable method private  method_registerBorderColor" data-toggle="collapse" data-target=".method_registerBorderColor .collapse">
-                            <h2>Register border colors.</h2>
-                            <pre>registerBorderColor(\PhpOffice\PhpWord\Style\Border $style) : void</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$style</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Border.html">\PhpOffice\PhpWord\Style\Border</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_registerFontItems"></a>
-                        <div class="element clickable method private  method_registerFontItems" data-toggle="collapse" data-target=".method_registerFontItems .collapse">
-                            <h2>Register fonts and colors.</h2>
-                            <pre>registerFontItems(\PhpOffice\PhpWord\Style\AbstractStyle $style) : void</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$style</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Style.AbstractStyle.html">\PhpOffice\PhpWord\Style\AbstractStyle</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_registerTableItem"></a>
-                        <div class="element clickable method private  method_registerTableItem" data-toggle="collapse" data-target=".method_registerTableItem .collapse">
-                            <h2>Register individual font and color.</h2>
-                            <pre>registerTableItem(&$table, string $value, string $default = null) : void</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$table</h4>
-                                                <code></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$value</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$default</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_setParentWriter"></a>
-                        <div class="element clickable method public  method_setParentWriter inherited" data-toggle="collapse" data-target=".method_setParentWriter .collapse">
-                            <h2>Set parent writer.</h2>
-                            <pre>setParentWriter(\PhpOffice\PhpWord\Writer\AbstractWriter $writer = null) : void</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$writer</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Writer.AbstractWriter.html">\PhpOffice\PhpWord\Writer\AbstractWriter</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
                         </div>
                                             <a id="method_getParentWriter"></a>
                         <div class="element clickable method public  method_getParentWriter inherited" data-toggle="collapse" data-target=".method_getParentWriter .collapse">
@@ -588,6 +327,8 @@
                             <pre>getParentWriter() : \PhpOffice\PhpWord\Writer\AbstractWriter</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -616,6 +357,316 @@
                                         <code><a href="../classes/PhpOffice.PhpWord.Writer.AbstractWriter.html">\PhpOffice\PhpWord\Writer\AbstractWriter</a></code><p></p>
                                                                     </div>
                             </div>
+
+                        </div>
+                                            <a id="method_registerBorderColor"></a>
+                        <div class="element clickable method private  method_registerBorderColor" data-toggle="collapse" data-target=".method_registerBorderColor .collapse">
+                            <h2>Register border colors.</h2>
+                            <pre>registerBorderColor(\PhpOffice\PhpWord\Style\Border $style) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Border.html">\PhpOffice\PhpWord\Style\Border</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_registerFont"></a>
+                        <div class="element clickable method private  method_registerFont" data-toggle="collapse" data-target=".method_registerFont .collapse">
+                            <h2>Register all fonts and colors in both named and inline styles to appropriate header table.</h2>
+                            <pre>registerFont() : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_registerFontItems"></a>
+                        <div class="element clickable method private  method_registerFontItems" data-toggle="collapse" data-target=".method_registerFontItems .collapse">
+                            <h2>Register fonts and colors.</h2>
+                            <pre>registerFontItems(\PhpOffice\PhpWord\Style\AbstractStyle $style) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Style.AbstractStyle.html">\PhpOffice\PhpWord\Style\AbstractStyle</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_registerTableItem"></a>
+                        <div class="element clickable method private  method_registerTableItem" data-toggle="collapse" data-target=".method_registerTableItem .collapse">
+                            <h2>Register individual font and color.</h2>
+                            <pre>registerTableItem( &$table, string $value, string $default = null) : void</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setParentWriter"></a>
+                        <div class="element clickable method public  method_setParentWriter inherited" data-toggle="collapse" data-target=".method_setParentWriter .collapse">
+                            <h2>Set parent writer.</h2>
+                            <pre>setParentWriter(\PhpOffice\PhpWord\Writer\AbstractWriter $writer = null) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$writer</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Writer.AbstractWriter.html">\PhpOffice\PhpWord\Writer\AbstractWriter</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_write"></a>
+                        <div class="element clickable method public  method_write inherited" data-toggle="collapse" data-target=".method_write .collapse">
+                            <h2>Write part</h2>
+                            <pre>write() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_writeCharset"></a>
+                        <div class="element clickable method private  method_writeCharset" data-toggle="collapse" data-target=".method_writeCharset .collapse">
+                            <h2>Write character set</h2>
+                            <pre>writeCharset() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_writeColorTable"></a>
+                        <div class="element clickable method private  method_writeColorTable" data-toggle="collapse" data-target=".method_writeColorTable .collapse">
+                            <h2>Write color table</h2>
+                            <pre>writeColorTable() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_writeDefaults"></a>
+                        <div class="element clickable method private  method_writeDefaults" data-toggle="collapse" data-target=".method_writeDefaults .collapse">
+                            <h2>Write header defaults</h2>
+                            <pre>writeDefaults() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_writeFontTable"></a>
+                        <div class="element clickable method private  method_writeFontTable" data-toggle="collapse" data-target=".method_writeFontTable .collapse">
+                            <h2>Write font table</h2>
+                            <pre>writeFontTable() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_writeGenerator"></a>
+                        <div class="element clickable method private  method_writeGenerator" data-toggle="collapse" data-target=".method_writeGenerator .collapse">
+                            <h2>Write</h2>
+                            <pre>writeGenerator() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
                         </div>
                     
                     
@@ -718,7 +769,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 10 Dec 2014 19:17:59 +0000.<br/>
+            generated on Thu, 11 Dec 2014 21:55:28 +0000.<br/>
     </footer>
     </body>
 </html>
