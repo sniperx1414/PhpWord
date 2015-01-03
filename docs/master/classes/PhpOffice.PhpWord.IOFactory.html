@@ -119,38 +119,43 @@
         <li class="nav-header">
             <i class="icon-custom icon-method"></i> Methods
             <ul>
-                                                                                                    <li class="method public">
-        <a href="#method_createWriter" title="createWriter :: Create new writer">
-            <span class="description">Create new writer</span><pre>createWriter</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
+                                                                                                                                                            <li class="method public">
         <a href="#method_createReader" title="createReader :: Create new reader">
             <span class="description">Create new reader</span><pre>createReader</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_createWriter" title="createWriter :: Create new writer">
+            <span class="description">Create new writer</span><pre>createWriter</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
         <a href="#method_load" title="load :: Loads PhpWord from file">
             <span class="description">Loads PhpWord from file</span><pre>load</pre>
         </a>
     </li>
 
-                                                                                                        </ul>
+                                                </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                        <li class="method private">
+                                                                            <li class="method private">
+                            <a href="#method_createObject" title="createObject :: Create new object">
+                                <span class="description">Create new object</span><pre>createObject</pre>
+                            </a>
+                        </li>
+                                                                                                                                                        <li class="method private">
                             <a href="#method_isConcreteClass" title="isConcreteClass :: Check if it&#039;s a concrete class (not abstract nor interface)">
                                 <span class="description">Check if it&#039;s a concrete class (not abstract nor interface)</span><pre>isConcreteClass</pre>
                             </a>
                         </li>
-                                                </ul>
+                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -167,21 +172,112 @@
                 <h1>IOFactory</h1>
                 <small style="display: block; text-align: right">
                                                         </small>
-                <p class="short_description">IO Factory</p>
+                <p class="short_description"></p>
                 <div class="details">
                     <div class="long_description">
                         
                     </div>
                     <table class="table table-bordered">
-                                                                                                                                                                                                        </table>
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_createWriter"></a>
+                                                                <a id="method_createObject"></a>
+                        <div class="element clickable method private  method_createObject" data-toggle="collapse" data-target=".method_createObject .collapse">
+                            <h2>Create new object</h2>
+                            <pre>createObject(string $type, string $name, \PhpOffice\PhpWord\PhpWord $phpWord = null) : \PhpOffice\PhpWord\Writer\WriterInterface|\PhpOffice\PhpWord\Reader\ReaderInterface</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$phpWord</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Writer.WriterInterface.html">\PhpOffice\PhpWord\Writer\WriterInterface</a>|<a href="../classes/PhpOffice.PhpWord.Reader.ReaderInterface.html">\PhpOffice\PhpWord\Reader\ReaderInterface</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_createReader"></a>
+                        <div class="element clickable method public  method_createReader" data-toggle="collapse" data-target=".method_createReader .collapse">
+                            <h2>Create new reader</h2>
+                            <pre>createReader(string $name = &#039;Word2007&#039;) : \PhpOffice\PhpWord\Reader\ReaderInterface</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Reader.ReaderInterface.html">\PhpOffice\PhpWord\Reader\ReaderInterface</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_createWriter"></a>
                         <div class="element clickable method public  method_createWriter" data-toggle="collapse" data-target=".method_createWriter .collapse">
                             <h2>Create new writer</h2>
                             <pre>createWriter(\PhpOffice\PhpWord\PhpWord $phpWord, string $name = &#039;Word2007&#039;) : \PhpOffice\PhpWord\Writer\WriterInterface</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -212,39 +308,34 @@
                                         <code><a href="../classes/PhpOffice.PhpWord.Writer.WriterInterface.html">\PhpOffice\PhpWord\Writer\WriterInterface</a></code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
-                                            <a id="method_createReader"></a>
-                        <div class="element clickable method public  method_createReader" data-toggle="collapse" data-target=".method_createReader .collapse">
-                            <h2>Create new reader</h2>
-                            <pre>createReader(string $name = &#039;Word2007&#039;) : \PhpOffice\PhpWord\Reader\ReaderInterface</pre>
+                                            <a id="method_isConcreteClass"></a>
+                        <div class="element clickable method private  method_isConcreteClass" data-toggle="collapse" data-target=".method_isConcreteClass .collapse">
+                            <h2>Check if it&#039;s a concrete class (not abstract nor interface)</h2>
+                            <pre>isConcreteClass(string $class) : boolean</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    throws
-                                                </th>
-                                                <td>
-                                                                                                                                                                        
-                                                                                                                                                                        
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$name</h4>
+                                                <h4>$class</h4>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/PhpOffice.PhpWord.Reader.ReaderInterface.html">\PhpOffice\PhpWord\Reader\ReaderInterface</a></code><p></p>
+                                        <code>boolean</code><p></p>
                                                                     </div>
                             </div>
+
                         </div>
                                             <a id="method_load"></a>
                         <div class="element clickable method public  method_load" data-toggle="collapse" data-target=".method_load .collapse">
@@ -252,6 +343,8 @@
                             <pre>load(string $filename, string $readerName = &#039;Word2007&#039;) : \PhpOffice\PhpWord\PhpWord</pre>
                             <div class="labels">
                                                                 <span class="label">static</span>                                                                                                                            </div>
+
+                            
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -270,33 +363,10 @@
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                        <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p><p>$phpWord</p></p>
                                                                     </div>
                             </div>
-                        </div>
-                                            <a id="method_isConcreteClass"></a>
-                        <div class="element clickable method private  method_isConcreteClass" data-toggle="collapse" data-target=".method_isConcreteClass .collapse">
-                            <h2>Check if it&#039;s a concrete class (not abstract nor interface)</h2>
-                            <pre>isConcreteClass(string $class) : bool</pre>
-                            <div class="labels">
-                                                                <span class="label">static</span>                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
 
-                                    <table class="table">
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$class</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>bool</code><p></p>
-                                                                    </div>
-                            </div>
                         </div>
                     
                     
@@ -320,7 +390,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 02 Oct 2014 16:12:11 +0000.<br/>
+            generated on Sat, 03 Jan 2015 09:52:58 +0000.<br/>
     </footer>
     </body>
 </html>
