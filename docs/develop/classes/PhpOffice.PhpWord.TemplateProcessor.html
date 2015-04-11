@@ -149,7 +149,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method public">
         <a href="#method_getVariables" title="getVariables :: Returns array of all variables in template.">
             <span class="description">Returns array of all variables in template.</span><pre>getVariables</pre>
         </a>
@@ -183,7 +183,12 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected">
+                                                                                                                                                                                                                                                                                                                                        <li class="method protected">
+                            <a href="#method_fixBrokenMacros" title="fixBrokenMacros :: Finds parts of broken macros and sticks them together.">
+                                <span class="description">Finds parts of broken macros and sticks them together.</span><pre>fixBrokenMacros</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                <li class="method protected">
                             <a href="#method_getVariablesForPart" title="getVariablesForPart :: Find all variables in $documentPartXML.">
                                 <span class="description">Find all variables in $documentPartXML.</span><pre>getVariablesForPart</pre>
                             </a>
@@ -207,7 +212,7 @@
                                 <span class="description">Find the start position of the nearest table row before $offset.</span><pre>findRowStart</pre>
                             </a>
                         </li>
-                                                                                <li class="method private">
+                                                                                                                    <li class="method private">
                             <a href="#method_getFooterName" title="getFooterName :: Get the name of the footer file for $index.">
                                 <span class="description">Get the name of the footer file for $index.</span><pre>getFooterName</pre>
                             </a>
@@ -254,7 +259,7 @@
                                                                                 <p>Default</p>
                                     </td>
                                 </tr>
-                                                                                                                                                                                                                                                                                                                                            </table>
+                                                                                                                                                                                </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
@@ -508,6 +513,42 @@
                                                                             
                                                                             <h3>Response</h3>
                                         <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_fixBrokenMacros"></a>
+                        <div class="element clickable method protected  method_fixBrokenMacros" data-toggle="collapse" data-target=".method_fixBrokenMacros .collapse">
+                            <h2>Finds parts of broken macros and sticks them together.</h2>
+                            <pre>fixBrokenMacros(string $documentPart) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Macros, while being edited, could be implicitly broken by some of the word processors.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.13.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$documentPart</h4>
+                                                <code>string</code><p><p>The document part in XML representation.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -979,7 +1020,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 22 Mar 2015 08:22:40 +0000.<br/>
+            generated on Sat, 11 Apr 2015 17:36:40 +0000.<br/>
     </footer>
     </body>
 </html>
