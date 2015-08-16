@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Reader\MsDoc
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/PhpOffice.html">PhpOffice</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public inherited">
+        <a href="#method_canRead" title="canRead :: Can the current ReaderInterface read the file?">
+            <span class="description">Can the current ReaderInterface read the file?</span><pre>canRead</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                        <li class="method public">
+        <a href="#method_getInt1d" title="getInt1d :: Read 8-bit unsigned integer">
+            <span class="description">Read 8-bit unsigned integer</span><pre>getInt1d</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getInt2d" title="getInt2d :: Read 16-bit unsigned integer">
+            <span class="description">Read 16-bit unsigned integer</span><pre>getInt2d</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getInt3d" title="getInt3d :: Read 24-bit signed integer">
+            <span class="description">Read 24-bit signed integer</span><pre>getInt3d</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getInt4d" title="getInt4d :: Read 32-bit signed integer">
+            <span class="description">Read 32-bit signed integer</span><pre>getInt4d</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_getReadDataOnly" title="getReadDataOnly :: Read data only?">
+            <span class="description">Read data only?</span><pre>getReadDataOnly</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_isReadDataOnly" title="isReadDataOnly :: Read data only?">
+            <span class="description">Read data only?</span><pre>isReadDataOnly</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_load" title="load :: Loads PhpWord from file">
+            <span class="description">Loads PhpWord from file</span><pre>load</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_setReadDataOnly" title="setReadDataOnly :: Set read data only">
+            <span class="description">Set read data only</span><pre>setReadDataOnly</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
+                            <a href="#method_openFile" title="openFile :: Open file for reading">
+                                <span class="description">Open file for reading</span><pre>openFile</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                <li class="method private">
+                            <a href="#method_generatePhpWord" title="generatePhpWord :: ">
+                                <span class="description"></span><pre>generatePhpWord</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_getArrayCP" title="getArrayCP :: ">
+                                <span class="description"></span><pre>getArrayCP</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                <li class="method private">
+                            <a href="#method_getNumInLcb" title="getNumInLcb :: ">
+                                <span class="description"></span><pre>getNumInLcb</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                            <li class="method private">
+                            <a href="#method_loadOLE" title="loadOLE :: Load an OLE Document">
+                                <span class="description">Load an OLE Document</span><pre>loadOLE</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_loadRecordHeader" title="loadRecordHeader :: Read a record header">
+                                <span class="description">Read a record header</span><pre>loadRecordHeader</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method private">
+                            <a href="#method_readBlockFibRgFcLcb" title="readBlockFibRgFcLcb :: ">
+                                <span class="description"></span><pre>readBlockFibRgFcLcb</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readFib" title="readFib :: ">
+                                <span class="description"></span><pre>readFib</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readFibContent" title="readFibContent :: ">
+                                <span class="description"></span><pre>readFibContent</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readPrl" title="readPrl :: ">
+                                <span class="description"></span><pre>readPrl</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readRecordPlcfBteChpx" title="readRecordPlcfBteChpx :: Character formatting properties to text in a document">
+                                <span class="description">Character formatting properties to text in a document</span><pre>readRecordPlcfBteChpx</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readRecordPlcfBtePapx" title="readRecordPlcfBtePapx :: Paragraph and information about them">
+                                <span class="description">Paragraph and information about them</span><pre>readRecordPlcfBtePapx</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readRecordPlcfSed" title="readRecordPlcfSed :: Section and information about them">
+                                <span class="description">Section and information about them</span><pre>readRecordPlcfSed</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readRecordSttbfFfn" title="readRecordSttbfFfn :: Specifies the fonts that are used in the document">
+                                <span class="description">Specifies the fonts that are used in the document</span><pre>readRecordSttbfFfn</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readSprm" title="readSprm :: ">
+                                <span class="description"></span><pre>readSprm</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private">
+                            <a href="#method_readSprmSpra" title="readSprmSpra :: ">
+                                <span class="description"></span><pre>readSprmSpra</pre>
+                            </a>
+                        </li>
+                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPCMYKJPEG" title="MSOBLIPCMYKJPEG :: ">
+                        <span class="description"></span><pre>MSOBLIPCMYKJPEG</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPDIB" title="MSOBLIPDIB :: ">
+                        <span class="description"></span><pre>MSOBLIPDIB</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPEMF" title="MSOBLIPEMF :: ">
+                        <span class="description"></span><pre>MSOBLIPEMF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPERROR" title="MSOBLIPERROR :: ">
+                        <span class="description"></span><pre>MSOBLIPERROR</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPJPEG" title="MSOBLIPJPEG :: ">
+                        <span class="description"></span><pre>MSOBLIPJPEG</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPPICT" title="MSOBLIPPICT :: ">
+                        <span class="description"></span><pre>MSOBLIPPICT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPPNG" title="MSOBLIPPNG :: ">
+                        <span class="description"></span><pre>MSOBLIPPNG</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPTIFF" title="MSOBLIPTIFF :: ">
+                        <span class="description"></span><pre>MSOBLIPTIFF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPUNKNOWN" title="MSOBLIPUNKNOWN :: ">
+                        <span class="description"></span><pre>MSOBLIPUNKNOWN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_MSOBLIPWMF" title="MSOBLIPWMF :: ">
+                        <span class="description"></span><pre>MSOBLIPWMF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPDIB" title="OFFICEARTBLIPDIB :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPDIB</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPEMF" title="OFFICEARTBLIPEMF :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPEMF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPJPEG" title="OFFICEARTBLIPJPEG :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPJPEG</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPJPG" title="OFFICEARTBLIPJPG :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPJPG</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPPICT" title="OFFICEARTBLIPPICT :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPPICT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPPNG" title="OFFICEARTBLIPPNG :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPPNG</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPTIFF" title="OFFICEARTBLIPTIFF :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPTIFF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_OFFICEARTBLIPWMF" title="OFFICEARTBLIPWMF :: ">
+                        <span class="description"></span><pre>OFFICEARTBLIPWMF</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_SPRA_VALUE" title="SPRA_VALUE :: ">
+                        <span class="description"></span><pre>SPRA_VALUE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_SPRA_VALUE_OPPOSITE" title="SPRA_VALUE_OPPOSITE :: ">
+                        <span class="description"></span><pre>SPRA_VALUE_OPPOSITE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION_2000" title="VERSION_2000 :: ">
+                        <span class="description"></span><pre>VERSION_2000</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION_2002" title="VERSION_2002 :: ">
+                        <span class="description"></span><pre>VERSION_2002</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION_2003" title="VERSION_2003 :: ">
+                        <span class="description"></span><pre>VERSION_2003</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION_2007" title="VERSION_2007 :: ">
+                        <span class="description"></span><pre>VERSION_2007</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VERSION_97" title="VERSION_97 :: ">
+                        <span class="description"></span><pre>VERSION_97</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>MsDoc</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Reader.AbstractReader.html">\PhpOffice\PhpWord\Reader\AbstractReader</a>
+                                                                Implements <a href="../classes/PhpOffice.PhpWord.Reader.ReaderInterface.html">\PhpOffice\PhpWord\Reader\ReaderInterface</a>
+                                    </small>
+                <p class="short_description">Reader for Word97</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        since
+                                                                            </th>
+                                    <td>
+                                                                                    0.10.0
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_canRead"></a>
+                        <div class="element clickable method public  method_canRead inherited" data-toggle="collapse" data-target=".method_canRead .collapse">
+                            <h2>Can the current ReaderInterface read the file?</h2>
+                            <pre>canRead(string $filename) : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_generatePhpWord"></a>
+                        <div class="element clickable method private  method_generatePhpWord" data-toggle="collapse" data-target=".method_generatePhpWord .collapse">
+                            <h2>generatePhpWord</h2>
+                            <pre>generatePhpWord() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getArrayCP"></a>
+                        <div class="element clickable method private  method_getArrayCP" data-toggle="collapse" data-target=".method_getArrayCP .collapse">
+                            <h2>getArrayCP</h2>
+                            <pre>getArrayCP( $data,  $posMem,  $iNum) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$posMem</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$iNum</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getInt1d"></a>
+                        <div class="element clickable method public  method_getInt1d" data-toggle="collapse" data-target=".method_getInt1d .collapse">
+                            <h2>Read 8-bit unsigned integer</h2>
+                            <pre>getInt1d(string $data, integer $pos) : integer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getInt2d"></a>
+                        <div class="element clickable method public  method_getInt2d" data-toggle="collapse" data-target=".method_getInt2d .collapse">
+                            <h2>Read 16-bit unsigned integer</h2>
+                            <pre>getInt2d(string $data, integer $pos) : integer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getInt3d"></a>
+                        <div class="element clickable method public  method_getInt3d" data-toggle="collapse" data-target=".method_getInt3d .collapse">
+                            <h2>Read 24-bit signed integer</h2>
+                            <pre>getInt3d(string $data, integer $pos) : integer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getInt4d"></a>
+                        <div class="element clickable method public  method_getInt4d" data-toggle="collapse" data-target=".method_getInt4d .collapse">
+                            <h2>Read 32-bit signed integer</h2>
+                            <pre>getInt4d(string $data, integer $pos) : integer</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getNumInLcb"></a>
+                        <div class="element clickable method private  method_getNumInLcb" data-toggle="collapse" data-target=".method_getNumInLcb .collapse">
+                            <h2>getNumInLcb</h2>
+                            <pre>getNumInLcb( $lcb,  $iSize) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$lcb</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$iSize</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getReadDataOnly"></a>
+                        <div class="element clickable method public deprecated method_getReadDataOnly inherited" data-toggle="collapse" data-target=".method_getReadDataOnly .collapse">
+                            <h2>Read data only?</h2>
+                            <pre>getReadDataOnly() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isReadDataOnly"></a>
+                        <div class="element clickable method public  method_isReadDataOnly inherited" data-toggle="collapse" data-target=".method_isReadDataOnly .collapse">
+                            <h2>Read data only?</h2>
+                            <pre>isReadDataOnly() : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_load"></a>
+                        <div class="element clickable method public  method_load" data-toggle="collapse" data-target=".method_load .collapse">
+                            <h2>Loads PhpWord from file</h2>
+                            <pre>load(string $filename) : \PhpOffice\PhpWord\PhpWord</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_loadOLE"></a>
+                        <div class="element clickable method private  method_loadOLE" data-toggle="collapse" data-target=".method_loadOLE .collapse">
+                            <h2>Load an OLE Document</h2>
+                            <pre>loadOLE(string $filename) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_loadRecordHeader"></a>
+                        <div class="element clickable method private  method_loadRecordHeader" data-toggle="collapse" data-target=".method_loadRecordHeader .collapse">
+                            <h2>Read a record header</h2>
+                            <pre>loadRecordHeader(string $stream, integer $pos) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$stream</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_openFile"></a>
+                        <div class="element clickable method protected  method_openFile inherited" data-toggle="collapse" data-target=".method_openFile .collapse">
+                            <h2>Open file for reading</h2>
+                            <pre>openFile(string $filename) : resource</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>resource</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readBlockFibRgFcLcb"></a>
+                        <div class="element clickable method private  method_readBlockFibRgFcLcb" data-toggle="collapse" data-target=".method_readBlockFibRgFcLcb .collapse">
+                            <h2>readBlockFibRgFcLcb</h2>
+                            <pre>readBlockFibRgFcLcb( $data,  $pos,  $version) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$version</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readFib"></a>
+                        <div class="element clickable method private  method_readFib" data-toggle="collapse" data-target=".method_readFib .collapse">
+                            <h2>readFib</h2>
+                            <pre>readFib( $data) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="http://msdn.microsoft.com/en-us/library/dd949344%28v=office.12%29.aspx">http://msdn.microsoft.com/en-us/library/dd949344%28v=office.12%29.aspx</a></p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="https://igor.io/2012/09/24/binary-parsing.html">https://igor.io/2012/09/24/binary-parsing.html</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readFibContent"></a>
+                        <div class="element clickable method private  method_readFibContent" data-toggle="collapse" data-target=".method_readFibContent .collapse">
+                            <h2>readFibContent</h2>
+                            <pre>readFibContent() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readPrl"></a>
+                        <div class="element clickable method private  method_readPrl" data-toggle="collapse" data-target=".method_readPrl .collapse">
+                            <h2>readPrl</h2>
+                            <pre>readPrl( $data,  $pos,  $cbNum) : \stdClass</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="http://msdn.microsoft.com/en-us/library/dd772849%28v=office.12%29.aspx">http://msdn.microsoft.com/en-us/library/dd772849%28v=office.12%29.aspx</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code></code><p><p>integer</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code></code><p><p>integer</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cbNum</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\stdClass</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readRecordPlcfBteChpx"></a>
+                        <div class="element clickable method private  method_readRecordPlcfBteChpx" data-toggle="collapse" data-target=".method_readRecordPlcfBteChpx .collapse">
+                            <h2>Character formatting properties to text in a document</h2>
+                            <pre>readRecordPlcfBteChpx() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="http://msdn.microsoft.com/en-us/library/dd907108%28v=office.12%29.aspx">http://msdn.microsoft.com/en-us/library/dd907108%28v=office.12%29.aspx</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readRecordPlcfBtePapx"></a>
+                        <div class="element clickable method private  method_readRecordPlcfBtePapx" data-toggle="collapse" data-target=".method_readRecordPlcfBtePapx .collapse">
+                            <h2>Paragraph and information about them</h2>
+                            <pre>readRecordPlcfBtePapx() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="http://msdn.microsoft.com/en-us/library/dd908569%28v=office.12%29.aspx">http://msdn.microsoft.com/en-us/library/dd908569%28v=office.12%29.aspx</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readRecordPlcfSed"></a>
+                        <div class="element clickable method private  method_readRecordPlcfSed" data-toggle="collapse" data-target=".method_readRecordPlcfSed .collapse">
+                            <h2>Section and information about them</h2>
+                            <pre>readRecordPlcfSed() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="http://msdn.microsoft.com/en-us/library/dd924458%28v=office.12%29.aspx">http://msdn.microsoft.com/en-us/library/dd924458%28v=office.12%29.aspx</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readRecordSttbfFfn"></a>
+                        <div class="element clickable method private  method_readRecordSttbfFfn" data-toggle="collapse" data-target=".method_readRecordSttbfFfn .collapse">
+                            <h2>Specifies the fonts that are used in the document</h2>
+                            <pre>readRecordSttbfFfn() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    link
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p><a href="http://msdn.microsoft.com/en-us/library/dd943880%28v=office.12%29.aspx">http://msdn.microsoft.com/en-us/library/dd943880%28v=office.12%29.aspx</a></p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readSprm"></a>
+                        <div class="element clickable method private  method_readSprm" data-toggle="collapse" data-target=".method_readSprm .collapse">
+                            <h2>readSprm</h2>
+                            <pre>readSprm( $sprm) : \stdClass</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$sprm</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\stdClass</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_readSprmSpra"></a>
+                        <div class="element clickable method private  method_readSprmSpra" data-toggle="collapse" data-target=".method_readSprmSpra .collapse">
+                            <h2>readSprmSpra</h2>
+                            <pre>readSprmSpra(string $data, integer $pos, \stdClass $oSprm) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pos</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$oSprm</h4>
+                                                <code>\stdClass</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setReadDataOnly"></a>
+                        <div class="element clickable method public  method_setReadDataOnly inherited" data-toggle="collapse" data-target=".method_setReadDataOnly .collapse">
+                            <h2>Set read data only</h2>
+                            <pre>setReadDataOnly(boolean $value = true) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>boolean</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_VERSION_97"> </a>
+                            <div class="element clickable constant  constant_VERSION_97" data-toggle="collapse" data-target=".constant_VERSION_97 .collapse">
+                                <h2>VERSION_97</h2>
+                                <pre>VERSION_97</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VERSION_2000"> </a>
+                            <div class="element clickable constant  constant_VERSION_2000" data-toggle="collapse" data-target=".constant_VERSION_2000 .collapse">
+                                <h2>VERSION_2000</h2>
+                                <pre>VERSION_2000</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VERSION_2002"> </a>
+                            <div class="element clickable constant  constant_VERSION_2002" data-toggle="collapse" data-target=".constant_VERSION_2002 .collapse">
+                                <h2>VERSION_2002</h2>
+                                <pre>VERSION_2002</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VERSION_2003"> </a>
+                            <div class="element clickable constant  constant_VERSION_2003" data-toggle="collapse" data-target=".constant_VERSION_2003 .collapse">
+                                <h2>VERSION_2003</h2>
+                                <pre>VERSION_2003</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VERSION_2007"> </a>
+                            <div class="element clickable constant  constant_VERSION_2007" data-toggle="collapse" data-target=".constant_VERSION_2007 .collapse">
+                                <h2>VERSION_2007</h2>
+                                <pre>VERSION_2007</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_SPRA_VALUE"> </a>
+                            <div class="element clickable constant  constant_SPRA_VALUE" data-toggle="collapse" data-target=".constant_SPRA_VALUE .collapse">
+                                <h2>SPRA_VALUE</h2>
+                                <pre>SPRA_VALUE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_SPRA_VALUE_OPPOSITE"> </a>
+                            <div class="element clickable constant  constant_SPRA_VALUE_OPPOSITE" data-toggle="collapse" data-target=".constant_SPRA_VALUE_OPPOSITE .collapse">
+                                <h2>SPRA_VALUE_OPPOSITE</h2>
+                                <pre>SPRA_VALUE_OPPOSITE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPEMF"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPEMF" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPEMF .collapse">
+                                <h2>OFFICEARTBLIPEMF</h2>
+                                <pre>OFFICEARTBLIPEMF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPWMF"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPWMF" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPWMF .collapse">
+                                <h2>OFFICEARTBLIPWMF</h2>
+                                <pre>OFFICEARTBLIPWMF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPPICT"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPPICT" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPPICT .collapse">
+                                <h2>OFFICEARTBLIPPICT</h2>
+                                <pre>OFFICEARTBLIPPICT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPJPG"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPJPG" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPJPG .collapse">
+                                <h2>OFFICEARTBLIPJPG</h2>
+                                <pre>OFFICEARTBLIPJPG</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPPNG"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPPNG" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPPNG .collapse">
+                                <h2>OFFICEARTBLIPPNG</h2>
+                                <pre>OFFICEARTBLIPPNG</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPDIB"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPDIB" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPDIB .collapse">
+                                <h2>OFFICEARTBLIPDIB</h2>
+                                <pre>OFFICEARTBLIPDIB</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPTIFF"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPTIFF" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPTIFF .collapse">
+                                <h2>OFFICEARTBLIPTIFF</h2>
+                                <pre>OFFICEARTBLIPTIFF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_OFFICEARTBLIPJPEG"> </a>
+                            <div class="element clickable constant  constant_OFFICEARTBLIPJPEG" data-toggle="collapse" data-target=".constant_OFFICEARTBLIPJPEG .collapse">
+                                <h2>OFFICEARTBLIPJPEG</h2>
+                                <pre>OFFICEARTBLIPJPEG</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPERROR"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPERROR" data-toggle="collapse" data-target=".constant_MSOBLIPERROR .collapse">
+                                <h2>MSOBLIPERROR</h2>
+                                <pre>MSOBLIPERROR</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPUNKNOWN"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPUNKNOWN" data-toggle="collapse" data-target=".constant_MSOBLIPUNKNOWN .collapse">
+                                <h2>MSOBLIPUNKNOWN</h2>
+                                <pre>MSOBLIPUNKNOWN</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPEMF"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPEMF" data-toggle="collapse" data-target=".constant_MSOBLIPEMF .collapse">
+                                <h2>MSOBLIPEMF</h2>
+                                <pre>MSOBLIPEMF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPWMF"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPWMF" data-toggle="collapse" data-target=".constant_MSOBLIPWMF .collapse">
+                                <h2>MSOBLIPWMF</h2>
+                                <pre>MSOBLIPWMF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPPICT"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPPICT" data-toggle="collapse" data-target=".constant_MSOBLIPPICT .collapse">
+                                <h2>MSOBLIPPICT</h2>
+                                <pre>MSOBLIPPICT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPJPEG"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPJPEG" data-toggle="collapse" data-target=".constant_MSOBLIPJPEG .collapse">
+                                <h2>MSOBLIPJPEG</h2>
+                                <pre>MSOBLIPJPEG</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPPNG"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPPNG" data-toggle="collapse" data-target=".constant_MSOBLIPPNG .collapse">
+                                <h2>MSOBLIPPNG</h2>
+                                <pre>MSOBLIPPNG</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPDIB"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPDIB" data-toggle="collapse" data-target=".constant_MSOBLIPDIB .collapse">
+                                <h2>MSOBLIPDIB</h2>
+                                <pre>MSOBLIPDIB</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPTIFF"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPTIFF" data-toggle="collapse" data-target=".constant_MSOBLIPTIFF .collapse">
+                                <h2>MSOBLIPTIFF</h2>
+                                <pre>MSOBLIPTIFF</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_MSOBLIPCMYKJPEG"> </a>
+                            <div class="element clickable constant  constant_MSOBLIPCMYKJPEG" data-toggle="collapse" data-target=".constant_MSOBLIPCMYKJPEG .collapse">
+                                <h2>MSOBLIPCMYKJPEG</h2>
+                                <pre>MSOBLIPCMYKJPEG</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_phpWord"> </a>
+                            <div class="element clickable property  private property_phpWord" data-toggle="collapse" data-target=".property_phpWord .collapse">
+                                <h2>PhpWord object</h2>
+                                <pre>phpWord : \PhpOffice\PhpWord\PhpWord</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dataWorkDocument"> </a>
+                            <div class="element clickable property  private property_dataWorkDocument" data-toggle="collapse" data-target=".property_dataWorkDocument .collapse">
+                                <h2>WordDocument Stream</h2>
+                                <pre>dataWorkDocument : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_data1Table"> </a>
+                            <div class="element clickable property  private property_data1Table" data-toggle="collapse" data-target=".property_data1Table .collapse">
+                                <h2>1Table Stream</h2>
+                                <pre>data1Table : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dataData"> </a>
+                            <div class="element clickable property  private property_dataData" data-toggle="collapse" data-target=".property_dataData .collapse">
+                                <h2>Data Stream</h2>
+                                <pre>dataData : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dataObjectPool"> </a>
+                            <div class="element clickable property  private property_dataObjectPool" data-toggle="collapse" data-target=".property_dataObjectPool .collapse">
+                                <h2>Object Pool Stream</h2>
+                                <pre>dataObjectPool : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_arrayCharacters"> </a>
+                            <div class="element clickable property  private property_arrayCharacters" data-toggle="collapse" data-target=".property_arrayCharacters .collapse">
+                                <h2>arrayCharacters</h2>
+                                <pre>arrayCharacters : array&lt;mixed,\stdClass&gt;</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;mixed,\stdClass&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_arrayFib"> </a>
+                            <div class="element clickable property  private property_arrayFib" data-toggle="collapse" data-target=".property_arrayFib .collapse">
+                                <h2>arrayFib</h2>
+                                <pre>arrayFib : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_arrayFonts"> </a>
+                            <div class="element clickable property  private property_arrayFonts" data-toggle="collapse" data-target=".property_arrayFonts .collapse">
+                                <h2>arrayFonts</h2>
+                                <pre>arrayFonts : array&lt;mixed,string&gt;</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;mixed,string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_arrayParagraphs"> </a>
+                            <div class="element clickable property  private property_arrayParagraphs" data-toggle="collapse" data-target=".property_arrayParagraphs .collapse">
+                                <h2>arrayParagraphs</h2>
+                                <pre>arrayParagraphs : array&lt;mixed,string&gt;</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;mixed,string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_arraySections"> </a>
+                            <div class="element clickable property  private property_arraySections" data-toggle="collapse" data-target=".property_arraySections .collapse">
+                                <h2>arraySections</h2>
+                                <pre>arraySections : array&lt;mixed,\stdClass&gt;</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;mixed,\stdClass&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_readDataOnly"> </a>
+                            <div class="element clickable property  protected property_readDataOnly inherited" data-toggle="collapse" data-target=".property_readDataOnly .collapse">
+                                <h2>Read data only?</h2>
+                                <pre>readDataOnly : boolean</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>boolean</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fileHandle"> </a>
+                            <div class="element clickable property  protected property_fileHandle inherited" data-toggle="collapse" data-target=".property_fileHandle .collapse">
+                                <h2>File pointer</h2>
+                                <pre>fileHandle : boolean|resource</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>boolean|resource</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PhpOffice\PhpWord\Reader\MsDoc"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.Reader.html">Reader</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Reader.MsDoc.html">MsDoc</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 16 Aug 2015 15:34:29 +0000.<br/>
+    </footer>
+    </body>
+</html>
