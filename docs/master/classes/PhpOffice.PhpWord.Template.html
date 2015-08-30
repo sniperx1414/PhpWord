@@ -149,7 +149,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method public inherited">
         <a href="#method_getVariables" title="getVariables :: Returns array of all variables in template.">
             <span class="description">Returns array of all variables in template.</span><pre>getVariables</pre>
         </a>
@@ -183,50 +183,60 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
+                                                                                                                                                                                                                                                                <li class="method protected inherited">
+                            <a href="#method_findRowEnd" title="findRowEnd :: Find the end position of the nearest table row after $offset.">
+                                <span class="description">Find the end position of the nearest table row after $offset.</span><pre>findRowEnd</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_findRowStart" title="findRowStart :: Find the start position of the nearest table row before $offset.">
+                                <span class="description">Find the start position of the nearest table row before $offset.</span><pre>findRowStart</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_fixBrokenMacros" title="fixBrokenMacros :: Finds parts of broken macros and sticks them together.">
+                                <span class="description">Finds parts of broken macros and sticks them together.</span><pre>fixBrokenMacros</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_getFooterName" title="getFooterName :: Get the name of the footer file for $index.">
+                                <span class="description">Get the name of the footer file for $index.</span><pre>getFooterName</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_getHeaderName" title="getHeaderName :: Get the name of the header file for $index.">
+                                <span class="description">Get the name of the header file for $index.</span><pre>getHeaderName</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_getSlice" title="getSlice :: Get a slice of a string.">
+                                <span class="description">Get a slice of a string.</span><pre>getSlice</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method protected inherited">
                             <a href="#method_getVariablesForPart" title="getVariablesForPart :: Find all variables in $documentPartXML.">
                                 <span class="description">Find all variables in $documentPartXML.</span><pre>getVariablesForPart</pre>
                             </a>
                         </li>
                                                                                                                                                                                                                                 <li class="method protected inherited">
-                            <a href="#method_setValueForPart" title="setValueForPart :: Find and replace placeholders in the given XML section.">
-                                <span class="description">Find and replace placeholders in the given XML section.</span><pre>setValueForPart</pre>
+                            <a href="#method_setValueForPart" title="setValueForPart :: Find and replace macros in the given XML section.">
+                                <span class="description">Find and replace macros in the given XML section.</span><pre>setValueForPart</pre>
                             </a>
                         </li>
                                                 </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                <li class="method private inherited">
-                            <a href="#method_findRowEnd" title="findRowEnd :: Find the end position of the nearest table row after $offset.">
-                                <span class="description">Find the end position of the nearest table row after $offset.</span><pre>findRowEnd</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private inherited">
-                            <a href="#method_findRowStart" title="findRowStart :: Find the start position of the nearest table row before $offset.">
-                                <span class="description">Find the start position of the nearest table row before $offset.</span><pre>findRowStart</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private inherited">
-                            <a href="#method_getFooterName" title="getFooterName :: Get the name of the footer file for $index.">
-                                <span class="description">Get the name of the footer file for $index.</span><pre>getFooterName</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private inherited">
-                            <a href="#method_getHeaderName" title="getHeaderName :: Get the name of the header file for $index.">
-                                <span class="description">Get the name of the header file for $index.</span><pre>getHeaderName</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private inherited">
-                            <a href="#method_getSlice" title="getSlice :: Get a slice of a string.">
-                                <span class="description">Get a slice of a string.</span><pre>getSlice</pre>
-                            </a>
-                        </li>
-                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
             <ul>
+                                <li class="constant ">
+                    <a href="#constant_MAXIMUM_REPLACEMENTS_DEFAULT" title="MAXIMUM_REPLACEMENTS_DEFAULT :: ">
+                        <span class="description"></span><pre>MAXIMUM_REPLACEMENTS_DEFAULT</pre>
+                    </a>
+                </li>
                             </ul>
         </li>
     </ul>
@@ -460,7 +470,7 @@
 
                         </div>
                                             <a id="method_findRowEnd"></a>
-                        <div class="element clickable method private  method_findRowEnd inherited" data-toggle="collapse" data-target=".method_findRowEnd .collapse">
+                        <div class="element clickable method protected  method_findRowEnd inherited" data-toggle="collapse" data-target=".method_findRowEnd .collapse">
                             <h2>Find the end position of the nearest table row after $offset.</h2>
                             <pre>findRowEnd(integer $offset) : integer</pre>
                             <div class="labels">
@@ -487,7 +497,7 @@
 
                         </div>
                                             <a id="method_findRowStart"></a>
-                        <div class="element clickable method private  method_findRowStart inherited" data-toggle="collapse" data-target=".method_findRowStart .collapse">
+                        <div class="element clickable method protected  method_findRowStart inherited" data-toggle="collapse" data-target=".method_findRowStart .collapse">
                             <h2>Find the start position of the nearest table row before $offset.</h2>
                             <pre>findRowStart(integer $offset) : integer</pre>
                             <div class="labels">
@@ -522,8 +532,44 @@
                             </div>
 
                         </div>
+                                            <a id="method_fixBrokenMacros"></a>
+                        <div class="element clickable method protected  method_fixBrokenMacros inherited" data-toggle="collapse" data-target=".method_fixBrokenMacros .collapse">
+                            <h2>Finds parts of broken macros and sticks them together.</h2>
+                            <pre>fixBrokenMacros(string $documentPart) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Macros, while being edited, could be implicitly broken by some of the word processors.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.13.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$documentPart</h4>
+                                                <code>string</code><p><p>The document part in XML representation.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_getFooterName"></a>
-                        <div class="element clickable method private  method_getFooterName inherited" data-toggle="collapse" data-target=".method_getFooterName .collapse">
+                        <div class="element clickable method protected  method_getFooterName inherited" data-toggle="collapse" data-target=".method_getFooterName .collapse">
                             <h2>Get the name of the footer file for $index.</h2>
                             <pre>getFooterName(integer $index) : string</pre>
                             <div class="labels">
@@ -550,7 +596,7 @@
 
                         </div>
                                             <a id="method_getHeaderName"></a>
-                        <div class="element clickable method private  method_getHeaderName inherited" data-toggle="collapse" data-target=".method_getHeaderName .collapse">
+                        <div class="element clickable method protected  method_getHeaderName inherited" data-toggle="collapse" data-target=".method_getHeaderName .collapse">
                             <h2>Get the name of the header file for $index.</h2>
                             <pre>getHeaderName(integer $index) : string</pre>
                             <div class="labels">
@@ -577,7 +623,7 @@
 
                         </div>
                                             <a id="method_getSlice"></a>
-                        <div class="element clickable method private  method_getSlice inherited" data-toggle="collapse" data-target=".method_getSlice .collapse">
+                        <div class="element clickable method protected  method_getSlice inherited" data-toggle="collapse" data-target=".method_getSlice .collapse">
                             <h2>Get a slice of a string.</h2>
                             <pre>getSlice(integer $startPosition, integer $endPosition) : string</pre>
                             <div class="labels">
@@ -767,7 +813,7 @@
                                             <a id="method_setValue"></a>
                         <div class="element clickable method public  method_setValue inherited" data-toggle="collapse" data-target=".method_setValue .collapse">
                             <h2>setValue</h2>
-                            <pre>setValue(mixed $search, mixed $replace, integer $limit = -1) : void</pre>
+                            <pre>setValue(mixed $macro, mixed $replace, integer $limit = self::MAXIMUM_REPLACEMENTS_DEFAULT) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -781,7 +827,7 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$search</h4>
+                                                <h4>$macro</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -799,7 +845,7 @@
                         </div>
                                             <a id="method_setValueForPart"></a>
                         <div class="element clickable method protected  method_setValueForPart inherited" data-toggle="collapse" data-target=".method_setValueForPart .collapse">
-                            <h2>Find and replace placeholders in the given XML section.</h2>
+                            <h2>Find and replace macros in the given XML section.</h2>
                             <pre>setValueForPart(string $documentPartXML, string $search, string $replace, integer $limit) : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -837,10 +883,32 @@
 
                         </div>
                     
-                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_MAXIMUM_REPLACEMENTS_DEFAULT"> </a>
+                            <div class="element clickable constant  constant_MAXIMUM_REPLACEMENTS_DEFAULT inherited" data-toggle="collapse" data-target=".constant_MAXIMUM_REPLACEMENTS_DEFAULT .collapse">
+                                <h2>MAXIMUM_REPLACEMENTS_DEFAULT</h2>
+                                <pre>MAXIMUM_REPLACEMENTS_DEFAULT</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
                                                     <a id="property_zipClass"> </a>
-                            <div class="element clickable property  private property_zipClass inherited" data-toggle="collapse" data-target=".property_zipClass .collapse">
+                            <div class="element clickable property  protected property_zipClass inherited" data-toggle="collapse" data-target=".property_zipClass .collapse">
                                 <h2>ZipArchive object.</h2>
                                 <pre>zipClass : mixed</pre>
                                 <div class="labels">
@@ -865,10 +933,10 @@
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_temporaryDocumentFilename"> </a>
-                            <div class="element clickable property  private property_temporaryDocumentFilename inherited" data-toggle="collapse" data-target=".property_temporaryDocumentFilename .collapse">
+                                                    <a id="property_tempDocumentFilename"> </a>
+                            <div class="element clickable property  protected property_tempDocumentFilename inherited" data-toggle="collapse" data-target=".property_tempDocumentFilename .collapse">
                                 <h2>Temporary document filename (with path).</h2>
-                                <pre>temporaryDocumentFilename : string</pre>
+                                <pre>tempDocumentFilename : string</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -891,10 +959,10 @@
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_temporaryDocumentMainPart"> </a>
-                            <div class="element clickable property  private property_temporaryDocumentMainPart inherited" data-toggle="collapse" data-target=".property_temporaryDocumentMainPart .collapse">
+                                                    <a id="property_tempDocumentMainPart"> </a>
+                            <div class="element clickable property  protected property_tempDocumentMainPart inherited" data-toggle="collapse" data-target=".property_tempDocumentMainPart .collapse">
                                 <h2>Content of main document part (in XML format) of the temporary document.</h2>
-                                <pre>temporaryDocumentMainPart : string</pre>
+                                <pre>tempDocumentMainPart : string</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -917,10 +985,10 @@
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_temporaryDocumentHeaders"> </a>
-                            <div class="element clickable property  private property_temporaryDocumentHeaders inherited" data-toggle="collapse" data-target=".property_temporaryDocumentHeaders .collapse">
+                                                    <a id="property_tempDocumentHeaders"> </a>
+                            <div class="element clickable property  protected property_tempDocumentHeaders inherited" data-toggle="collapse" data-target=".property_tempDocumentHeaders .collapse">
                                 <h2>Content of headers (in XML format) of the temporary document.</h2>
-                                <pre>temporaryDocumentHeaders : array&lt;mixed,string&gt;</pre>
+                                <pre>tempDocumentHeaders : array&lt;mixed,string&gt;</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -943,10 +1011,10 @@
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_temporaryDocumentFooters"> </a>
-                            <div class="element clickable property  private property_temporaryDocumentFooters inherited" data-toggle="collapse" data-target=".property_temporaryDocumentFooters .collapse">
+                                                    <a id="property_tempDocumentFooters"> </a>
+                            <div class="element clickable property  protected property_tempDocumentFooters inherited" data-toggle="collapse" data-target=".property_tempDocumentFooters .collapse">
                                 <h2>Content of footers (in XML format) of the temporary document.</h2>
-                                <pre>temporaryDocumentFooters : array&lt;mixed,string&gt;</pre>
+                                <pre>tempDocumentFooters : array&lt;mixed,string&gt;</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -989,7 +1057,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 03 Jan 2015 09:52:47 +0000.<br/>
+            generated on Sun, 30 Aug 2015 14:43:36 +0000.<br/>
     </footer>
     </body>
 </html>
