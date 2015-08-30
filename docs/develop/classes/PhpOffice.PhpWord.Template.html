@@ -219,8 +219,8 @@
                             </a>
                         </li>
                                                                                                                                                                                                                                 <li class="method protected inherited">
-                            <a href="#method_setValueForPart" title="setValueForPart :: Find and replace placeholders in the given XML section.">
-                                <span class="description">Find and replace placeholders in the given XML section.</span><pre>setValueForPart</pre>
+                            <a href="#method_setValueForPart" title="setValueForPart :: Find and replace macros in the given XML section.">
+                                <span class="description">Find and replace macros in the given XML section.</span><pre>setValueForPart</pre>
                             </a>
                         </li>
                                                 </ul>
@@ -232,6 +232,11 @@
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
             <ul>
+                                <li class="constant ">
+                    <a href="#constant_MAXIMUM_REPLACEMENTS_DEFAULT" title="MAXIMUM_REPLACEMENTS_DEFAULT :: ">
+                        <span class="description"></span><pre>MAXIMUM_REPLACEMENTS_DEFAULT</pre>
+                    </a>
+                </li>
                             </ul>
         </li>
     </ul>
@@ -808,7 +813,7 @@
                                             <a id="method_setValue"></a>
                         <div class="element clickable method public  method_setValue inherited" data-toggle="collapse" data-target=".method_setValue .collapse">
                             <h2>setValue</h2>
-                            <pre>setValue(mixed $search, mixed $replace, integer $limit = -1) : void</pre>
+                            <pre>setValue(mixed $macro, mixed $replace, integer $limit = self::MAXIMUM_REPLACEMENTS_DEFAULT) : void</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
 
@@ -822,7 +827,7 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$search</h4>
+                                                <h4>$macro</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -840,7 +845,7 @@
                         </div>
                                             <a id="method_setValueForPart"></a>
                         <div class="element clickable method protected  method_setValueForPart inherited" data-toggle="collapse" data-target=".method_setValueForPart .collapse">
-                            <h2>Find and replace placeholders in the given XML section.</h2>
+                            <h2>Find and replace macros in the given XML section.</h2>
                             <pre>setValueForPart(string $documentPartXML, string $search, string $replace, integer $limit) : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -878,7 +883,29 @@
 
                         </div>
                     
-                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_MAXIMUM_REPLACEMENTS_DEFAULT"> </a>
+                            <div class="element clickable constant  constant_MAXIMUM_REPLACEMENTS_DEFAULT inherited" data-toggle="collapse" data-target=".constant_MAXIMUM_REPLACEMENTS_DEFAULT .collapse">
+                                <h2>MAXIMUM_REPLACEMENTS_DEFAULT</h2>
+                                <pre>MAXIMUM_REPLACEMENTS_DEFAULT</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
                                                     <a id="property_zipClass"> </a>
                             <div class="element clickable property  protected property_zipClass inherited" data-toggle="collapse" data-target=".property_zipClass .collapse">
@@ -1030,7 +1057,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 16 Aug 2015 15:59:52 +0000.<br/>
+            generated on Sun, 30 Aug 2015 14:15:37 +0000.<br/>
     </footer>
     </body>
 </html>
