@@ -252,14 +252,14 @@
 <text text-anchor="middle" x="680.5" y="-4830.1" font-family="Times Roman,serif" font-size="11.00" fill="gray">Style</text>
 </g>
 <g id="graph24" class="cluster"><title>cluster_\PhpOffice\PhpWord\SimpleType</title>
-<polyline fill="none" stroke="gray" points="1054,-3662 1130,-3662 "/>
-<path fill="none" stroke="gray" d="M1130,-3662C1136,-3662 1142,-3668 1142,-3674"/>
-<polyline fill="none" stroke="gray" points="1142,-3674 1142,-3778 "/>
-<path fill="none" stroke="gray" d="M1142,-3778C1142,-3784 1136,-3790 1130,-3790"/>
-<polyline fill="none" stroke="gray" points="1130,-3790 1054,-3790 "/>
-<path fill="none" stroke="gray" d="M1054,-3790C1048,-3790 1042,-3784 1042,-3778"/>
-<polyline fill="none" stroke="gray" points="1042,-3778 1042,-3674 "/>
-<path fill="none" stroke="gray" d="M1042,-3674C1042,-3668 1048,-3662 1054,-3662"/>
+<polyline fill="none" stroke="gray" points="1064,-3662 1120,-3662 "/>
+<path fill="none" stroke="gray" d="M1120,-3662C1126,-3662 1132,-3668 1132,-3674"/>
+<polyline fill="none" stroke="gray" points="1132,-3674 1132,-3778 "/>
+<path fill="none" stroke="gray" d="M1132,-3778C1132,-3784 1126,-3790 1120,-3790"/>
+<polyline fill="none" stroke="gray" points="1120,-3790 1064,-3790 "/>
+<path fill="none" stroke="gray" d="M1064,-3790C1058,-3790 1052,-3784 1052,-3778"/>
+<polyline fill="none" stroke="gray" points="1052,-3778 1052,-3674 "/>
+<path fill="none" stroke="gray" d="M1052,-3674C1052,-3668 1058,-3662 1064,-3662"/>
 <text text-anchor="middle" x="1092" y="-3776.1" font-family="Times Roman,serif" font-size="11.00" fill="gray">SimpleType</text>
 </g>
 <g id="graph25" class="cluster"><title>cluster_\PhpOffice\PhpWord\Shared</title>
@@ -2054,15 +2054,15 @@
 <path fill="none" stroke="black" d="M459.373,-4154.55C444.428,-4158.83 426.324,-4165.44 412,-4175 368.001,-4204.37 329.359,-4253.09 307.894,-4283.27"/>
 <polygon fill="none" stroke="black" points="304.911,-4281.43 302.051,-4291.63 310.649,-4285.44 304.911,-4281.43"/>
 </g>
-<!-- \\PhpOffice\\PhpWord\\SimpleType\\ST_JcTable -->
-<g id="node194" class="node"><title>\\PhpOffice\\PhpWord\\SimpleType\\ST_JcTable</title>
-<polygon fill="none" stroke="black" points="1134,-3760 1050,-3760 1050,-3724 1134,-3724 1134,-3760"/>
-<text text-anchor="middle" x="1092" y="-3739.1" font-family="Courier,monospace" font-size="11.00">ST_JcTable</text>
+<!-- \\PhpOffice\\PhpWord\\SimpleType\\JcTable -->
+<g id="node194" class="node"><title>\\PhpOffice\\PhpWord\\SimpleType\\JcTable</title>
+<polygon fill="none" stroke="black" points="1124,-3760 1060,-3760 1060,-3724 1124,-3724 1124,-3760"/>
+<text text-anchor="middle" x="1092" y="-3739.1" font-family="Courier,monospace" font-size="11.00">JcTable</text>
 </g>
-<!-- \\PhpOffice\\PhpWord\\SimpleType\\ST_Jc -->
-<g id="node195" class="node"><title>\\PhpOffice\\PhpWord\\SimpleType\\ST_Jc</title>
+<!-- \\PhpOffice\\PhpWord\\SimpleType\\Jc -->
+<g id="node195" class="node"><title>\\PhpOffice\\PhpWord\\SimpleType\\Jc</title>
 <polygon fill="none" stroke="black" points="1119,-3706 1065,-3706 1065,-3670 1119,-3670 1119,-3706"/>
-<text text-anchor="middle" x="1092" y="-3685.1" font-family="Courier,monospace" font-size="11.00">ST_Jc</text>
+<text text-anchor="middle" x="1092" y="-3685.1" font-family="Courier,monospace" font-size="11.00">Jc</text>
 </g>
 <!-- \\PhpOffice\\PhpWord\\Shared\\ZipArchive -->
 <g id="node197" class="node"><title>\\PhpOffice\\PhpWord\\Shared\\ZipArchive</title>
