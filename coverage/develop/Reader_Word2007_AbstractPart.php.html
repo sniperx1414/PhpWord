@@ -333,8 +333,8 @@
      <tr><td><div align="right"><a name="17"></a><a href="#17">17</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="18"></a><a href="#18">18</a></div></td><td class="codeLine">namespace PhpOffice\PhpWord\Reader\Word2007;</td></tr>
      <tr><td><div align="right"><a name="19"></a><a href="#19">19</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="20"></a><a href="#20">20</a></div></td><td class="codeLine">use PhpOffice\PhpWord\PhpWord;</td></tr>
-     <tr><td><div align="right"><a name="21"></a><a href="#21">21</a></div></td><td class="codeLine">use PhpOffice\PhpWord\Shared\XMLReader;</td></tr>
+     <tr><td><div align="right"><a name="20"></a><a href="#20">20</a></div></td><td class="codeLine">use PhpOffice\Common\XMLReader;</td></tr>
+     <tr><td><div align="right"><a name="21"></a><a href="#21">21</a></div></td><td class="codeLine">use PhpOffice\PhpWord\PhpWord;</td></tr>
      <tr><td><div align="right"><a name="22"></a><a href="#22">22</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="23"></a><a href="#23">23</a></div></td><td class="codeLine">/**</td></tr>
      <tr><td><div align="right"><a name="24"></a><a href="#24">24</a></div></td><td class="codeLine"> * Abstract part reader</td></tr>
@@ -408,7 +408,7 @@
      <tr><td><div align="right"><a name="92"></a><a href="#92">92</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="93"></a><a href="#93">93</a></div></td><td class="codeLine">     * Read w:p.</td></tr>
      <tr><td><div align="right"><a name="94"></a><a href="#94">94</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="95"></a><a href="#95">95</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="95"></a><a href="#95">95</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="96"></a><a href="#96">96</a></div></td><td class="codeLine">     * @param \DOMElement $domNode</td></tr>
      <tr><td><div align="right"><a name="97"></a><a href="#97">97</a></div></td><td class="codeLine">     * @param mixed $parent</td></tr>
      <tr><td><div align="right"><a name="98"></a><a href="#98">98</a></div></td><td class="codeLine">     * @param string $docPart</td></tr>
@@ -499,7 +499,7 @@
      <tr><td><div align="right"><a name="183"></a><a href="#183">183</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="184"></a><a href="#184">184</a></div></td><td class="codeLine">     * Read w:r.</td></tr>
      <tr><td><div align="right"><a name="185"></a><a href="#185">185</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="186"></a><a href="#186">186</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="186"></a><a href="#186">186</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="187"></a><a href="#187">187</a></div></td><td class="codeLine">     * @param \DOMElement $domNode</td></tr>
      <tr><td><div align="right"><a name="188"></a><a href="#188">188</a></div></td><td class="codeLine">     * @param mixed $parent</td></tr>
      <tr><td><div align="right"><a name="189"></a><a href="#189">189</a></div></td><td class="codeLine">     * @param string $docPart</td></tr>
@@ -562,7 +562,7 @@
      <tr><td><div align="right"><a name="246"></a><a href="#246">246</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="247"></a><a href="#247">247</a></div></td><td class="codeLine">     * Read w:tbl.</td></tr>
      <tr><td><div align="right"><a name="248"></a><a href="#248">248</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="249"></a><a href="#249">249</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="249"></a><a href="#249">249</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="250"></a><a href="#250">250</a></div></td><td class="codeLine">     * @param \DOMElement $domNode</td></tr>
      <tr><td><div align="right"><a name="251"></a><a href="#251">251</a></div></td><td class="codeLine">     * @param mixed $parent</td></tr>
      <tr><td><div align="right"><a name="252"></a><a href="#252">252</a></div></td><td class="codeLine">     * @param string $docPart</td></tr>
@@ -623,7 +623,7 @@
      <tr><td><div align="right"><a name="307"></a><a href="#307">307</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="308"></a><a href="#308">308</a></div></td><td class="codeLine">     * Read w:pPr.</td></tr>
      <tr><td><div align="right"><a name="309"></a><a href="#309">309</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="310"></a><a href="#310">310</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="310"></a><a href="#310">310</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="311"></a><a href="#311">311</a></div></td><td class="codeLine">     * @param \DOMElement $domNode</td></tr>
      <tr><td><div align="right"><a name="312"></a><a href="#312">312</a></div></td><td class="codeLine">     * @return array|null</td></tr>
      <tr><td><div align="right"><a name="313"></a><a href="#313">313</a></div></td><td class="codeLine">     */</td></tr>
@@ -655,7 +655,7 @@
      <tr><td><div align="right"><a name="339"></a><a href="#339">339</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="340"></a><a href="#340">340</a></div></td><td class="codeLine">     * Read w:rPr</td></tr>
      <tr><td><div align="right"><a name="341"></a><a href="#341">341</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="342"></a><a href="#342">342</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="342"></a><a href="#342">342</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="343"></a><a href="#343">343</a></div></td><td class="codeLine">     * @param \DOMElement $domNode</td></tr>
      <tr><td><div align="right"><a name="344"></a><a href="#344">344</a></div></td><td class="codeLine">     * @return array|null</td></tr>
      <tr><td><div align="right"><a name="345"></a><a href="#345">345</a></div></td><td class="codeLine">     */</td></tr>
@@ -698,7 +698,7 @@
      <tr><td><div align="right"><a name="382"></a><a href="#382">382</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="383"></a><a href="#383">383</a></div></td><td class="codeLine">     * Read w:tblPr</td></tr>
      <tr><td><div align="right"><a name="384"></a><a href="#384">384</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="385"></a><a href="#385">385</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="385"></a><a href="#385">385</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="386"></a><a href="#386">386</a></div></td><td class="codeLine">     * @param \DOMElement $domNode</td></tr>
      <tr><td><div align="right"><a name="387"></a><a href="#387">387</a></div></td><td class="codeLine">     * @return string|array|null</td></tr>
      <tr><td><div align="right"><a name="388"></a><a href="#388">388</a></div></td><td class="codeLine">     * @todo Capture w:tblStylePr w:type=&quot;firstRow&quot;</td></tr>
@@ -734,7 +734,7 @@
      <tr><td><div align="right"><a name="418"></a><a href="#418">418</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="419"></a><a href="#419">419</a></div></td><td class="codeLine">     * Read w:tcPr</td></tr>
      <tr><td><div align="right"><a name="420"></a><a href="#420">420</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="421"></a><a href="#421">421</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="421"></a><a href="#421">421</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="422"></a><a href="#422">422</a></div></td><td class="codeLine">     * @param \DOMElement $domNode</td></tr>
      <tr><td><div align="right"><a name="423"></a><a href="#423">423</a></div></td><td class="codeLine">     * @return array</td></tr>
      <tr><td><div align="right"><a name="424"></a><a href="#424">424</a></div></td><td class="codeLine">     */</td></tr>
@@ -754,7 +754,7 @@
      <tr><td><div align="right"><a name="438"></a><a href="#438">438</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="439"></a><a href="#439">439</a></div></td><td class="codeLine">     * Read style definition</td></tr>
      <tr><td><div align="right"><a name="440"></a><a href="#440">440</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="441"></a><a href="#441">441</a></div></td><td class="codeLine">     * @param \PhpOffice\PhpWord\Shared\XMLReader $xmlReader</td></tr>
+     <tr><td><div align="right"><a name="441"></a><a href="#441">441</a></div></td><td class="codeLine">     * @param \PhpOffice\Common\XMLReader $xmlReader</td></tr>
      <tr><td><div align="right"><a name="442"></a><a href="#442">442</a></div></td><td class="codeLine">     * @param \DOMElement $parentNode</td></tr>
      <tr><td><div align="right"><a name="443"></a><a href="#443">443</a></div></td><td class="codeLine">     * @param array $styleDefs</td></tr>
      <tr><td><div align="right"><a name="444"></a><a href="#444">444</a></div></td><td class="codeLine">     * @ignoreScrutinizerPatch</td></tr>
@@ -839,7 +839,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.21</a> and <a href="http://phpunit.de/">PHPUnit 3.7.38</a> at Sat Dec 12 18:02:41 UTC 2015.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.31</a> and <a href="http://phpunit.de/">PHPUnit 3.7.38</a> at Sat Jan 23 15:21:44 UTC 2016.</small>
     </p>
    </footer>
   </div>
