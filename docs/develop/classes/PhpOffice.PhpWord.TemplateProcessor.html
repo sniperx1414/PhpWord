@@ -149,7 +149,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method public">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method public">
         <a href="#method_getVariables" title="getVariables :: Returns array of all variables in template.">
             <span class="description">Returns array of all variables in template.</span><pre>getVariables</pre>
         </a>
@@ -184,6 +184,16 @@
         <li class="nav-header protected">» Protected
             <ul>
                                                                                                                                                                                                                                                                 <li class="method protected">
+                            <a href="#method_ensureMacroCompleted" title="ensureMacroCompleted :: ">
+                                <span class="description"></span><pre>ensureMacroCompleted</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_ensureUtf8Encoded" title="ensureUtf8Encoded :: ">
+                                <span class="description"></span><pre>ensureUtf8Encoded</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
                             <a href="#method_findRowEnd" title="findRowEnd :: Find the end position of the nearest table row after $offset.">
                                 <span class="description">Find the end position of the nearest table row after $offset.</span><pre>findRowEnd</pre>
                             </a>
@@ -227,7 +237,7 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -455,6 +465,60 @@
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_ensureMacroCompleted"></a>
+                        <div class="element clickable method protected  method_ensureMacroCompleted" data-toggle="collapse" data-target=".method_ensureMacroCompleted .collapse">
+                            <h2>ensureMacroCompleted</h2>
+                            <pre>ensureMacroCompleted(string $macro) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$macro</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_ensureUtf8Encoded"></a>
+                        <div class="element clickable method protected  method_ensureUtf8Encoded" data-toggle="collapse" data-target=".method_ensureUtf8Encoded .collapse">
+                            <h2>ensureUtf8Encoded</h2>
+                            <pre>ensureUtf8Encoded(string $subject) : string</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$subject</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
 
@@ -803,7 +867,7 @@
                                             <a id="method_setValue"></a>
                         <div class="element clickable method public  method_setValue" data-toggle="collapse" data-target=".method_setValue .collapse">
                             <h2>setValue</h2>
-                            <pre>setValue(mixed $macro, mixed $replace, integer $limit = self::MAXIMUM_REPLACEMENTS_DEFAULT) : void</pre>
+                            <pre>setValue(mixed $search, mixed $replace, integer $limit = self::MAXIMUM_REPLACEMENTS_DEFAULT) : void</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -817,7 +881,7 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$macro</h4>
+                                                <h4>$search</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -836,7 +900,7 @@
                                             <a id="method_setValueForPart"></a>
                         <div class="element clickable method protected  method_setValueForPart" data-toggle="collapse" data-target=".method_setValueForPart .collapse">
                             <h2>Find and replace macros in the given XML section.</h2>
-                            <pre>setValueForPart(string $documentPartXML, string $search, string $replace, integer $limit) : string</pre>
+                            <pre>setValueForPart(mixed $search, mixed $replace, string $documentPartXML, integer $limit) : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -850,15 +914,15 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$documentPartXML</h4>
-                                                <code>string</code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
                                                 <h4>$search</h4>
-                                                <code>string</code><p></p>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$replace</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$documentPartXML</h4>
                                                 <code>string</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
@@ -1047,7 +1111,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 09 Apr 2016 18:12:12 +0000.<br/>
+            generated on Sat, 23 Apr 2016 16:00:03 +0000.<br/>
     </footer>
     </body>
 </html>
