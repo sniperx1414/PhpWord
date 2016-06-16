@@ -59,12 +59,12 @@ class Image extends AbstractElement
         $style = $element->getStyle();
         $styleWriter = new ImageStyleWriter($xmlWriter, $style);
 
-        if (!$this->withoutP) {
-            $xmlWriter->startElement('w:p');
-            $styleWriter->writeAlignment();
-        }
+        // if (!$this->withoutP) {
+        //     $xmlWriter->startElement('w:p');
+        //     $styleWriter->writeAlignment();
+        // }
 
-        $xmlWriter->startElement('w:r');
+        // $xmlWriter->startElement('w:r');
         $xmlWriter->startElement('w:pict');
         $xmlWriter->startElement('v:shape');
         $xmlWriter->writeAttribute('type', '#_x0000_t75');
@@ -78,9 +78,9 @@ class Image extends AbstractElement
 
         $xmlWriter->endElement(); // v:shape
         $xmlWriter->endElement(); // w:pict
-        $xmlWriter->endElement(); // w:r
+        // $xmlWriter->endElement(); // w:r
 
-        $this->endElementP();
+        // $this->endElementP();
     }
 
     /**

@@ -41,10 +41,10 @@ class TextBox extends Image
         $style = $element->getStyle();
         $styleWriter = new TextBoxStyleWriter($xmlWriter, $style);
 
-        if (!$this->withoutP) {
+        /*if (!$this->withoutP) {
             $xmlWriter->startElement('w:p');
             $styleWriter->writeAlignment();
-        }
+        }*/
 
         $xmlWriter->startElement('w:r');
         $xmlWriter->startElement('w:pict');
@@ -67,8 +67,8 @@ class TextBox extends Image
 
         $xmlWriter->endElement(); // v:shape
         $xmlWriter->endElement(); // w:pict
-        $xmlWriter->endElement(); // w:r
+        // $xmlWriter->endElement(); // w:r
 
-        $this->endElementP();
+        // $this->endElementP();
     }
 }
