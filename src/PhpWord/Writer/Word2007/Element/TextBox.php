@@ -46,7 +46,7 @@ class TextBox extends Image
             $styleWriter->writeAlignment();
         }*/
 
-        $xmlWriter->startElement('w:r');
+        // $xmlWriter->startElement('w:r');
         $xmlWriter->startElement('w:pict');
         $xmlWriter->startElement('v:shape');
         $xmlWriter->writeAttribute('type', '#_x0000_t0202');
